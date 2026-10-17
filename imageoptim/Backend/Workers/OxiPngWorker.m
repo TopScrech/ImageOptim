@@ -6,7 +6,7 @@
 
 - (instancetype)initWithLevel:(NSInteger)level stripMetadata:(BOOL)aStrip file:(Job *)aJob {
     if (self = [super initWithFile:aJob]) {
-        optlevel = MAX(2, MIN(level, 6));
+        optlevel = 2;
         strip = aStrip;
     }
     return self;
@@ -19,7 +19,7 @@
 
 -(BOOL)optimizeFile:(File *)file toTempPath:(NSURL *)temp {
 
-    NSMutableArray *args = [NSMutableArray arrayWithObjects: [NSString stringWithFormat:@"-o%d",(int)(optlevel ? optlevel : 6)],
+    NSMutableArray *args = [NSMutableArray arrayWithObjects: [NSString stringWithFormat:@"-o%d",(int)optlevel],
                             @"-i0", @"-a",
                             @"--out",temp.path,@"--",file.path,nil];
     if (strip) {
