@@ -4951,7 +4951,6 @@
 				5A7D24EF13E5BC3100815AAA /* PBXBuildFile */,
 				5A7D24EE13E5BC3100815AAA /* PBXBuildFile */,
 				5A7D24E613E5BC3100815AAA /* PBXBuildFile */,
-				5A0A24FD17495224003264CC /* PBXBuildFile */,
 				5A7D24E513E5BC3100815AAA /* PBXBuildFile */,
 				5A16343E140BF97400758D99 /* PBXBuildFile */,
 				1AD5B24E174F84C600BC75FD /* PBXBuildFile */,
@@ -11307,12 +11306,6 @@
 			sourceTree = SOURCE_ROOT;
 			fileEncoding = 4;
 		};
-		5A0A24FC17495224003264CC /* err@2x.png */ = {
-			path = "err@2x.png";
-			isa = PBXFileReference;
-			lastKnownFileType = image.png;
-			sourceTree = SOURCE_ROOT;
-		};
 		484FF28DC80B46731ECDD3B5 /* PBXBuildFile */ = {
 			isa = PBXBuildFile;
 			fileRef = 0784CB5F7BB98E4EC05346DD /* SUAppcast.h */;
@@ -16653,7 +16646,6 @@
 				5AE54D800CAEE8AC00903DF4 /* defaults.plist */,
 				5AC63C490E9ABF0A0053B879 /* dsa_pub.pem */,
 				5A9EE4490CB59CDC00F08CC5 /* err.png */,
-				5A0A24FC17495224003264CC /* err@2x.png */,
 				40C846B3D3091D62BB7E54E2 /* ImageOptim-Bridging-Header.h */,
 				5AACA80F0CAFE3CA004D45CA /* ImageOptim.icns */,
 				1AD5B24D174F84C600BC75FD /* ImageOptimVerbs.sdef */,
@@ -17079,10 +17071,6 @@
 			name = jcparam.c;
 			sourceTree = SOURCE_ROOT;
 			fileEncoding = 4;
-		};
-		5A0A24FD17495224003264CC /* PBXBuildFile */ = {
-			isa = PBXBuildFile;
-			fileRef = 5A0A24FC17495224003264CC /* err@2x.png */;
 		};
 		5ABE15551AE5072300861C6B /* BackendTests.m */ = {
 			path = Backend/Tests/BackendTests.m;
