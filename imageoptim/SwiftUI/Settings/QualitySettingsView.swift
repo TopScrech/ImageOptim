@@ -1,4 +1,4 @@
-import SwiftUI
+import ScrechKit
 
 struct QualitySettingsView: View {
     @AppStorage("LossyEnabled") private var lossyEnabled = false
@@ -13,7 +13,7 @@ struct QualitySettingsView: View {
         Form {
             Toggle("Enable lossy minification", isOn: $lossyEnabled)
             Text("Makes files much smaller, but may change how images look")
-                .foregroundStyle(.secondary)
+                .secondary()
 
             Section("Quality") {
                 Slider(value: $jpegQuality, in: (guetzliEnabled ? 85 : 50)...100, step: 1) {

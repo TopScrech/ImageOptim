@@ -1,4 +1,4 @@
-import SwiftUI
+import ScrechKit
 
 struct OptimizationStatusView: View {
     @Environment(OptimizationViewModel.self) private var model
@@ -14,7 +14,7 @@ struct OptimizationStatusView: View {
                 Text("Optimizing images")
             } else if model.originalBytes > 0 {
                 Text("Saved \(model.bytesSaved.formatted(.byteCount(style: .file))) out of \(model.originalBytes.formatted(.byteCount(style: .file)))")
-                    .textSelection(.enabled)
+                    .enableSelection()
             } else {
                 Text("Images are optimized in place")
             }
@@ -27,7 +27,7 @@ struct OptimizationStatusView: View {
                 Text("Lossy minification enabled")
             }
         }
-        .font(.callout)
-        .foregroundStyle(.secondary)
+        .callout()
+        .secondary()
     }
 }

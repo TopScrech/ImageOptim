@@ -1,4 +1,4 @@
-import SwiftUI
+import ScrechKit
 
 struct GeneralSettingsView: View {
     @Environment(SettingsViewModel.self) private var model
@@ -26,8 +26,8 @@ struct GeneralSettingsView: View {
 
                 Toggle("Run at low priority", isOn: $runLowPriority)
                 Text("Priority changes take effect after restarting ImageOptim")
-                    .font(.caption)
-                    .foregroundStyle(.secondary)
+                    .caption()
+                    .secondary()
 
                 Toggle("Bounce Dock icon when finished", isOn: $bounceDock)
             }

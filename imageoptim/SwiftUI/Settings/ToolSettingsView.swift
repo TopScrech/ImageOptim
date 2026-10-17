@@ -1,4 +1,4 @@
-import SwiftUI
+import ScrechKit
 
 struct ToolSettingsView: View {
     @Environment(SettingsViewModel.self) private var model
@@ -38,8 +38,8 @@ struct ToolSettingsView: View {
                 Toggle("SVGO", isOn: $svgo)
                     .disabled(!model.supportsSVGO)
                 Text("SVGO requires Node.js installed in /usr/local/bin or /opt/homebrew/bin")
-                    .font(.caption)
-                    .foregroundStyle(.secondary)
+                    .caption()
+                    .secondary()
             }
         }
         .formStyle(.grouped)

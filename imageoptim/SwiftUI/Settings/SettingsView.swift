@@ -1,4 +1,4 @@
-import SwiftUI
+import ScrechKit
 
 struct SettingsView: View {
     @State private var model = SettingsViewModel()

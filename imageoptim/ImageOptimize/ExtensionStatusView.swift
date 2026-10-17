@@ -1,4 +1,4 @@
-import SwiftUI
+import ScrechKit
 
 struct ExtensionStatusView: View {
     @Environment(ExtensionViewModel.self) private var model
@@ -8,7 +8,7 @@ struct ExtensionStatusView: View {
             ProgressView()
 
             Text(model.status)
-                .foregroundStyle(.secondary)
+                .secondary()
 
             Button("Stop", systemImage: "stop", action: model.stop)
         }

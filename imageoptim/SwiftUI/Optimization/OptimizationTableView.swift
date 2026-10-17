@@ -1,4 +1,4 @@
-import SwiftUI
+import ScrechKit
 
 struct OptimizationTableView: View {
     @Environment(OptimizationViewModel.self) private var model

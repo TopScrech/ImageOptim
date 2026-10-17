@@ -5,6 +5,30 @@
 	objectVersion = 110;
 	archiveVersion = 1;
 	objects = {
+		A17E00000000000000000001 /* ScrechKit */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/TopScrech/ScrechKit.git";
+			requirement = { kind = upToNextMajorVersion; minimumVersion = 1.0.15; };
+		};
+		A17E00000000000000000002 /* ScrechKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A17E00000000000000000001 /* ScrechKit */;
+			productName = ScrechKit;
+		};
+		A17E00000000000000000003 /* ScrechKit in Frameworks */ = {
+			isa = PBXBuildFile;
+			productRef = A17E00000000000000000002 /* ScrechKit */;
+		};
+		A17E00000000000000000004 /* ScrechKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A17E00000000000000000001 /* ScrechKit */;
+			productName = ScrechKit;
+		};
+		A17E00000000000000000005 /* ScrechKit in Frameworks */ = {
+			isa = PBXBuildFile;
+			productRef = A17E00000000000000000004 /* ScrechKit */;
+		};
+
 		681A50E6CC2F49579967F3CE /* build */ = {
 			isa = PBXGroup;
 			name = build;
@@ -719,6 +743,7 @@
 		8D11072E0486CEB800E47090 /* PBXFrameworksBuildPhase */ = {
 			isa = PBXFrameworksBuildPhase;
 			files = (
+				A17E00000000000000000003 /* ScrechKit in Frameworks */,
 				5A5CD39419662E940096D77F /* PBXBuildFile */,
 				5A5CD39619662E9A0096D77F /* PBXBuildFile */,
 				5ABE15591AE5072300861C6B /* PBXBuildFile */,
@@ -8630,6 +8655,7 @@
 			productType = "com.apple.product-type.application";
 			productName = ImageOptim;
 			isa = PBXNativeTarget;
+			packageProductDependencies = (A17E00000000000000000002 /* ScrechKit */);
 			buildPhases = (
 				8D11072C0486CEB800E47090 /* PBXSourcesBuildPhase */,
 				5A7D24E113E5BC0C00815AAA /* PBXResourcesBuildPhase */,
@@ -12219,6 +12245,7 @@
 				zh_TW,
 			);
 			isa = PBXProject;
+			packageReferences = (A17E00000000000000000001 /* ScrechKit */);
 			preferredProjectObjectVersion = 110;
 			targets = (
 				8D1107260486CEB800E47090 /* ImageOptim */,
@@ -13587,6 +13614,7 @@
 			buildConfigurationList = 5AC64F221AF3FDEF0032AA7F /* XCConfigurationList */;
 			productName = ImageOptimize;
 			isa = PBXNativeTarget;
+			packageProductDependencies = (A17E00000000000000000004 /* ScrechKit */);
 			buildPhases = (
 				5AC64EFA1AF3FDEE0032AA7F /* PBXSourcesBuildPhase */,
 				5AC64EFB1AF3FDEE0032AA7F /* PBXFrameworksBuildPhase */,
@@ -15170,6 +15198,7 @@
 		5AC64EFB1AF3FDEE0032AA7F /* PBXFrameworksBuildPhase */ = {
 			isa = PBXFrameworksBuildPhase;
 			files = (
+				A17E00000000000000000005 /* ScrechKit in Frameworks */,
 				5AC4CBB31AF3FFA10003AEA2 /* PBXBuildFile */,
 			);
 		};
