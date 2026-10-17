@@ -6,8 +6,9 @@ build: all
 all: png.h
 
 png.h: /tmp/$(OPTIPNG_FILENAME)
-	tar xzf /tmp/$(OPTIPNG_FILENAME) --strip-components=3 --exclude=Makefile optipng-$(VERSION)/lib/libpng
+	tar xzf /tmp/$(OPTIPNG_FILENAME) --strip-components=3 --exclude=Makefile --exclude='*.xcodeproj' optipng-$(VERSION)/lib/libpng
 	sed -i.bak 's/defined(TARGET_OS_MAC)/0/' pngconf.h && rm pngconf.h.bak
+	touch png.h
 
 /tmp/$(OPTIPNG_FILENAME):
 	curl -L http://downloads.sourceforge.net/project/optipng/OptiPNG/optipng-$(VERSION)/$(OPTIPNG_FILENAME) -o /tmp/$(OPTIPNG_FILENAME)

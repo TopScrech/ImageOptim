@@ -1,9 +1,3 @@
-//
-//  Worker.m
-//
-//  Created by porneL on 30.wrz.07.
-//
-
 #import "Worker.h"
 #import "Job.h"
 #import "File.h"

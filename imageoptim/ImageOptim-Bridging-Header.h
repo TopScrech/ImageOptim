@@ -1,0 +1,6 @@
+#import "Backend/Job.h"
+#import "Backend/JobQueue.h"
+#import "Backend/File.h"
+#import "ResultsDb.h"
+#import "log.h"
+#import "../Sparkle/Sparkle/SUUpdater.h"

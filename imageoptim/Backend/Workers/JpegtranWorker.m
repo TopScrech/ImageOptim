@@ -1,9 +1,3 @@
-//
-//  JpegtranWorker.m
-//
-//  Created by porneL on 7.paź.07.
-//
-
 #import "JpegtranWorker.h"
 #import "../Job.h"
 #import "../TempFile.h"

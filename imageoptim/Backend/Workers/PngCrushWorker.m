@@ -1,9 +1,3 @@
-//
-//  PngCrushWorker.m
-//
-//  Created by porneL on 1.paź.07.
-//
-
 #import "PngCrushWorker.h"
 #import "../Job.h"
 #import "../TempFile.h"

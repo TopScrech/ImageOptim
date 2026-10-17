@@ -1,9 +1,3 @@
-//
-//  JpegoptimWorker.h
-//
-//  Created by porneL on 7.paź.07.
-//
-
 @import Cocoa;
 #import "CommandWorker.h"
 

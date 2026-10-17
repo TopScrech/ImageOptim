@@ -1,9 +1,3 @@
-//
-//  Worker.m
-//
-//  Created by porneL on 23.wrz.07.
-//
-
 #import "CommandWorker.h"
 #include <unistd.h>
 #import "../Job.h"

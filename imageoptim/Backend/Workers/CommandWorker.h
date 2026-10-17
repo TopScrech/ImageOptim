@@ -1,9 +1,3 @@
-//
-//  Worker.h
-//
-//  Created by porneL on 23.wrz.07.
-//
-
 @import Cocoa;
 #import "Worker.h"
 

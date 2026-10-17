@@ -1,10 +1,5 @@
-//
-//  Created by porneL on 8.wrz.07.
-//
-
 #import "Job.h"
 #import "TempFile.h"
-#import "ImageOptimController.h"
 #import "Workers/Save.h"
 #import "Workers/AdvCompWorker.h"
 #import "Workers/PngquantWorker.h"

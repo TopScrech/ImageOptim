@@ -1,11 +1,3 @@
-//
-//  GuezilWorker.m
-//  ImageOptim
-//
-//  Created by Peter Kovacs on 3/17/17.
-//
-//
-
 #import "GuetzliWorker.h"
 #import "../Job.h"
 #import "../TempFile.h"

@@ -1,9 +1,3 @@
-//
-//  PngoutWorker.h
-//
-//  Created by porneL on 29.wrz.07.
-//
-
 @import Cocoa;
 #import "CommandWorker.h"
 

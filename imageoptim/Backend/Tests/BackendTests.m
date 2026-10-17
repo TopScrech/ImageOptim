@@ -1,11 +1,3 @@
-//
-//  BackendTests.m
-//  BackendTests
-//
-//  Created by Kornel on 20/04/2015.
-//
-//
-
 @import Cocoa;
 #import <XCTest/XCTest.h>
 #import "Job.h"

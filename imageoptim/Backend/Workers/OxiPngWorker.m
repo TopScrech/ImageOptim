@@ -1,9 +1,3 @@
-//
-//  AdvCompWorker.m
-//
-//  Created by porneL on 30.wrz.07.
-//
-
 #import "OxiPngWorker.h"
 #import "../Job.h"
 #import "../TempFile.h"

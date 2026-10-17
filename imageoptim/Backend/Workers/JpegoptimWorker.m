@@ -1,9 +1,3 @@
-//
-//  JpegoptimWorker.m
-//
-//  Created by porneL on 7.paź.07.
-//
-
 #import "JpegoptimWorker.h"
 #import "../Job.h"
 #import "../TempFile.h"

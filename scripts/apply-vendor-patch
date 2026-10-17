@@ -1,0 +1,12 @@
+#!/bin/sh
+set -eu
+vendor_directory=$1
+patch_file=$(CDPATH= cd -- "$(dirname -- "$2")" && pwd)/$(basename -- "$2")
+if patch --dry-run --forward -p1 -d "$vendor_directory" < "$patch_file" >/dev/null 2>&1; then
+    patch --forward -p1 -d "$vendor_directory" < "$patch_file"
+elif patch --dry-run --reverse -p1 -d "$vendor_directory" < "$patch_file" >/dev/null 2>&1; then
+    :
+else
+    echo "Cannot apply vendor compatibility patch: $patch_file" >&2
+    exit 1
+fi

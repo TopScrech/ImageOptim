@@ -1,9 +1,3 @@
-//
-//  File.h
-//
-//  Created by porneL on 8.wrz.07.
-//
-
 @import Cocoa;
 #import "Workers/Worker.h"
 
@@ -32,9 +26,7 @@ NS_ASSUME_NONNULL_BEGIN
     BOOL stopping, lossyConverted;
 }
 
-- (BOOL)isBusy;
-- (BOOL)isStoppable;
-- (BOOL)isOptimized;
+@property (readonly) BOOL isBusy, isStoppable, isOptimized;
 
 - (BOOL)stop;
 - (BOOL)revert;
@@ -60,10 +52,10 @@ NS_ASSUME_NONNULL_BEGIN
 @property (strong, nullable) NSString *statusText, *bestToolName;
 @property (strong) NSString *displayName;
 @property (strong, nonatomic) NSURL *filePath;
-@property (strong) NSString *statusImageName;
-@property (readonly, nonatomic) NSNumber *byteSizeOriginal;
-@property (readonly, nonatomic) NSNumber *byteSizeOptimized;
-@property (readonly, nonatomic) NSNumber *percentOptimized;
+@property (strong, nullable) NSString *statusImageName;
+@property (readonly, nonatomic, nullable) NSNumber *byteSizeOriginal;
+@property (readonly, nonatomic, nullable) NSNumber *byteSizeOptimized;
+@property (readonly, nonatomic, nullable) NSNumber *percentOptimized;
 @property (assign, readonly) NSInteger statusOrder;
 @property (strong, readonly) NSMutableDictionary *workersPreviousResults;
 

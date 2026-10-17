@@ -1,11 +1,3 @@
-//
-//  TempFile.m
-//  ImageOptim
-//
-//  Created by Kornel on 12/01/2017.
-//
-//
-
 #import "TempFile.h"
 
 @implementation TempFile
