@@ -2,55 +2,53 @@ import SwiftUI
 
 @Observable
 final class OptimizationViewModel {
-    var results: [OptimizationResult] = []
-    var selection: Set<URL> = []
+    var results: [OptimizationResult] { filesController?.arrangedObjects.map(OptimizationResult.init) ?? [] }
+    var selection: Set<URL> = [] {
+        didSet { synchronizeSelection() }
+    }
     var isImporting = false
     var showsError = false
     var errorMessage: String? {
         didSet { showsError = errorMessage != nil }
     }
     var previewURL: URL?
-    var isBusy = false
-    var canStop = false
-    var canRevert = false
-    var canOptimizeAgain = false
-    var canOptimizeSmaller = false
-    var canClearCompleted = false
-    var bytesSaved: Int64 = 0
-    var originalBytes: Int64 = 0
+    var isBusy: Bool { filesController?.isBusy ?? false }
+    var canStop: Bool { filesController?.isStoppable ?? false }
+    var canRevert: Bool { filesController?.canRevert ?? false }
+    var canOptimizeAgain: Bool { filesController?.canStartAgainOptimized(false) ?? false }
+    var canOptimizeSmaller: Bool { filesController?.canStartAgainOptimized(true) ?? false }
+    var canClearCompleted: Bool { filesController?.canClearComplete ?? false }
+    var originalBytes: Int64 { completedJobs.reduce(0) { $0 + ($1.byteSizeOriginal ?? 0) } }
+    var bytesSaved: Int64 {
+        completedJobs.reduce(0) { $0 + max(0, ($1.byteSizeOriginal ?? 0) - ($1.byteSizeOptimized ?? 0)) }
+    }
     private var delegate: ImageOptimController?
     private var undoManager: UndoManager?
-
-    func connect(to delegate: ImageOptimController) async {
-        self.delegate = delegate
-        delegate.filesController.undoManager = undoManager
-        while !Task.isCancelled {
-            refresh()
-            do {
-                try await Task.sleep(for: .milliseconds(150))
-            } catch {
-                return
-            }
-        }
+    private var filesController: FilesController? { delegate?.filesController }
+    private var completedJobs: [JobProxy] {
+        filesController?.arrangedObjects.filter {
+            $0.isDone && !$0.isFailed && ($0.byteSizeOriginal ?? 0) > 0 && ($0.byteSizeOptimized ?? 0) > 0
+        } ?? []
     }
 
-    func refresh() {
-        guard let controller = delegate?.filesController else { return }
-        let jobs = controller.arrangedObjects
-        let updatedResults = jobs.map(OptimizationResult.init)
-        if results != updatedResults { results = updatedResults }
-        selection.formIntersection(Set(results.map(\.id)))
-        controller.setSelectedObjects(jobs.filter { selection.contains($0.filePath) })
-        controller.updateStoppableState()
-        isBusy = controller.isBusy
-        canStop = controller.isStoppable
-        canRevert = controller.canRevert
-        canOptimizeAgain = controller.canStartAgainOptimized(false)
-        canOptimizeSmaller = controller.canStartAgainOptimized(true)
-        canClearCompleted = controller.canClearComplete
-        let completed = results.filter { $0.isDone && !$0.isFailed && $0.originalSize > 0 && $0.optimizedSize > 0 }
-        originalBytes = completed.reduce(0) { $0 + $1.originalSize }
-        bytesSaved = completed.reduce(0) { $0 + max(0, $1.originalSize - $1.optimizedSize) }
+    func connect(to delegate: ImageOptimController) {
+        filesController?.onFilesChanged = nil
+        self.delegate = delegate
+        delegate.filesController.undoManager = undoManager
+        delegate.filesController.onFilesChanged = { [weak self] in
+            self?.synchronizeSelection()
+        }
+        synchronizeSelection()
+    }
+
+    private func synchronizeSelection() {
+        guard let filesController else { return }
+        let jobs = filesController.arrangedObjects
+        let validSelection = selection.intersection(jobs.map(\.filePath))
+        if selection != validSelection {
+            selection = validSelection
+        }
+        filesController.setSelectedObjects(jobs.filter { selection.contains($0.filePath) })
     }
 
     func add(_ urls: [URL]) {
@@ -59,7 +57,6 @@ final class OptimizationViewModel {
         if !controller.add(urls) {
             errorMessage = "Some files could not be opened"
         }
-        refresh()
     }
 
     func importFiles(_ result: Result<[URL], Error>) {
@@ -70,33 +67,25 @@ final class OptimizationViewModel {
     }
 
     func stop() {
-        refresh()
         delegate?.filesController.stopSelected()
-        refresh()
     }
 
     func optimizeAgain(optimizedOnly: Bool = false) {
-        refresh()
         delegate?.filesController.startAgainOptimized(optimizedOnly)
-        refresh()
     }
 
     func revert() {
-        refresh()
         delegate?.filesController.revert()
-        refresh()
     }
 
     func clearCompleted() {
         delegate?.filesController.clearComplete()
-        refresh()
     }
 
     func removeSelected() {
         guard let controller = delegate?.filesController else { return }
         let jobs = controller.arrangedObjects
         controller.remove(contentsOf: jobs.filter { selection.contains($0.filePath) })
-        refresh()
     }
 
     func preview() {
@@ -113,18 +102,15 @@ final class OptimizationViewModel {
     }
 
     func copyFiles() {
-        refresh()
         delegate?.copySelectedFiles()
     }
 
     func copyDataURLs() {
-        refresh()
         delegate?.copySelectedDataURLs()
     }
 
     func pasteFiles() {
         delegate?.pasteFiles()
-        refresh()
     }
 
     func checkForUpdates() {

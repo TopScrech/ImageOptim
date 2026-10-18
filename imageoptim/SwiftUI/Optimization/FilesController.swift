@@ -2,18 +2,21 @@ import SwiftUI
 
 @Observable
 final class FilesController {
-    private(set) var arrangedObjects: [JobProxy] = []
+    private(set) var arrangedObjects: [JobProxy] = [] {
+        didSet { onFilesChanged?() }
+    }
+    var onFilesChanged: (() -> Void)?
     var selectedObjects: [JobProxy] = []
     var undoManager: UndoManager?
     var onQueueFinished: (() -> Void)?
     private(set) var isBusy = false
-    private(set) var isStoppable = false
+    var isStoppable: Bool { isBusy && selectedObjects.contains { $0.isStoppable } }
     private var queue: JobQueue?
     private var database: ResultsDb?
     private var isEnabled = false
     private var nextInsertRow = -1
     private var scans: [UUID: Task<Void, Never>] = [:]
-    private var monitor: Task<Void, Never>?
+    private var queueObservation: NSKeyValueObservation?
     private var pendingDirectories: [URL] = []
     private var scanLimit = 1
 
@@ -25,13 +28,13 @@ final class FilesController {
                          dirs: defaults.integer(forKey: "RunConcurrentDirscans"),
                          files: defaults.integer(forKey: "RunConcurrentFileops"), defaults: defaults)
         isEnabled = queue != nil
-        monitor = Task { [weak self] in
-            while !Task.isCancelled {
-                self?.updateBusyState()
-                do { try await Task.sleep(for: .milliseconds(100)) }
-                catch { return }
+        queueObservation = queue?.observe(\.isBusy, options: [.new]) { [weak self] _, _ in
+            Task { @MainActor [weak self] in
+                guard let self, self.isEnabled else { return }
+                self.updateBusyState()
             }
         }
+        updateBusyState()
     }
 
     func setRow(_ row: Int) { nextInsertRow = row }
@@ -43,7 +46,7 @@ final class FilesController {
 
     func cleanup() {
         isEnabled = false
-        monitor?.cancel()
+        queueObservation = nil
         for task in scans.values { task.cancel() }
         scans.removeAll()
         pendingDirectories.removeAll()
@@ -126,7 +129,6 @@ final class FilesController {
 
     func stopSelected() {
         for job in selectedObjects { _ = job.stop() }
-        updateStoppableState()
     }
 
     func revert() {
@@ -159,12 +161,7 @@ final class FilesController {
     private func updateBusyState() {
         let wasBusy = isBusy
         isBusy = queueCount > 0
-        updateStoppableState()
         if wasBusy && !isBusy { onQueueFinished?() }
-    }
-
-    func updateStoppableState() {
-        isStoppable = isBusy && selectedObjects.contains { $0.isStoppable }
     }
 
     private var enabledExtensions: Set<String> {

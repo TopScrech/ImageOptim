@@ -10,8 +10,8 @@ struct ImageOptimApp: App {
             OptimizationView()
                 .environment(model)
                 .focusedSceneValue(\.optimizationModel, model)
-                .task {
-                    await model.connect(to: delegate)
+                .onAppear {
+                    model.connect(to: delegate)
                 }
         }
         .defaultSize(width: 800, height: 480)

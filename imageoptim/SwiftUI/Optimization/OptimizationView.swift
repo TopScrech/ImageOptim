@@ -51,8 +51,5 @@ struct OptimizationView: View {
         .onAppear {
             model.setUndoManager(undoManager)
         }
-        .onChange(of: model.selection) {
-            model.refresh()
-        }
     }
 }
