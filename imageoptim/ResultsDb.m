@@ -29,8 +29,7 @@ typedef BOOL (^rowcallback)(int numColumns, char **values, char **columnNames);
         sqlitequeue = dispatch_queue_create("imageoptim sqlite", DISPATCH_QUEUE_SERIAL);
         dispatch_async(sqlitequeue, ^() {
             char *err;
-            if (SQLITE_OK != sqlite3_exec(self->db, "CREATE TABLE IF NOT EXISTS results(inputs_hashsh BLOB(16) NOT NULL PRIMARY KEY, size INT NOT NULL, status INT NOT NULL DEFAULT 0);"
-                                                    "CREATE INDEX IF NOT EXISTS results_size ON results(size)",
+            if (SQLITE_OK != sqlite3_exec(self->db, "CREATE TABLE IF NOT EXISTS results(inputs_hashsh BLOB(16) NOT NULL PRIMARY KEY, size INT NOT NULL, status INT NOT NULL DEFAULT 0);",
                                           NULL, NULL, &err)) {
                 IOWarn(@"Failed to create tables: %s", err);
                 sqlite3_free(err);
@@ -61,16 +60,6 @@ typedef BOOL (^rowcallback)(int numColumns, char **values, char **columnNames);
 
     BOOL __block found = NO;
     [self runQuery:[NSString stringWithFormat:@"SELECT 1 FROM results WHERE inputs_hashsh = x'%08x%08x%08x%08x' LIMIT 1", hash[0], hash[1], hash[2], hash[3]]
-         withBlock:^BOOL(int c, char **a, char **b) {
-             found = YES;
-             return YES;
-         }];
-    return found;
-}
-
-- (BOOL)hasResultWithFileSize:(NSUInteger)size {
-    BOOL __block found = NO;
-    [self runQuery:[NSString stringWithFormat:@"SELECT 1 FROM results WHERE size = %lu LIMIT 1", (long)size]
          withBlock:^BOOL(int c, char **a, char **b) {
              found = YES;
              return YES;

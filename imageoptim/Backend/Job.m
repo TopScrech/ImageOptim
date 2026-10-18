@@ -536,11 +536,6 @@
     NSMutableArray *worker_list = [NSMutableArray new];
     NSInteger level = [defs integerForKey:@"AdvPngLevel"]; // AdvPNG setting is reused for all tools now
     BOOL lossyEnabled = [defs boolForKey:@"LossyEnabled"];
-    if (lossyEnabled) {
-        dispatch_async(dispatch_get_main_queue(), ^() {
-            [defs setBool:YES forKey:@"LossyUsed"];
-        });
-    }
 
     switch (input->fileType) {
     case FILETYPE_PNG:
@@ -642,7 +637,7 @@
     // Create a hash that includes all optimization settings to invalidate file caches on settings changes
     [self setSettingsHash:[runFirst arrayByAddingObjectsFromArray:runLater]];
 
-    // Can't check only file size, because then hash won't be available on save! if ([db hasResultWithFileSize:byteSizeOnDisk]) {
+    // Hash settings and file contents for cache lookup and saving results
 #pragma GCC diagnostic push
 #pragma GCC diagnostic ignored "-Wdeprecated-declarations"
     CC_MD5_CTX md5ctx = {}, *md5ctxp = &md5ctx;

@@ -6,7 +6,6 @@
 @interface Worker : NSOperation {
     NSOperation *nextOperation;
     Job *job;
-    int fileType;
 }
 
 // nextOperation will make given operation high priority after this one finishes,
