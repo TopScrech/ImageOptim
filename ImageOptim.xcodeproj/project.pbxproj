@@ -1405,7 +1405,7 @@
 				2BFD5B5844B1C23EA2BF6FBD /* Dependencies */,
 				8496E90F56E24549F8FBCDA8 /* Frameworks */,
 				BA4CB4D4B9FA1FD16846CCFB /* Products */,
-				F3AB07893085712400916586 /* Recovered References */,
+				F3AB07893085712400916586 /* Configurations */,
 			);
 			path = ..;
 			sourceTree = "<group>";
@@ -1421,6 +1421,7 @@
 				60A8598CEFD2D0B8DCB1D919 /* libpng */,
 				164C8F7AED5A51EFF82AF166 /* oxipng */,
 				4B68CE12A2F60CF295E4A4ED /* pngcrush */,
+				5AF71642174AF7C30018D3FE /* pngout */,
 				2FBF94F59DA6F8812207F97F /* pngquant */,
 				8BFE262B69F60FD846BD0FF5 /* svgcleaner */,
 				13DC3DE9F964C6D1F5FAB633 /* svgo */,
@@ -1881,14 +1882,13 @@
 			path = oxipng;
 			sourceTree = "<group>";
 		};
-		F3AB07893085712400916586 /* Recovered References */ = {
+		F3AB07893085712400916586 /* Configurations */ = {
 			isa = PBXGroup;
 			children = (
-				5AF71642174AF7C30018D3FE /* pngout */,
 				5A27B9C2139B079A0095FC2F /* debug.xcconfig */,
 				5A27B956139B03090095FC2F /* release.xcconfig */,
 			);
-			name = "Recovered References";
+			name = Configurations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
