@@ -3,7 +3,6 @@ import SwiftUI
 final class ImageOptimController: NSObject, NSApplicationDelegate {
     static weak var current: ImageOptimController?
     let filesController = FilesController()
-    private var updater: SUUpdater?
     private let commandLinePaths: [String]
 
     override init() {
@@ -39,7 +38,6 @@ final class ImageOptimController: NSObject, NSApplicationDelegate {
     }
 
     func applicationDidFinishLaunching(_ notification: Notification) {
-        updater = SUUpdater.shared()
         if !commandLinePaths.isEmpty {
             NSApp.hide(self)
             filesController.addPaths(commandLinePaths)
@@ -98,10 +96,6 @@ final class ImageOptimController: NSObject, NSApplicationDelegate {
 
     private func readFileURLs(from pasteboard: NSPasteboard) -> [URL] {
         pasteboard.readObjects(forClasses: [NSURL.self], options: [.urlReadingFileURLsOnly: true]) as? [URL] ?? []
-    }
-
-    func checkForUpdates() {
-        updater?.checkForUpdates(self)
     }
 
     func applicationShouldTerminateAfterLastWindowClosed(_ sender: NSApplication) -> Bool { true }

@@ -58,10 +58,6 @@ struct OptimizationCommands: Commands {
                     .disabled(model.selection.isEmpty)
             }
 
-            CommandGroup(after: .appInfo) {
-                Button("Check for updates", action: model.checkForUpdates)
-            }
-
             CommandGroup(replacing: .help) {
                 if let url = URL(string: "https://imageoptim.com/mac") {
                     Link("ImageOptim Help", destination: url)

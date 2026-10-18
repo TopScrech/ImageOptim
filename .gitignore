@@ -64,7 +64,6 @@ imageoptim/build
 imageoptim/DerivedData
 imageoptim/optipng
 imageoptim/pngout
-imageoptim/Sparkle.framework
 jpegoptim/*.1
 jpegoptim/*.c
 jpegoptim/*.h

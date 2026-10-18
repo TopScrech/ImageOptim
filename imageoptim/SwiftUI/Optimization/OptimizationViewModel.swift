@@ -112,8 +112,4 @@ final class OptimizationViewModel {
     func pasteFiles() {
         delegate?.pasteFiles()
     }
-
-    func checkForUpdates() {
-        delegate?.checkForUpdates()
-    }
 }
