@@ -801,7 +801,6 @@
 		10F9CC50C35C041B4F2E406B /* trees.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = trees.h; sourceTree = "<group>"; };
 		113C0CCB99BF73FCB023F85B /* jdapimin.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = jdapimin.c; sourceTree = "<group>"; };
 		1231ABBAD510DAE2D3CA6847 /* gzip_container.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gzip_container.c; sourceTree = "<group>"; };
-		129E96A22777B0709511FB4C /* zconf.in.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = zconf.in.h; sourceTree = "<group>"; };
 		12E2F3A5563E265201AB35ED /* BinTree4b.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BinTree4b.h; sourceTree = "<group>"; };
 		14853C729358A6BC08A1958F /* BinTreeMFMain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BinTreeMFMain.h; sourceTree = "<group>"; };
 		164A79812E9F6F68379A02E8 /* jcext.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = jcext.c; sourceTree = "<group>"; };
@@ -1821,7 +1820,6 @@
 				10F9CC50C35C041B4F2E406B /* trees.h */,
 				CFE64F5959F263B0B4145ED4 /* uncompr.c */,
 				A04717E40A06688E52692E4D /* zconf.h */,
-				129E96A22777B0709511FB4C /* zconf.in.h */,
 				09B51656379502EC69C5ABDC /* zlib.h */,
 				88ED2A6947F617DA56C7FCF6 /* zutil.c */,
 				917EA4376B43C7CF1BA0DA6F /* zutil.h */,
