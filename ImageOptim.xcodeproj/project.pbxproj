@@ -1461,11 +1461,11 @@
 			isa = PBXGroup;
 			children = (
 				8EC9A00BFD09B3190AC6B222 /* README.md */,
+				B1B967F576F8BFB9D355DD40 /* imageoptim */,
+				81E6D20B6D012443C21CEBA8 /* scripts */,
 				2BFD5B5844B1C23EA2BF6FBD /* Dependencies */,
 				8496E90F56E24549F8FBCDA8 /* Frameworks */,
-				B1B967F576F8BFB9D355DD40 /* imageoptim */,
 				BA4CB4D4B9FA1FD16846CCFB /* Products */,
-				81E6D20B6D012443C21CEBA8 /* scripts */,
 			);
 			path = ..;
 			sourceTree = "<group>";
