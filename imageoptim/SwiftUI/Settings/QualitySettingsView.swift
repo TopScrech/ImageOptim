@@ -11,9 +11,10 @@ struct QualitySettingsView: View {
 
     var body: some View {
         Form {
-            Toggle("Enable lossy minification", isOn: $lossyEnabled)
-            Text("Makes files much smaller, but may change how images look")
-                .secondary()
+            Toggle(isOn: $lossyEnabled) {
+                Text("Enable lossy minification")
+                Text("Makes files much smaller, but may change how images look")
+            }
 
             Section("Quality") {
                 Slider(value: $jpegQuality, in: (guetzliEnabled ? 85 : 50)...100, step: 1) {

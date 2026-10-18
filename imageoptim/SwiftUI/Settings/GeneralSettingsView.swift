@@ -24,10 +24,10 @@ struct GeneralSettingsView: View {
                     Text("Optimization level")
                 }
 
-                Toggle("Run at low priority", isOn: $runLowPriority)
-                Text("Priority changes take effect after restarting ImageOptim")
-                    .caption()
-                    .secondary()
+                Toggle(isOn: $runLowPriority) {
+                    Text("Run at low priority")
+                    Text("Priority changes take effect after restarting ImageOptim")
+                }
 
                 Toggle("Bounce Dock icon when finished", isOn: $bounceDock)
             }

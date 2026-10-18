@@ -23,12 +23,12 @@ struct OptimizationView: View {
                 }
             } else {
                 OptimizationTableView()
+
+                Divider()
+
+                OptimizationStatusView()
+                    .padding([.horizontal, .bottom])
             }
-
-            Divider()
-
-            OptimizationStatusView()
-                .padding([.horizontal, .bottom])
         }
         .frame(minWidth: 650, minHeight: 300)
         .toolbar {

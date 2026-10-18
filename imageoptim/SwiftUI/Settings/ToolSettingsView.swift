@@ -35,11 +35,12 @@ struct ToolSettingsView: View {
             Section("GIF and SVG") {
                 Toggle("Gifsicle", isOn: $gifsicle)
                 Toggle("svgcleaner", isOn: $svgcleaner)
-                Toggle("SVGO", isOn: $svgo)
-                    .disabled(!model.supportsSVGO)
-                Text("SVGO requires Node.js installed in /usr/local/bin or /opt/homebrew/bin")
-                    .caption()
-                    .secondary()
+                
+                Toggle(isOn: $svgo) {
+                    Text("SVGO")
+                    Text("SVGO requires Node.js installed in /usr/local/bin or /opt/homebrew/bin")
+                }
+                .disabled(!model.supportsSVGO)
             }
         }
         .formStyle(.grouped)

@@ -10,19 +10,21 @@ struct OptimizationToolbar: ToolbarContent {
             }
             .help("Add images or folders to optimize")
 
-            Button("Stop", systemImage: "stop", action: model.stop)
-                .help("Stop optimization")
-                .disabled(!model.canStop)
+            if !model.results.isEmpty {
+                Button("Stop", systemImage: "stop", action: model.stop)
+                    .help("Stop optimization")
+                    .disabled(!model.canStop)
 
-            Button("Optimize again", systemImage: "arrow.clockwise") {
-                model.optimizeAgain()
+                Button("Optimize again", systemImage: "arrow.clockwise") {
+                    model.optimizeAgain()
+                }
+                .help("Optimize images again")
+                .disabled(!model.canOptimizeAgain)
+
+                Button("Clear completed", systemImage: "trash", action: model.clearCompleted)
+                    .help("Remove completed images from the list")
+                    .disabled(!model.canClearCompleted)
             }
-            .help("Optimize images again")
-            .disabled(!model.canOptimizeAgain)
-
-            Button("Clear completed", systemImage: "trash", action: model.clearCompleted)
-                .help("Remove completed images from the list")
-                .disabled(!model.canClearCompleted)
 
             SettingsLink {
                 Label("Settings", systemImage: "gearshape")

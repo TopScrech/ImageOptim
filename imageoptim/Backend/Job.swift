@@ -155,7 +155,7 @@ public final class Job {
         let smallest = toolResults.min { $0.value.size < $1.value.size }?.key
         let largestGain = toolResults.max { $0.value.ratio < $1.value.ratio }?.key
         if let smallest, let largestGain, smallest != largestGain {
-            bestToolName = "\(largestGain)+\(smallest)"
+            bestToolName = "\(largestGain) + \(smallest)"
         } else {
             bestToolName = smallest ?? largestGain
         }
