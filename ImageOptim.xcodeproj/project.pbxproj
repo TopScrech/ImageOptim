@@ -481,7 +481,7 @@
 		};
 		C43B7EE07717A1387576C2CC /* PBXBuildFile */ = {
 			isa = PBXBuildFile;
-			fileRef = F5EF05CD680F86E1EAEAE188 /* libimageoptimjpeg.dylib */;
+			fileRef = DAB4CF36FAB6F1AA2B919FF2 /* libimageoptimjpeg.dylib */;
 		};
 		5F91633A2ADB7A7B00230D34 /* PBXBuildFile */ = {
 			isa = PBXBuildFile;
@@ -2786,8 +2786,6 @@
 				8496E90F56E24549F8FBCDA8 /* Frameworks */,
 				B1B967F576F8BFB9D355DD40 /* imageoptim */,
 				BA4CB4D4B9FA1FD16846CCFB /* Products */,
-				F5EF05CD680F86E1EAEAE188 /* libimageoptimjpeg.dylib */,
-				5C3FBD63CA61603D0068587F /* liblibpng.dylib */,
 				8EC9A00BFD09B3190AC6B222 /* README.md */,
 				81E6D20B6D012443C21CEBA8 /* scripts */,
 			);
@@ -5091,13 +5089,6 @@
 			isa = PBXTargetDependency;
 			target = 5A453F8D16BE79A7002AFE23 /* downloads */;
 			targetProxy = F3472511307BDE880093BBD6 /* PBXContainerItemProxy */;
-		};
-		5C3FBD63CA61603D0068587F /* liblibpng.dylib */ = {
-			path = "../../../Library/Developer/Xcode/DerivedData/ImageOptim-cmhdqovjmikzhafpeansxwkmezkf/Build/Products/Debug/liblibpng.dylib";
-			isa = PBXFileReference;
-			name = liblibpng.dylib;
-			lastKnownFileType = "compiled.mach-o.dylib";
-			sourceTree = SOURCE_ROOT;
 		};
 		59657D3D0DB375E7C6A71764 /* SPUDownloadData.h */ = {
 			path = ../Sparkle/Sparkle/SPUDownloadData.h;
@@ -11647,13 +11638,6 @@
 			lastKnownFileType = sourcecode.c.h;
 			sourceTree = SOURCE_ROOT;
 		};
-		F5EF05CD680F86E1EAEAE188 /* libimageoptimjpeg.dylib */ = {
-			path = "../../../Library/Developer/Xcode/DerivedData/ImageOptim-cmhdqovjmikzhafpeansxwkmezkf/Build/Products/Debug/libimageoptimjpeg.dylib";
-			isa = PBXFileReference;
-			name = libimageoptimjpeg.dylib;
-			lastKnownFileType = "compiled.mach-o.dylib";
-			sourceTree = SOURCE_ROOT;
-		};
 		91F79862139876ED8B9BF329 /* nl */ = {
 			path = ../Sparkle/Sparkle/nl.lproj/SUAutomaticUpdateAlert.strings;
 			isa = PBXFileReference;
@@ -13253,7 +13237,7 @@
 		};
 		C654C6F4D9F2A0CA5D9BE069 /* PBXBuildFile */ = {
 			isa = PBXBuildFile;
-			fileRef = 5C3FBD63CA61603D0068587F /* liblibpng.dylib */;
+			fileRef = 3532AF2725FA6F55691F130A /* liblibpng.dylib */;
 		};
 		2FBF94F59DA6F8812207F97F /* pngquant */ = {
 			isa = PBXGroup;

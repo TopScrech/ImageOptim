@@ -171,3 +171,7 @@ advpng/libdeflate/
 advpng/zopfli/
 advpng/compile
 advpng/*.orig
+
+# Generated Xcode caches
+CachedSpecifications-*
+*.xcplugincache
