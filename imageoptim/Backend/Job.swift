@@ -30,7 +30,6 @@ public final class Job {
         displayName = FileManager.default.displayName(atPath: filePath.path)
     }
 
-    public var fileName: String { displayName }
     public var isOptimized: Bool {
         guard let original = unoptimizedInput, let output = workingInput ?? savedOutput else { return false }
         return output.byteSize < original.byteSize

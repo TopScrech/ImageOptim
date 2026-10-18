@@ -39,7 +39,6 @@
 		165B0BA654F436029A027853 /* InByte.cc in Sources */ = {isa = PBXBuildFile; fileRef = 6CA5D5EDE744D1840A7DA1B1 /* InByte.cc */; };
 		16D871BA47BBE36E3D462AD7 /* pngcrush.c in Sources */ = {isa = PBXBuildFile; fileRef = 1CC853DB3BACC4A424ABFD53 /* pngcrush.c */; };
 		1844FAA52FC9DDE62A512F2B /* blocksplitter.c in Sources */ = {isa = PBXBuildFile; fileRef = 4098C8C41B86B0203CD8133C /* blocksplitter.c */; };
-		1AD5B24E174F84C600BC75FD /* ImageOptimVerbs.sdef in Resources */ = {isa = PBXBuildFile; fileRef = 1AD5B24D174F84C600BC75FD /* ImageOptimVerbs.sdef */; };
 		1E3397206DACC3F25D484965 /* jfdctflt.c in Sources */ = {isa = PBXBuildFile; fileRef = 079D2911933FC3741D425E71 /* jfdctflt.c */; };
 		20199F6A053421F2DB3D250E /* crc32.c in Sources */ = {isa = PBXBuildFile; fileRef = A21D8119C728A28710A4B497 /* crc32.c */; };
 		20266DAEC2642C0DF334A02A /* repng.cc in Sources */ = {isa = PBXBuildFile; fileRef = 33A5507D51810F18CAD3696C /* repng.cc */; };
@@ -52,7 +51,6 @@
 		261337185366FA7327599BC5 /* OutByte.cc in Sources */ = {isa = PBXBuildFile; fileRef = D99AD67BB7FDBD1C37D80AF3 /* OutByte.cc */; };
 		289466B300F1F2CDE6BC16B6 /* cache.c in Sources */ = {isa = PBXBuildFile; fileRef = 2BC608231168058E384223BC /* cache.c */; };
 		28D95FF236ECDF704B7D4D5C /* 7zlzma.cc in Sources */ = {isa = PBXBuildFile; fileRef = A784212F5ADCA9473D447D53 /* 7zlzma.cc */; };
-		2AD9AC3DA49F498EAE3F4B2F /* ExtensionStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEB5426058A4650BD39B358 /* ExtensionStatusView.swift */; };
 		2B357EA517F9CF8307A39A30 /* data.cc in Sources */ = {isa = PBXBuildFile; fileRef = 6444FB4AE0618EE0D369A32C /* data.cc */; };
 		2D718D6EC99FD9A557E4D165 /* jdcolor.c in Sources */ = {isa = PBXBuildFile; fileRef = 68CB74EB0ACADCD551CDB1AB /* jdcolor.c */; };
 		2EB9BEAFC19C3A72C1B80DA2 /* inffast.c in Sources */ = {isa = PBXBuildFile; fileRef = 399E942314B00C460F997BEB /* inffast.c */; };
@@ -90,9 +88,6 @@
 		56D7879E303431D4EE7E65F9 /* pngwio.c in Sources */ = {isa = PBXBuildFile; fileRef = 3055982C61A11EFDD0755970 /* pngwio.c */; };
 		58ACAC0F58E4B2A1F8983DA4 /* jpeg_data_writer.cc in Sources */ = {isa = PBXBuildFile; fileRef = 5A5B696B28174B1DF6CEDAC4 /* jpeg_data_writer.cc */; };
 		59B7D9A7D69D8EB730B0F993 /* zopflipng_lib.cc in Sources */ = {isa = PBXBuildFile; fileRef = 2CBAA03E2A877E4E355731D7 /* zopflipng_lib.cc */; };
-		5A05C5B91B55B40A000E32E3 /* ImageOptim.icns in Resources */ = {isa = PBXBuildFile; fileRef = 5AACA80F0CAFE3CA004D45CA /* ImageOptim.icns */; };
-		5A16343E140BF97400758D99 /* ImageOptim.icns in Resources */ = {isa = PBXBuildFile; fileRef = 5AACA80F0CAFE3CA004D45CA /* ImageOptim.icns */; };
-		5A7D24EF13E5BC3100815AAA /* defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5AE54D800CAEE8AC00903DF4 /* defaults.plist */; };
 		5A7FB7261E2C3E1600481B4A /* svgo.js in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5A7FB7251E2C3E1600481B4A /* svgo.js */; };
 		5A8AC4870DAB002929273234 /* inflate.c in Sources */ = {isa = PBXBuildFile; fileRef = 69C291FF5A421923E946AC56 /* inflate.c */; };
 		5A99FE84140AE80600BB2F79 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A99FE83140AE80600BB2F79 /* Quartz.framework */; };
@@ -152,7 +147,6 @@
 		819BA75F533445A8E6D6B024 /* pngmem.c in Sources */ = {isa = PBXBuildFile; fileRef = AE1B81B6D2342086A79DA108 /* pngmem.c */; };
 		82908B3464DFCF28889857EB /* guetzli.cc in Sources */ = {isa = PBXBuildFile; fileRef = 689427BC0CA8A9575BFE35CB /* guetzli.cc */; };
 		83A48AE895772F55E7C3ADBC /* Cargo.toml in Sources */ = {isa = PBXBuildFile; fileRef = BB62067CB7643CD6FC758365 /* Cargo.toml */; settings = {COMPILER_FLAGS = "--bin 'oxipng' --features 'binary'"; }; };
-		843CBCB5830E4F5BA6BCAEE2 /* ExtensionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FD103C741841A88B75BCAC /* ExtensionViewModel.swift */; };
 		874865904D2A6D3F6B143680 /* LZMAEncoder.cc in Sources */ = {isa = PBXBuildFile; fileRef = 44E43B3947ECDC97F2834A38 /* LZMAEncoder.cc */; };
 		87CE44EB58611277DED6B010 /* jcparam.c in Sources */ = {isa = PBXBuildFile; fileRef = 9E6DFC9F30D46F02D5399122 /* jcparam.c */; };
 		8A4DA04835522D467972D382 /* libimageoptimjpeg.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DAB4CF36FAB6F1AA2B919FF2 /* libimageoptimjpeg.dylib */; };
@@ -172,10 +166,8 @@
 		9BF8D2D566A7E9FB84E3B9CC /* jdinput.c in Sources */ = {isa = PBXBuildFile; fileRef = 75D75BDDC487A1C4EDDCDB87 /* jdinput.c */; };
 		9E449F09A39F28DEC4E1C074 /* uncompr.c in Sources */ = {isa = PBXBuildFile; fileRef = CFE64F5959F263B0B4145ED4 /* uncompr.c */; };
 		9E57D0E274E84AF021973B18 /* pngwrite.c in Sources */ = {isa = PBXBuildFile; fileRef = 2AD6D0101004C2E650C92736 /* pngwrite.c */; };
-		A11111111111111111111111 /* DirectoryScannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E960A96C0DA9EE13F105BDCC /* DirectoryScannerTests.swift */; };
 		A17E00000000000000000003 /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = A17E00000000000000000002 /* ScrechKit */; };
 		A17E00000000000000000005 /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = A17E00000000000000000004 /* ScrechKit */; };
-		A17E00000000000000000020 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F3ABD54E3085647D00916586 /* Localizable.xcstrings */; };
 		A3F1830D2D6D7CB10BACE36A /* optimize.c in Sources */ = {isa = PBXBuildFile; fileRef = ADE2CB30461EC56CDAB06E3D /* optimize.c */; };
 		A4ED6ABA85B0BA461B4BEE0C /* jpeg_data_reader.cc in Sources */ = {isa = PBXBuildFile; fileRef = 5FC05999A73F088AB409463C /* jpeg_data_reader.cc */; };
 		A5BA3F47F92A0D71C3BF3193 /* jdpostct.c in Sources */ = {isa = PBXBuildFile; fileRef = 275735108F055A808DAAE603 /* jdpostct.c */; };
@@ -250,10 +242,7 @@
 		EEE4A5477DDF23072C0E60C6 /* HuffmanEncoder.cc in Sources */ = {isa = PBXBuildFile; fileRef = 67901CF01D72A661827A72C4 /* HuffmanEncoder.cc */; };
 		EF045B94EA838A55EBE9EE35 /* fdct.cc in Sources */ = {isa = PBXBuildFile; fileRef = B3542451D19029FC9CB13BA1 /* fdct.cc */; };
 		F0E9B6ED2001660AC66E35EC /* jctrans.c in Sources */ = {isa = PBXBuildFile; fileRef = BD99C030AD90F6ADF6403B9D /* jctrans.c */; };
-		F212626255155D1803FF76E7 /* ExtensionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EDABB23F52BB85FDDC48BC /* ExtensionController.swift */; };
 		F35DF1BCDEB29D9D635E3823 /* jfdctint.c in Sources */ = {isa = PBXBuildFile; fileRef = 26263BA7D068FB4F4F3B8D69 /* jfdctint.c */; };
-		F3ABD54D3085647D00916586 /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F3ABD54C3085647D00916586 /* InfoPlist.xcstrings */; };
-		F3ABD54F3085647D00916586 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F3ABD54E3085647D00916586 /* Localizable.xcstrings */; };
 		F61BED89696446FBF67DF6B5 /* pngrtran.c in Sources */ = {isa = PBXBuildFile; fileRef = C79D97EDF8D68E708D029B93 /* pngrtran.c */; };
 		FA4AE51B6771FE1212CBCFA0 /* jsimd_none.c in Sources */ = {isa = PBXBuildFile; fileRef = F86286B4CE3ABD5EF601887D /* jsimd_none.c */; };
 		FC420D721D7E7CDE62BF483B /* infback.c in Sources */ = {isa = PBXBuildFile; fileRef = 178EECDA6AAE7E0E2D05B04D /* infback.c */; };
@@ -814,7 +803,6 @@
 		1231ABBAD510DAE2D3CA6847 /* gzip_container.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gzip_container.c; sourceTree = "<group>"; };
 		129E96A22777B0709511FB4C /* zconf.in.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = zconf.in.h; sourceTree = "<group>"; };
 		12E2F3A5563E265201AB35ED /* BinTree4b.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BinTree4b.h; sourceTree = "<group>"; };
-		13815FF8793342D1AF958C89 /* ImageOptim-Debug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "ImageOptim-Debug.entitlements"; sourceTree = "<group>"; };
 		14853C729358A6BC08A1958F /* BinTreeMFMain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BinTreeMFMain.h; sourceTree = "<group>"; };
 		164A79812E9F6F68379A02E8 /* jcext.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = jcext.c; sourceTree = "<group>"; };
 		1747CCE5137E15C7CD0CDF5C /* jpeg_data_writer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = jpeg_data_writer.h; sourceTree = "<group>"; };
@@ -823,7 +811,6 @@
 		1900C9A07AC3E5A5C4DAC57D /* jpegoptim */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = jpegoptim; sourceTree = BUILT_PRODUCTS_DIR; };
 		1962722FC009B4D0824C8949 /* jcapistd.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = jcapistd.c; sourceTree = "<group>"; };
 		19965B1922BFB8803F229407 /* butteraugli_comparator.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = butteraugli_comparator.cc; sourceTree = "<group>"; };
-		1AD5B24D174F84C600BC75FD /* ImageOptimVerbs.sdef */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = ImageOptimVerbs.sdef; sourceTree = "<group>"; };
 		1CC853DB3BACC4A424ABFD53 /* pngcrush.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pngcrush.c; sourceTree = "<group>"; };
 		201B56E6EA37FDC7659A0A8E /* zlib_container.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zlib_container.c; sourceTree = "<group>"; };
 		207E5E0596954CD2514CA5FD /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
@@ -832,7 +819,6 @@
 		24771B9B01CEB0943C6D9C7D /* jccolor.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = jccolor.c; sourceTree = "<group>"; };
 		24AEE89C3CE892874AB89D41 /* AriConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AriConst.h; sourceTree = "<group>"; };
 		24DE4E21EC21D10B33C81840 /* BinTree4Main.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BinTree4Main.h; sourceTree = "<group>"; };
-		24EDABB23F52BB85FDDC48BC /* ExtensionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionController.swift; sourceTree = "<group>"; };
 		26263BA7D068FB4F4F3B8D69 /* jfdctint.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = jfdctint.c; sourceTree = "<group>"; };
 		275735108F055A808DAAE603 /* jdpostct.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = jdpostct.c; sourceTree = "<group>"; };
 		27599D04115F31E969A06ABA /* jpegtran */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = jpegtran; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -856,7 +842,6 @@
 		3398406DB3E3E6FFB4DAA005 /* jmemmgr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = jmemmgr.c; sourceTree = "<group>"; };
 		33A5507D51810F18CAD3696C /* repng.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = repng.cc; sourceTree = "<group>"; };
 		3532AF2725FA6F55691F130A /* liblibpng.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = liblibpng.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
-		35FD103C741841A88B75BCAC /* ExtensionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionViewModel.swift; sourceTree = "<group>"; };
 		3606ECC0885482E8C25F1CAA /* squeeze.c */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.c.c; path = squeeze.c; sourceTree = "<group>"; tabWidth = 2; };
 		369EC9407C226DEB61A5B57A /* zlib_decompress.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = zlib_decompress.c; sourceTree = "<group>"; };
 		36EEEBE698565690434B1F79 /* fz.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fz.c; sourceTree = "<group>"; };
@@ -886,23 +871,20 @@
 		557EB71ABCE052B7534035A8 /* zlib_compress.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = zlib_compress.c; sourceTree = "<group>"; };
 		55CC6C2BFB508D47AED90D29 /* pngtrans.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pngtrans.c; sourceTree = "<group>"; };
 		5A1DD6E3C9335386A21B121D /* libstatic.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libstatic.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		5A27B956139B03090095FC2F /* release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = release.xcconfig; sourceTree = "<group>"; };
-		5A27B9C2139B079A0095FC2F /* debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = debug.xcconfig; sourceTree = "<group>"; };
+		5A27B956139B03090095FC2F /* release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = release.xcconfig; sourceTree = SOURCE_ROOT; };
+		5A27B9C2139B079A0095FC2F /* debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = debug.xcconfig; sourceTree = SOURCE_ROOT; };
 		5A5B696B28174B1DF6CEDAC4 /* jpeg_data_writer.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = jpeg_data_writer.cc; sourceTree = "<group>"; };
 		5A7FB7251E2C3E1600481B4A /* svgo.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = svgo.js; sourceTree = "<group>"; };
 		5A99FE83140AE80600BB2F79 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
-		5AACA80F0CAFE3CA004D45CA /* ImageOptim.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = ImageOptim.icns; sourceTree = "<group>"; };
 		5ABE15421AE5072300861C6B /* ImageOptimGPL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ImageOptimGPL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5ABE154C1AE5072300861C6B /* BackendTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BackendTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AC64EFE1AF3FDEE0032AA7F /* ImageOptimize.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ImageOptimize.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		5AE54D800CAEE8AC00903DF4 /* defaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = defaults.plist; sourceTree = "<group>"; };
 		5AEF1B1D10F2BCA900E3E4F0 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
-		5AF71642174AF7C30018D3FE /* pngout */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = pngout; sourceTree = "<group>"; };
+		5AF71642174AF7C30018D3FE /* pngout */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = pngout; sourceTree = SOURCE_ROOT; };
 		5B28C078CBE60493483B66F3 /* CRC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRC.h; sourceTree = "<group>"; };
 		5D01C9D4E926B4807AACE31E /* xform.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = xform.c; sourceTree = "<group>"; };
 		5D04B57679EF59F205AB0EC4 /* processor.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = processor.cc; sourceTree = "<group>"; };
 		5E2DE7F0A41D46B9DC3E2BED /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		5EEB5426058A4650BD39B358 /* ExtensionStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionStatusView.swift; sourceTree = "<group>"; };
 		5FC05999A73F088AB409463C /* jpeg_data_reader.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = jpeg_data_reader.cc; sourceTree = "<group>"; };
 		5FE9D5E7FC7AD6D854C0A85C /* config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
 		604D96442ADF9B69597256CE /* lodepng_util.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = lodepng_util.cpp; sourceTree = "<group>"; };
@@ -1083,7 +1065,6 @@
 		E4FEBFC589CE2CAE00B820A0 /* advpng */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = advpng; sourceTree = BUILT_PRODUCTS_DIR; };
 		E67AAF94E455D9BF0FFEA569 /* pngquant */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = pngquant; sourceTree = BUILT_PRODUCTS_DIR; };
 		E71103B7DC1CA96D2DA4FE8D /* clp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = clp.c; sourceTree = "<group>"; };
-		E960A96C0DA9EE13F105BDCC /* DirectoryScannerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectoryScannerTests.swift; sourceTree = "<group>"; };
 		EA4633A03BE1E4BC74B3D415 /* zopfli_lib.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = zopfli_lib.c; sourceTree = "<group>"; };
 		EAD125E3B15E964DBA7E4B8E /* crc32.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = crc32.h; sourceTree = "<group>"; };
 		EAD22913686B3B7495783A28 /* WindowIn.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WindowIn.cc; sourceTree = "<group>"; };
@@ -1093,8 +1074,6 @@
 		EE94F9DA088003707F276A67 /* dct_double.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = dct_double.cc; sourceTree = "<group>"; };
 		EF1A304CCFB629EF586A3589 /* zlib_container.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = zlib_container.c; sourceTree = "<group>"; };
 		F1879560279BDF7A09392431 /* blocksplitter.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = blocksplitter.c; sourceTree = "<group>"; };
-		F3ABD54C3085647D00916586 /* InfoPlist.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = InfoPlist.xcstrings; sourceTree = "<group>"; };
-		F3ABD54E3085647D00916586 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		F3FA000BDE2BE7DE251B8EE4 /* LenCoder.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LenCoder.cc; sourceTree = "<group>"; };
 		F4328FF9675526536A688813 /* inffast.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = inffast.h; sourceTree = "<group>"; };
 		F45A23A0E59FFBEFA49C9F46 /* arm/cpu_features.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = arm/cpu_features.c; sourceTree = "<group>"; };
@@ -1109,62 +1088,95 @@
 		FC30E8AC5DC7C1F89D82D0AC /* RCDefs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCDefs.h; sourceTree = "<group>"; };
 		FDE4812F588B3EDFBE4FE52B /* LSBFEncoder.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LSBFEncoder.cc; sourceTree = "<group>"; };
 		FE9CA2564A73B239C7E6A137 /* jpeg_data_encoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = jpeg_data_encoder.h; sourceTree = "<group>"; };
-		FF6CC049A97C424CA8FD450B /* ImageOptimize-Debug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "ImageOptimize-Debug.entitlements"; sourceTree = "<group>"; };
 		FFE59271B5F731746BDDA567 /* jddctmgr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = jddctmgr.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		F3ABD51A308563A400916586 /* Exceptions for "SwiftUI" folder in "BackendTests" target */ = {
+		3D31B0D50E1244AB95BDBFFA /* Exceptions for "imageoptim" folder in "ImageOptimize" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				Optimization/DirectoryScanner.swift,
-			);
-			target = 5ABE154B1AE5072300861C6B /* BackendTests */;
-		};
-		F3ABD51B308563A400916586 /* Exceptions for "SwiftUI" folder in "ImageOptimize" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Shared/SharedPreferences.swift,
+				ImageOptim.icns,
+				ImageOptimize/ExtensionController.swift,
+				ImageOptimize/ExtensionStatusView.swift,
+				ImageOptimize/ExtensionViewModel.swift,
+				Localizable.xcstrings,
+				SwiftUI/Shared/SharedPreferences.swift,
 			);
 			target = 5AC64EFD1AF3FDEE0032AA7F /* ImageOptimize */;
 		};
-		6DB5D724E0B246399D0542F4 /* Exceptions for "Backend" folder in "Backend" target */ = {
+		7D22545563E346818987B211 /* Exceptions for "imageoptim" folder in "Backend" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				Info.plist,
-				Tests/BackendTests.swift,
-				Tests/Info.plist,
-				Tests/unoptimized.png,
+				Backend/AsyncLimiter.swift,
+				Backend/BundleAnchor.swift,
+				Backend/File.swift,
+				Backend/FileOperations.swift,
+				Backend/FileType.swift,
+				Backend/Job.swift,
+				Backend/JobQueue.swift,
+				Backend/OptimizationSettings.swift,
+				Backend/ResultsDb.swift,
+				Backend/Workers/CommandWorker.swift,
+				Backend/Workers/Optimizer.swift,
 			);
 			target = 5ABE15411AE5072300861C6B /* Backend */;
 		};
-		B581715A43104F23ACD16098 /* Exceptions for "Backend" folder in "BackendTests" target */ = {
+		94BF3B9A4AD1413F99E57D81 /* Exceptions for "imageoptim" folder in "BackendTests" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				Tests/BackendTests.swift,
-				Tests/unoptimized.png,
+				Backend/Tests/BackendTests.swift,
+				Backend/Tests/unoptimized.png,
+				SwiftUI/Optimization/DirectoryScanner.swift,
+				Tests/DirectoryScannerTests.swift,
 			);
 			target = 5ABE154B1AE5072300861C6B /* BackendTests */;
+		};
+		E56FF66745BA46C0948E486F /* Exceptions for "imageoptim" folder in "ImageOptim" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				defaults.plist,
+				ImageOptim.icns,
+				ImageOptimVerbs.sdef,
+				InfoPlist.xcstrings,
+				Localizable.xcstrings,
+				"SwiftUI/App/FocusedValues+Optimization.swift",
+				"SwiftUI/App/FocusedValues+Settings.swift",
+				SwiftUI/App/GetQueueCountCommand.swift,
+				SwiftUI/App/ImageOptimApp.swift,
+				SwiftUI/App/ImageOptimController.swift,
+				SwiftUI/App/OptimizationCommands.swift,
+				SwiftUI/App/SettingsCommands.swift,
+				SwiftUI/Optimization/DirectoryScanner.swift,
+				SwiftUI/Optimization/FilesController.swift,
+				SwiftUI/Optimization/JobProxy.swift,
+				SwiftUI/Optimization/OptimizationFileView.swift,
+				SwiftUI/Optimization/OptimizationResult.swift,
+				SwiftUI/Optimization/OptimizationStatusView.swift,
+				SwiftUI/Optimization/OptimizationTableView.swift,
+				SwiftUI/Optimization/OptimizationToolbar.swift,
+				SwiftUI/Optimization/OptimizationView.swift,
+				SwiftUI/Optimization/OptimizationViewModel.swift,
+				SwiftUI/Settings/GeneralSettingsView.swift,
+				SwiftUI/Settings/QualitySettingsView.swift,
+				SwiftUI/Settings/SettingsView.swift,
+				SwiftUI/Settings/SettingsViewModel.swift,
+				SwiftUI/Settings/ToolSettingsView.swift,
+				SwiftUI/Shared/SharedPreferences.swift,
+			);
+			target = 8D1107260486CEB800E47090 /* ImageOptim */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		F3ABD502308563A300916586 /* SwiftUI */ = {
+		B1B967F576F8BFB9D355DD40 /* imageoptim */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				F3ABD51A308563A400916586 /* Exceptions for "SwiftUI" folder in "BackendTests" target */,
-				F3ABD51B308563A400916586 /* Exceptions for "SwiftUI" folder in "ImageOptimize" target */,
+				E56FF66745BA46C0948E486F /* Exceptions for "imageoptim" folder in "ImageOptim" target */,
+				7D22545563E346818987B211 /* Exceptions for "imageoptim" folder in "Backend" target */,
+				94BF3B9A4AD1413F99E57D81 /* Exceptions for "imageoptim" folder in "BackendTests" target */,
+				3D31B0D50E1244AB95BDBFFA /* Exceptions for "imageoptim" folder in "ImageOptimize" target */,
 			);
-			path = SwiftUI;
-			sourceTree = "<group>";
-		};
-		C8C465E4E329FD7B02BCA3C0 /* Backend */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				6DB5D724E0B246399D0542F4 /* Exceptions for "Backend" folder in "Backend" target */,
-				B581715A43104F23ACD16098 /* Exceptions for "Backend" folder in "BackendTests" target */,
-			);
-			path = Backend;
+			path = imageoptim;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -1381,14 +1393,6 @@
 			path = libjpeg;
 			sourceTree = "<group>";
 		};
-		27DEC899062538700AE79433 /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				E960A96C0DA9EE13F105BDCC /* DirectoryScannerTests.swift */,
-			);
-			path = Tests;
-			sourceTree = "<group>";
-		};
 		29B97314FDCFA39411CA2CEA /* .. */ = {
 			isa = PBXGroup;
 			children = (
@@ -1398,6 +1402,7 @@
 				2BFD5B5844B1C23EA2BF6FBD /* Dependencies */,
 				8496E90F56E24549F8FBCDA8 /* Frameworks */,
 				BA4CB4D4B9FA1FD16846CCFB /* Products */,
+				F3AB07893085712400916586 /* Recovered References */,
 			);
 			path = ..;
 			sourceTree = "<group>";
@@ -1428,17 +1433,6 @@
 				EC58D7B80529D72588B8F0EA /* src */,
 			);
 			path = pngquant;
-			sourceTree = "<group>";
-		};
-		30CC334DD0F45BE17573D5AD /* ImageOptimize */ = {
-			isa = PBXGroup;
-			children = (
-				5EEB5426058A4650BD39B358 /* ExtensionStatusView.swift */,
-				35FD103C741841A88B75BCAC /* ExtensionViewModel.swift */,
-				24EDABB23F52BB85FDDC48BC /* ExtensionController.swift */,
-				FF6CC049A97C424CA8FD450B /* ImageOptimize-Debug.entitlements */,
-			);
-			path = ImageOptimize;
 			sourceTree = "<group>";
 		};
 		3D70B8ACFC0C9103C34ADDAB /* zopfli */ = {
@@ -1720,15 +1714,6 @@
 			path = src;
 			sourceTree = "<group>";
 		};
-		9356A2BE41A00CC28504BABE /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				F3ABD54C3085647D00916586 /* InfoPlist.xcstrings */,
-				F3ABD54E3085647D00916586 /* Localizable.xcstrings */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
 		97C922628FAFD4C58CEA8939 /* guetzli */ = {
 			isa = PBXGroup;
 			children = (
@@ -1763,25 +1748,6 @@
 				604D96442ADF9B69597256CE /* lodepng_util.cpp */,
 			);
 			path = lodepng;
-			sourceTree = "<group>";
-		};
-		B1B967F576F8BFB9D355DD40 /* imageoptim */ = {
-			isa = PBXGroup;
-			children = (
-				C8C465E4E329FD7B02BCA3C0 /* Backend */,
-				30CC334DD0F45BE17573D5AD /* ImageOptimize */,
-				9356A2BE41A00CC28504BABE /* Resources */,
-				F3ABD502308563A300916586 /* SwiftUI */,
-				5A27B9C2139B079A0095FC2F /* debug.xcconfig */,
-				5AE54D800CAEE8AC00903DF4 /* defaults.plist */,
-				5AACA80F0CAFE3CA004D45CA /* ImageOptim.icns */,
-				1AD5B24D174F84C600BC75FD /* ImageOptimVerbs.sdef */,
-				5AF71642174AF7C30018D3FE /* pngout */,
-				5A27B956139B03090095FC2F /* release.xcconfig */,
-				27DEC899062538700AE79433 /* Tests */,
-				13815FF8793342D1AF958C89 /* ImageOptim-Debug.entitlements */,
-			);
-			path = imageoptim;
 			sourceTree = "<group>";
 		};
 		B7AC1BA09B47636E7AF2EA91 /* jpegoptim */ = {
@@ -1919,6 +1885,16 @@
 				BB62067CB7643CD6FC758365 /* Cargo.toml */,
 			);
 			path = oxipng;
+			sourceTree = "<group>";
+		};
+		F3AB07893085712400916586 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				5AF71642174AF7C30018D3FE /* pngout */,
+				5A27B9C2139B079A0095FC2F /* debug.xcconfig */,
+				5A27B956139B03090095FC2F /* release.xcconfig */,
+			);
+			name = "Recovered References";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -2130,9 +2106,6 @@
 				5FFC9754275843280035D0A2 /* PBXTargetDependency */,
 				D047E4CD1E7D81040036F96B /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				C8C465E4E329FD7B02BCA3C0 /* Backend */,
-			);
 			name = Backend;
 			productName = Backend;
 			productReference = 5ABE15421AE5072300861C6B /* ImageOptimGPL.framework */;
@@ -2286,9 +2259,6 @@
 				5A453F9B16BE79B6002AFE23 /* PBXTargetDependency */,
 				5ABE15581AE5072300861C6B /* PBXTargetDependency */,
 				5AC64F0B1AF3FDEE0032AA7F /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				F3ABD502308563A300916586 /* SwiftUI */,
 			);
 			name = ImageOptim;
 			packageProductDependencies = (
@@ -2505,11 +2475,6 @@
 		5A7D24E113E5BC0C00815AAA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			files = (
-				5A7D24EF13E5BC3100815AAA /* defaults.plist in Resources */,
-				5A16343E140BF97400758D99 /* ImageOptim.icns in Resources */,
-				1AD5B24E174F84C600BC75FD /* ImageOptimVerbs.sdef in Resources */,
-				F3ABD54D3085647D00916586 /* InfoPlist.xcstrings in Resources */,
-				F3ABD54F3085647D00916586 /* Localizable.xcstrings in Resources */,
 			);
 		};
 		5ABE154A1AE5072300861C6B /* Resources */ = {
@@ -2520,8 +2485,6 @@
 		5AC64EFC1AF3FDEE0032AA7F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			files = (
-				A17E00000000000000000020 /* Localizable.xcstrings in Resources */,
-				5A05C5B91B55B40A000E32E3 /* ImageOptim.icns in Resources */,
 			);
 		};
 /* End PBXResourcesBuildPhase section */
@@ -2717,15 +2680,11 @@
 		5ABE15481AE5072300861C6B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			files = (
-				A11111111111111111111111 /* DirectoryScannerTests.swift in Sources */,
 			);
 		};
 		5AC64EFA1AF3FDEE0032AA7F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			files = (
-				843CBCB5830E4F5BA6BCAEE2 /* ExtensionViewModel.swift in Sources */,
-				2AD9AC3DA49F498EAE3F4B2F /* ExtensionStatusView.swift in Sources */,
-				F212626255155D1803FF76E7 /* ExtensionController.swift in Sources */,
 			);
 		};
 		617B32C8D58D89DC415D4D5F /* Sources */ = {
@@ -3099,9 +3058,6 @@
 			targetProxy = F3472516307BDE880093BBD6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		023F20A8E70A9C6238009B91 /* Debug configuration for PBXLegacyTarget "libjpeg-download" */ = {
