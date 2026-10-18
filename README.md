@@ -46,6 +46,7 @@ Matching version numbers indicate the same release base, not identical source co
 - Incomplete audits, including network failures or missing sources, exit with status 2
 
 SVGO is pinned in `svgo/package-lock.json` and built with `npm ci`; the build and runtime require Node.js 16 or newer
+The Swift backend locates Node.js in the standard installation directories or the app’s inherited PATH
 Run `make -C svgo && npm --prefix svgo test` to check both SVG modes and the bundled script
 Run `python3 -B scripts/test-tool-versions.py` for offline version-checker tests
 
@@ -58,7 +59,7 @@ For local ad hoc validation of tools that load bundled libraries, build with `EN
 
 The main app uses SwiftUI for its window, sortable results table, toolbar, menus, Quick Look, and settings
 The app lifecycle, file list, folder scanner, scripting command, shared preferences, and action extension are implemented in Swift 6
-The Objective-C optimization engine and bundled command-line tools handle image processing
+The Swift 6 optimization engine schedules bundled command-line tools using async tasks, with observable job state, cancellation, result caching, and recoverable file replacement
 `imageoptim/SwiftUI` contains the main interface and observable view models
 The ImageOptimize action extension uses async image loading and a SwiftUI progress view hosted by a Swift native entry point
 The app and extension no longer load XIB files

@@ -1,3 +1,4 @@
+import ImageOptimGPL
 import SwiftUI
 import UniformTypeIdentifiers
 

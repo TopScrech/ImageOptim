@@ -10,7 +10,6 @@ final class ImageOptimController: NSObject, NSApplicationDelegate {
         commandLinePaths = arguments.contains { $0.hasPrefix("-") } ? [] : arguments
         super.init()
         Self.current = self
-        IOSetHideLogs(commandLinePaths.isEmpty ? 0 : 1)
         registerDefaults()
         filesController.configure()
         filesController.onQueueFinished = { [weak self] in self?.queueFinished() }

@@ -1,1 +1,1 @@
-@import Cocoa;
+#import <Foundation/Foundation.h>

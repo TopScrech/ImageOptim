@@ -96,8 +96,6 @@
 		5A1D3E8C14366933004EE809 /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = 5A1D3E8B14366933004EE809 /* style.css */; };
 		5A34D0031AEF6DA300A154E4 /* BackendTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABE15551AE5072300861C6B /* BackendTests.swift */; };
 		5A34D0041AEF6DB300A154E4 /* ImageOptimGPL.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A34CFEE1AEF6D9800A154E4 /* ImageOptimGPL.h */; };
-		5A34D0991AEF75CE00A154E4 /* JobQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A34D0971AEF75CE00A154E4 /* JobQueue.h */; };
-		5A34D09A1AEF75CE00A154E4 /* JobQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A34D0981AEF75CE00A154E4 /* JobQueue.m */; };
 		5A5CD39419662E940096D77F /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A5CD39319662E940096D77F /* AppKit.framework */; };
 		5A5CD39619662E9A0096D77F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A5CD39519662E9A0096D77F /* Foundation.framework */; };
 		5A7D24E513E5BC3100815AAA /* Help in Resources */ = {isa = PBXBuildFile; fileRef = 5A95FEBE0CB8041A00737B79 /* Help */; };
@@ -107,28 +105,12 @@
 		5A7D24EA13E5BC3100815AAA /* progress.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A9EE4720CB59EC100F08CC5 /* progress.png */; };
 		5A7D24EB13E5BC3100815AAA /* wait.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A9EE44C0CB59CDC00F08CC5 /* wait.png */; };
 		5A7D24EF13E5BC3100815AAA /* defaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5AE54D800CAEE8AC00903DF4 /* defaults.plist */; };
-		5A7FB6D71E2C37DD00481B4A /* SvgoWorker.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A7FB6D61E2C37DD00481B4A /* SvgoWorker.h */; };
-		5A7FB6F31E2C37EB00481B4A /* SvgoWorker.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A7FB6F21E2C37EB00481B4A /* SvgoWorker.m */; };
 		5A7FB7261E2C3E1600481B4A /* svgo.js in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5A7FB7251E2C3E1600481B4A /* svgo.js */; };
 		5A8AC4870DAB002929273234 /* inflate.c in Sources */ = {isa = PBXBuildFile; fileRef = 69C291FF5A421923E946AC56 /* inflate.c */; };
-		5A93FD2F1FF1C452005D2F27 /* SvgcleanerWorker.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A93FD051FF1BF1F005D2F27 /* SvgcleanerWorker.m */; };
 		5A99FE84140AE80600BB2F79 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A99FE83140AE80600BB2F79 /* Quartz.framework */; };
 		5ABE154D1AE5072300861C6B /* ImageOptimGPL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5ABE15421AE5072300861C6B /* ImageOptimGPL.framework */; };
 		5ABE15591AE5072300861C6B /* ImageOptimGPL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5ABE15421AE5072300861C6B /* ImageOptimGPL.framework */; };
 		5ABE155A1AE5072300861C6B /* ImageOptimGPL.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 5ABE15421AE5072300861C6B /* ImageOptimGPL.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		5ABE15741AE5073100861C6B /* Job.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A0D2E560C922AB700FD7CDE /* Job.m */; };
-		5ABE15771AE5073100861C6B /* ResultsDb.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A08FE911936982E001DA24B /* ResultsDb.m */; };
-		5ABE15781AE5073E00861C6B /* AdvCompWorker.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AE54E200CAF16D800903DF4 /* AdvCompWorker.m */; };
-		5ABE15791AE5073E00861C6B /* CommandWorker.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A44F5830CB2ECEB00BD2884 /* CommandWorker.m */; };
-		5ABE157B1AE5073E00861C6B /* GifsicleWorker.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A4DC21A1028AE1800A9DD55 /* GifsicleWorker.m */; };
-		5ABE157C1AE5073E00861C6B /* JpegoptimWorker.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A9E5B2A0CB961E000E05D28 /* JpegoptimWorker.m */; };
-		5ABE157D1AE5073E00861C6B /* JpegtranWorker.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A6E04420EA40B6A00380DE7 /* JpegtranWorker.m */; };
-		5ABE157E1AE5073E00861C6B /* OxiPngWorker.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A5C29420CB04A0F00FAF446 /* OxiPngWorker.m */; };
-		5ABE157F1AE5073E00861C6B /* PngCrushWorker.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A44F4B30CB1868100BD2884 /* PngCrushWorker.m */; };
-		5ABE15801AE5073E00861C6B /* PngoutWorker.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AE54DEE0CAEF56100903DF4 /* PngoutWorker.m */; };
-		5ABE15811AE5073E00861C6B /* Save.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB81F941AE1BE1300719AB7 /* Save.m */; };
-		5ABE15821AE5073E00861C6B /* Worker.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AACA13E0CAF241B004D45CA /* Worker.m */; };
-		5ABE15831AE5073E00861C6B /* ZopfliWorker.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A2ACD131790935C004992B7 /* ZopfliWorker.m */; };
 		5ABE15841AE5074900861C6B /* pngout in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5AF71642174AF7C30018D3FE /* pngout */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		5ABE161B1AE508E600861C6B /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A08FDAF1933D635001DA24B /* libsqlite3.dylib */; };
 		5ABE161C1AE508F400861C6B /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AEF1B1D10F2BCA900E3E4F0 /* AppKit.framework */; };
@@ -141,15 +123,9 @@
 		5ABE16271AE5097800861C6B /* advpng in CopyFiles */ = {isa = PBXBuildFile; fileRef = E4FEBFC589CE2CAE00B820A0 /* advpng */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		5ABE16291AE5099500861C6B /* liblibpng.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3532AF2725FA6F55691F130A /* liblibpng.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		5ABE162A1AE5099F00861C6B /* zopflipng in CopyFiles */ = {isa = PBXBuildFile; fileRef = B7D18A687128FF0113976523 /* zopflipng */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		5ABE16D21AE5AD9F00861C6B /* log.c in Sources */ = {isa = PBXBuildFile; fileRef = 5ABE16D11AE5AD9F00861C6B /* log.c */; };
 		5AC4CBB31AF3FFA10003AEA2 /* ImageOptimGPL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5ABE15421AE5072300861C6B /* ImageOptimGPL.framework */; };
 		5AC64EC21AF3FCFE0032AA7F /* unoptimized.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AC64EC11AF3FCFE0032AA7F /* unoptimized.png */; };
 		5AC64F0C1AF3FDEE0032AA7F /* ImageOptimize.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 5AC64EFE1AF3FDEE0032AA7F /* ImageOptimize.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		5AD033531E26B6840030291A /* File.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AD033511E26B6840030291A /* File.h */; };
-		5AD033541E26B6840030291A /* File.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AD033521E26B6840030291A /* File.m */; };
-		5AD0347C1E27185D0030291A /* TempFile.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AD0347A1E27185D0030291A /* TempFile.h */; };
-		5AD0347D1E27185D0030291A /* TempFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AD0347B1E27185D0030291A /* TempFile.m */; };
-		5AE04E2E1B5301E100669E85 /* PngquantWorker.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AA9F4371899D063006C64C8 /* PngquantWorker.m */; };
 		5B1705D13ADDFCFE79C30934 /* inftrees.c in Sources */ = {isa = PBXBuildFile; fileRef = 7EC01EEE5EECDDD6A38E8B19 /* inftrees.c */; };
 		5C373AC9318BDE7E57413B70 /* jpeg_data_encoder.cc in Sources */ = {isa = PBXBuildFile; fileRef = 4F2681541903DC3E1C5E9CD0 /* jpeg_data_encoder.cc */; };
 		5EEFD5171A1EB77886A165AA /* zlib_container.c in Sources */ = {isa = PBXBuildFile; fileRef = EF1A304CCFB629EF586A3589 /* zlib_container.c */; };
@@ -248,7 +224,6 @@
 		CAD7104B59B6F87B5F0E2E0C /* compress.cc in Sources */ = {isa = PBXBuildFile; fileRef = CBE60702D4D911AD8BC17A65 /* compress.cc */; };
 		CED2A6ADD8DFE198C3A0EA40 /* pngset.c in Sources */ = {isa = PBXBuildFile; fileRef = 01C1F7478E2267C925107C4D /* pngset.c */; };
 		CFABBD62AB1DB25EBA1BC954 /* trees.c in Sources */ = {isa = PBXBuildFile; fileRef = 52F406DCC2D44B61D4949609 /* trees.c */; };
-		D047E4651E7C3D7C0036F96B /* GuetzliWorker.m in Sources */ = {isa = PBXBuildFile; fileRef = D047E4641E7C3D7C0036F96B /* GuetzliWorker.m */; };
 		D047E5311E7D90DD0036F96B /* guetzli in CopyFiles */ = {isa = PBXBuildFile; fileRef = A151C50ACCBF2719E498BDFC /* guetzli */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		D11BCD55F523FF8CB97064B6 /* inflate.c in Sources */ = {isa = PBXBuildFile; fileRef = 69C291FF5A421923E946AC56 /* inflate.c */; };
 		D29707E5D88FB329D6F230C1 /* utils.c in Sources */ = {isa = PBXBuildFile; fileRef = 71BD7F15951DCEF58AB630D2 /* utils.c */; };
@@ -300,6 +275,17 @@
 		FC866FAE1C7A7087063CBD56 /* lodepng_util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 604D96442ADF9B69597256CE /* lodepng_util.cpp */; };
 		FE1490AEF9BC021F425D99A9 /* jdcoefct.c in Sources */ = {isa = PBXBuildFile; fileRef = 762E95B77EF52D3C187E1CAF /* jdcoefct.c */; };
 		FF1876F959094C7C7C2A2233 /* jcphuff.c in Sources */ = {isa = PBXBuildFile; fileRef = DF4CC72977353E0F55F64E81 /* jcphuff.c */; };
+		9D6F2E88E0394956B1C2892E /* OptimizationSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665C1CCEFC0E402283953B5C /* OptimizationSettings.swift */; };
+		558062044F9A45D4B55F89B0 /* JobQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08E00AD6070418D9237E809 /* JobQueue.swift */; };
+		3E005E23A91D476EB0574010 /* FileType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C24188489C4B7F89282003 /* FileType.swift */; };
+		9847B92B5E5C471A8914B620 /* BundleAnchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3443E9B67B774312BB84B310 /* BundleAnchor.swift */; };
+		4FC44C1DEE9E46AC8EA8A276 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEDBF836D4C4C3ABA92B326 /* File.swift */; };
+		84E3AADEE84E423FA1408B7E /* ResultsDb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C9C77070C84F79A84E5157 /* ResultsDb.swift */; };
+		9A866680F7734062921364E5 /* FileOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7E7BAF72BC4C38B178D7B4 /* FileOperations.swift */; };
+		1156D256A49346039952837E /* Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790B394B8A734DB8A10AF8AB /* Job.swift */; };
+		890E3833B37E429B914896C5 /* AsyncLimiter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE53EAA4DCF5485EB58B512C /* AsyncLimiter.swift */; };
+		8AD510A97B42413896AB8853 /* CommandWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56434CB156734682B181123D /* CommandWorker.swift */; };
+		CCABC85298284A06BB001416 /* Optimizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0474F7A1AA4BA0AD8EFE40 /* Optimizer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildRule section */
@@ -922,7 +908,6 @@
 		3F026E8DD24509C79D3D50C5 /* gamma_correct.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gamma_correct.h; sourceTree = "<group>"; };
 		3FE17E90F6FF74170848943E /* getopt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = getopt.c; sourceTree = "<group>"; };
 		4098C8C41B86B0203CD8133C /* blocksplitter.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = blocksplitter.c; sourceTree = "<group>"; };
-		40C846B3D3091D62BB7E54E2 /* ImageOptim-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ImageOptim-Bridging-Header.h"; sourceTree = "<group>"; };
 		4135A886C93F92C7959A9F01 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		41D5680F81F757F8A1B5C1A8 /* merge.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = merge.c; sourceTree = "<group>"; };
 		447768A9CC491930E9573E87 /* BinTree3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BinTree3.h; sourceTree = "<group>"; };
@@ -946,33 +931,15 @@
 		5A034423129985D5002091AA /* pt */ = {isa = PBXFileReference; lastKnownFileType = folder; name = pt; path = pt.lproj/Help; sourceTree = "<group>"; };
 		5A03443B1299884F002091AA /* ru */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ru; path = ru.lproj/Help; sourceTree = "<group>"; };
 		5A08FDAF1933D635001DA24B /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
-		5A08FE901936982E001DA24B /* ResultsDb.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ResultsDb.h; sourceTree = "<group>"; };
-		5A08FE911936982E001DA24B /* ResultsDb.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultsDb.m; sourceTree = "<group>"; };
-		5A0D2E550C922AB700FD7CDE /* Job.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Job.h; sourceTree = "<group>"; };
-		5A0D2E560C922AB700FD7CDE /* Job.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Job.m; sourceTree = "<group>"; };
 		5A1D3E8B14366933004EE809 /* style.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = style.css; sourceTree = "<group>"; };
 		5A1DD6E3C9335386A21B121D /* libstatic.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libstatic.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A27B956139B03090095FC2F /* release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = release.xcconfig; sourceTree = "<group>"; };
 		5A27B9C2139B079A0095FC2F /* debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = debug.xcconfig; sourceTree = "<group>"; };
-		5A2ACD121790935C004992B7 /* ZopfliWorker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZopfliWorker.h; sourceTree = "<group>"; };
-		5A2ACD131790935C004992B7 /* ZopfliWorker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZopfliWorker.m; sourceTree = "<group>"; };
 		5A34CFEE1AEF6D9800A154E4 /* ImageOptimGPL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageOptimGPL.h; sourceTree = "<group>"; };
-		5A34D0971AEF75CE00A154E4 /* JobQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobQueue.h; sourceTree = "<group>"; };
-		5A34D0981AEF75CE00A154E4 /* JobQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JobQueue.m; sourceTree = "<group>"; };
-		5A44F4B20CB1868100BD2884 /* PngCrushWorker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PngCrushWorker.h; sourceTree = "<group>"; };
-		5A44F4B30CB1868100BD2884 /* PngCrushWorker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PngCrushWorker.m; sourceTree = "<group>"; };
-		5A44F5830CB2ECEB00BD2884 /* CommandWorker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommandWorker.m; sourceTree = "<group>"; };
-		5A44F5850CB2ECFE00BD2884 /* CommandWorker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommandWorker.h; sourceTree = "<group>"; };
-		5A4DC2191028AE1800A9DD55 /* GifsicleWorker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GifsicleWorker.h; sourceTree = "<group>"; };
-		5A4DC21A1028AE1800A9DD55 /* GifsicleWorker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GifsicleWorker.m; sourceTree = "<group>"; };
 		5A5B696B28174B1DF6CEDAC4 /* jpeg_data_writer.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = jpeg_data_writer.cc; sourceTree = "<group>"; };
-		5A5C29410CB04A0F00FAF446 /* OxiPngWorker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OxiPngWorker.h; sourceTree = "<group>"; };
-		5A5C29420CB04A0F00FAF446 /* OxiPngWorker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OxiPngWorker.m; sourceTree = "<group>"; };
 		5A5CD39319662E940096D77F /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/AppKit.framework; sourceTree = DEVELOPER_DIR; };
 		5A5CD39519662E9A0096D77F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		5A5E8ABF1B6508D9003012E9 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "zh-Hans"; path = "zh-Hans.lproj/Help"; sourceTree = "<group>"; };
-		5A6E04410EA40B6A00380DE7 /* JpegtranWorker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JpegtranWorker.h; sourceTree = "<group>"; };
-		5A6E04420EA40B6A00380DE7 /* JpegtranWorker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JpegtranWorker.m; sourceTree = "<group>"; };
 		5A7D24F113EDF5F100815AAA /* es */ = {isa = PBXFileReference; lastKnownFileType = folder; name = es; path = es.lproj/Help; sourceTree = "<group>"; };
 		5A7F3D781EB73DA100E94752 /* sk */ = {isa = PBXFileReference; lastKnownFileType = folder; name = sk; path = sk.lproj/Help; sourceTree = "<group>"; };
 		5A7F3D941EB73DA500E94752 /* ro */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ro; path = ro.lproj/Help; sourceTree = "<group>"; };
@@ -981,18 +948,12 @@
 		5A7F3E111EB7414800E94752 /* ar */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ar; path = ar.lproj/Help; sourceTree = "<group>"; };
 		5A7F3E141EB741AB00E94752 /* fi */ = {isa = PBXFileReference; lastKnownFileType = folder; name = fi; path = fi.lproj/Help; sourceTree = "<group>"; };
 		5A7F3E1C1EB7421700E94752 /* uk */ = {isa = PBXFileReference; lastKnownFileType = folder; name = uk; path = uk.lproj/Help; sourceTree = "<group>"; };
-		5A7FB6D61E2C37DD00481B4A /* SvgoWorker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SvgoWorker.h; sourceTree = "<group>"; };
-		5A7FB6F21E2C37EB00481B4A /* SvgoWorker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SvgoWorker.m; sourceTree = "<group>"; };
 		5A7FB7251E2C3E1600481B4A /* svgo.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = svgo.js; sourceTree = "<group>"; };
 		5A8B52D61559C29D005AA6E3 /* en-GB */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "en-GB"; path = "en-GB.lproj/Help"; sourceTree = "<group>"; };
 		5A8DFBD910C097B9009A5C8E /* nl */ = {isa = PBXFileReference; lastKnownFileType = folder; name = nl; path = nl.lproj/Help; sourceTree = "<group>"; };
-		5A93FCEC1FF1BF1F005D2F27 /* SvgcleanerWorker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SvgcleanerWorker.h; sourceTree = "<group>"; };
-		5A93FD051FF1BF1F005D2F27 /* SvgcleanerWorker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SvgcleanerWorker.m; sourceTree = "<group>"; };
 		5A94A02610275AFD005CC9CB /* fr */ = {isa = PBXFileReference; lastKnownFileType = folder; name = fr; path = fr.lproj/Help; sourceTree = "<group>"; };
 		5A95FEBF0CB8041A00737B79 /* en */ = {isa = PBXFileReference; lastKnownFileType = folder; name = en; path = en.lproj/Help; sourceTree = "<group>"; };
 		5A99FE83140AE80600BB2F79 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
-		5A9E5B290CB961E000E05D28 /* JpegoptimWorker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JpegoptimWorker.h; sourceTree = "<group>"; };
-		5A9E5B2A0CB961E000E05D28 /* JpegoptimWorker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JpegoptimWorker.m; sourceTree = "<group>"; };
 		5A9ED38015F2213F005B8CA5 /* ja */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ja; path = ja.lproj/Help; sourceTree = "<group>"; };
 		5A9EE4490CB59CDC00F08CC5 /* err.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = err.png; sourceTree = "<group>"; };
 		5A9EE44A0CB59CDC00F08CC5 /* noopt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = noopt.png; sourceTree = "<group>"; };
@@ -1000,38 +961,22 @@
 		5A9EE44C0CB59CDC00F08CC5 /* wait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wait.png; sourceTree = "<group>"; };
 		5A9EE4720CB59EC100F08CC5 /* progress.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = progress.png; sourceTree = "<group>"; };
 		5AA338A31117BF5500046C79 /* de */ = {isa = PBXFileReference; lastKnownFileType = folder; name = de; path = de.lproj/Help; sourceTree = "<group>"; };
-		5AA9F4361899D063006C64C8 /* PngquantWorker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PngquantWorker.h; sourceTree = "<group>"; };
-		5AA9F4371899D063006C64C8 /* PngquantWorker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PngquantWorker.m; sourceTree = "<group>"; };
-		5AA9F5F5189339A500697D8E /* log.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = log.h; sourceTree = "<group>"; };
 		5AA9F7821893743B00697D8E /* cs */ = {isa = PBXFileReference; lastKnownFileType = folder; name = cs; path = cs.lproj/Help; sourceTree = "<group>"; };
 		5AA9F7831893744800697D8E /* el */ = {isa = PBXFileReference; lastKnownFileType = folder; name = el; path = el.lproj/Help; sourceTree = "<group>"; };
 		5AA9F7841893746300697D8E /* it */ = {isa = PBXFileReference; lastKnownFileType = folder; name = it; path = it.lproj/Help; sourceTree = "<group>"; };
 		5AA9F7851893746E00697D8E /* tr */ = {isa = PBXFileReference; lastKnownFileType = folder; name = tr; path = tr.lproj/Help; sourceTree = "<group>"; };
 		5AA9F7861893747900697D8E /* vi */ = {isa = PBXFileReference; lastKnownFileType = folder; name = vi; path = vi.lproj/Help; sourceTree = "<group>"; };
 		5AA9F799189374A000697D8E /* pl */ = {isa = PBXFileReference; lastKnownFileType = folder; name = pl; path = pl.lproj/Help; sourceTree = "<group>"; };
-		5AACA13D0CAF241B004D45CA /* Worker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Worker.h; sourceTree = "<group>"; };
-		5AACA13E0CAF241B004D45CA /* Worker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Worker.m; sourceTree = "<group>"; };
 		5AACA80F0CAFE3CA004D45CA /* ImageOptim.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = ImageOptim.icns; sourceTree = "<group>"; };
-		5AB81F931AE1BE1300719AB7 /* Save.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Save.h; sourceTree = "<group>"; };
-		5AB81F941AE1BE1300719AB7 /* Save.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Save.m; sourceTree = "<group>"; };
 		5ABE15421AE5072300861C6B /* ImageOptimGPL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ImageOptimGPL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5ABE154C1AE5072300861C6B /* BackendTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BackendTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5ABE15551AE5072300861C6B /* BackendTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackendTests.swift; sourceTree = "<group>"; };
-		5ABE16D11AE5AD9F00861C6B /* log.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = log.c; sourceTree = "<group>"; };
 		5ABF611313E37B86009F6F22 /* da */ = {isa = PBXFileReference; lastKnownFileType = folder; name = da; path = da.lproj/Help; sourceTree = "<group>"; };
 		5AC64EC11AF3FCFE0032AA7F /* unoptimized.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unoptimized.png; sourceTree = "<group>"; };
 		5AC64EFE1AF3FDEE0032AA7F /* ImageOptimize.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ImageOptimize.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AC9882B155F1AE100E221A0 /* sv */ = {isa = PBXFileReference; lastKnownFileType = folder; name = sv; path = sv.lproj/Help; sourceTree = "<group>"; };
-		5AD033511E26B6840030291A /* File.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = File.h; sourceTree = "<group>"; };
-		5AD033521E26B6840030291A /* File.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = File.m; sourceTree = "<group>"; };
-		5AD0347A1E27185D0030291A /* TempFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TempFile.h; sourceTree = "<group>"; };
-		5AD0347B1E27185D0030291A /* TempFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TempFile.m; sourceTree = "<group>"; };
 		5AD299C2143675BB0048C725 /* no */ = {isa = PBXFileReference; lastKnownFileType = folder; name = no; path = no.lproj/Help; sourceTree = "<group>"; };
 		5AE54D800CAEE8AC00903DF4 /* defaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = defaults.plist; sourceTree = "<group>"; };
-		5AE54DED0CAEF56100903DF4 /* PngoutWorker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PngoutWorker.h; sourceTree = "<group>"; };
-		5AE54DEE0CAEF56100903DF4 /* PngoutWorker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PngoutWorker.m; sourceTree = "<group>"; };
-		5AE54E1F0CAF16D800903DF4 /* AdvCompWorker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdvCompWorker.h; sourceTree = "<group>"; };
-		5AE54E200CAF16D800903DF4 /* AdvCompWorker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdvCompWorker.m; sourceTree = "<group>"; };
 		5AE74B60146DECB100287FA6 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "pt-BR"; path = "pt-BR.lproj/Help"; sourceTree = "<group>"; };
 		5AE9755E17AD5BE20037C2E2 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = ru; path = ru.lproj/Credits.html; sourceTree = "<group>"; };
 		5AEF1B1D10F2BCA900E3E4F0 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -1138,7 +1083,6 @@
 		A57743C49C9061010B28CAA2 /* BinTree2Main.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BinTree2Main.h; sourceTree = "<group>"; };
 		A58C51BEB1C0259CC2847321 /* butteraugli.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = butteraugli.cc; sourceTree = "<group>"; };
 		A635716AE99C334C76F3A667 /* libbz2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libbz2.dylib; path = usr/lib/libbz2.dylib; sourceTree = SDKROOT; };
-		A7696C528E94F35BB28D001B /* ImageOptimize-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ImageOptimize-Bridging-Header.h"; sourceTree = "<group>"; };
 		A7720E58F7AFFD90816F946A /* jcdctmgr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = jcdctmgr.c; sourceTree = "<group>"; };
 		A784212F5ADCA9473D447D53 /* 7zlzma.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 7zlzma.cc; sourceTree = "<group>"; };
 		A798F5459D96C8F800D5F4D0 /* DeflateDecoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeflateDecoder.h; sourceTree = "<group>"; };
@@ -1195,8 +1139,6 @@
 		CCA7C3224FF1AEF77D7023C5 /* AriBitCoder.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AriBitCoder.cc; sourceTree = "<group>"; };
 		CD813504B13A4BF7E0D954B8 /* jcmainct.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = jcmainct.c; sourceTree = "<group>"; };
 		CFE64F5959F263B0B4145ED4 /* uncompr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = uncompr.c; sourceTree = "<group>"; };
-		D047E4491E7C3CE70036F96B /* GuetzliWorker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GuetzliWorker.h; sourceTree = "<group>"; };
-		D047E4641E7C3D7C0036F96B /* GuetzliWorker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuetzliWorker.m; sourceTree = "<group>"; };
 		D08CF9A1A13540C92DC10CB6 /* jdsample.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = jdsample.c; sourceTree = "<group>"; };
 		D0F0E7CF1A72169FD5932111 /* WindowOut.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WindowOut.cc; sourceTree = "<group>"; };
 		D2621C1E3F1F3D73E951D196 /* jdapistd.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = jdapistd.c; sourceTree = "<group>"; };
@@ -1255,6 +1197,17 @@
 		FE9CA2564A73B239C7E6A137 /* jpeg_data_encoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = jpeg_data_encoder.h; sourceTree = "<group>"; };
 		FF6CC049A97C424CA8FD450B /* ImageOptimize-Debug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "ImageOptimize-Debug.entitlements"; sourceTree = "<group>"; };
 		FFE59271B5F731746BDDA567 /* jddctmgr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = jddctmgr.c; sourceTree = "<group>"; };
+		665C1CCEFC0E402283953B5C /* OptimizationSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OptimizationSettings.swift"; sourceTree = "<group>"; };
+		A08E00AD6070418D9237E809 /* JobQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JobQueue.swift"; sourceTree = "<group>"; };
+		33C24188489C4B7F89282003 /* FileType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileType.swift"; sourceTree = "<group>"; };
+		3443E9B67B774312BB84B310 /* BundleAnchor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BundleAnchor.swift"; sourceTree = "<group>"; };
+		DDEDBF836D4C4C3ABA92B326 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "File.swift"; sourceTree = "<group>"; };
+		38C9C77070C84F79A84E5157 /* ResultsDb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ResultsDb.swift"; sourceTree = "<group>"; };
+		8E7E7BAF72BC4C38B178D7B4 /* FileOperations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileOperations.swift"; sourceTree = "<group>"; };
+		790B394B8A734DB8A10AF8AB /* Job.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Job.swift"; sourceTree = "<group>"; };
+		BE53EAA4DCF5485EB58B512C /* AsyncLimiter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AsyncLimiter.swift"; sourceTree = "<group>"; };
+		56434CB156734682B181123D /* CommandWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandWorker.swift; sourceTree = "<group>"; };
+		8F0474F7A1AA4BA0AD8EFE40 /* Optimizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Optimizer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -1405,36 +1358,8 @@
 		086039FE725498C11E5926DE /* Workers */ = {
 			isa = PBXGroup;
 			children = (
-				5AE54E1F0CAF16D800903DF4 /* AdvCompWorker.h */,
-				5AE54E200CAF16D800903DF4 /* AdvCompWorker.m */,
-				5A44F5850CB2ECFE00BD2884 /* CommandWorker.h */,
-				5A44F5830CB2ECEB00BD2884 /* CommandWorker.m */,
-				5A4DC2191028AE1800A9DD55 /* GifsicleWorker.h */,
-				5A4DC21A1028AE1800A9DD55 /* GifsicleWorker.m */,
-				D047E4491E7C3CE70036F96B /* GuetzliWorker.h */,
-				D047E4641E7C3D7C0036F96B /* GuetzliWorker.m */,
-				5A9E5B290CB961E000E05D28 /* JpegoptimWorker.h */,
-				5A9E5B2A0CB961E000E05D28 /* JpegoptimWorker.m */,
-				5A6E04410EA40B6A00380DE7 /* JpegtranWorker.h */,
-				5A6E04420EA40B6A00380DE7 /* JpegtranWorker.m */,
-				5A5C29410CB04A0F00FAF446 /* OxiPngWorker.h */,
-				5A5C29420CB04A0F00FAF446 /* OxiPngWorker.m */,
-				5A44F4B20CB1868100BD2884 /* PngCrushWorker.h */,
-				5A44F4B30CB1868100BD2884 /* PngCrushWorker.m */,
-				5AE54DED0CAEF56100903DF4 /* PngoutWorker.h */,
-				5AE54DEE0CAEF56100903DF4 /* PngoutWorker.m */,
-				5AA9F4361899D063006C64C8 /* PngquantWorker.h */,
-				5AA9F4371899D063006C64C8 /* PngquantWorker.m */,
-				5AB81F931AE1BE1300719AB7 /* Save.h */,
-				5AB81F941AE1BE1300719AB7 /* Save.m */,
-				5A93FCEC1FF1BF1F005D2F27 /* SvgcleanerWorker.h */,
-				5A93FD051FF1BF1F005D2F27 /* SvgcleanerWorker.m */,
-				5A7FB6D61E2C37DD00481B4A /* SvgoWorker.h */,
-				5A7FB6F21E2C37EB00481B4A /* SvgoWorker.m */,
-				5AACA13D0CAF241B004D45CA /* Worker.h */,
-				5AACA13E0CAF241B004D45CA /* Worker.m */,
-				5A2ACD121790935C004992B7 /* ZopfliWorker.h */,
-				5A2ACD131790935C004992B7 /* ZopfliWorker.m */,
+				56434CB156734682B181123D /* CommandWorker.swift */,
+				8F0474F7A1AA4BA0AD8EFE40 /* Optimizer.swift */,
 			);
 			path = Workers;
 			sourceTree = "<group>";
@@ -1593,7 +1518,6 @@
 				5EEB5426058A4650BD39B358 /* ExtensionStatusView.swift */,
 				35FD103C741841A88B75BCAC /* ExtensionViewModel.swift */,
 				24EDABB23F52BB85FDDC48BC /* ExtensionController.swift */,
-				A7696C528E94F35BB28D001B /* ImageOptimize-Bridging-Header.h */,
 				FF6CC049A97C424CA8FD450B /* ImageOptimize-Debug.entitlements */,
 			);
 			path = ImageOptimize;
@@ -1950,17 +1874,13 @@
 				5A27B9C2139B079A0095FC2F /* debug.xcconfig */,
 				5AE54D800CAEE8AC00903DF4 /* defaults.plist */,
 				5A9EE4490CB59CDC00F08CC5 /* err.png */,
-				40C846B3D3091D62BB7E54E2 /* ImageOptim-Bridging-Header.h */,
 				5AACA80F0CAFE3CA004D45CA /* ImageOptim.icns */,
 				1AD5B24D174F84C600BC75FD /* ImageOptimVerbs.sdef */,
-				5AA9F5F5189339A500697D8E /* log.h */,
 				5A9EE44A0CB59CDC00F08CC5 /* noopt.png */,
 				5A9EE44B0CB59CDC00F08CC5 /* ok.png */,
 				5AF71642174AF7C30018D3FE /* pngout */,
 				5A9EE4720CB59EC100F08CC5 /* progress.png */,
 				5A27B956139B03090095FC2F /* release.xcconfig */,
-				5A08FE901936982E001DA24B /* ResultsDb.h */,
-				5A08FE911936982E001DA24B /* ResultsDb.m */,
 				5A1D3E8B14366933004EE809 /* style.css */,
 				5A9EE44C0CB59CDC00F08CC5 /* wait.png */,
 				27DEC899062538700AE79433 /* Tests */,
@@ -2022,18 +1942,18 @@
 		C8C465E4E329FD7B02BCA3C0 /* Backend */ = {
 			isa = PBXGroup;
 			children = (
+				665C1CCEFC0E402283953B5C /* OptimizationSettings.swift */,
+				A08E00AD6070418D9237E809 /* JobQueue.swift */,
+				33C24188489C4B7F89282003 /* FileType.swift */,
+				3443E9B67B774312BB84B310 /* BundleAnchor.swift */,
+				DDEDBF836D4C4C3ABA92B326 /* File.swift */,
+				38C9C77070C84F79A84E5157 /* ResultsDb.swift */,
+				8E7E7BAF72BC4C38B178D7B4 /* FileOperations.swift */,
+				790B394B8A734DB8A10AF8AB /* Job.swift */,
+				BE53EAA4DCF5485EB58B512C /* AsyncLimiter.swift */,
 				4BEF8AD4662109E4A0CD9834 /* Tests */,
 				086039FE725498C11E5926DE /* Workers */,
-				5AD033511E26B6840030291A /* File.h */,
-				5AD033521E26B6840030291A /* File.m */,
 				5A34CFEE1AEF6D9800A154E4 /* ImageOptimGPL.h */,
-				5A0D2E550C922AB700FD7CDE /* Job.h */,
-				5A0D2E560C922AB700FD7CDE /* Job.m */,
-				5A34D0971AEF75CE00A154E4 /* JobQueue.h */,
-				5A34D0981AEF75CE00A154E4 /* JobQueue.m */,
-				5ABE16D11AE5AD9F00861C6B /* log.c */,
-				5AD0347A1E27185D0030291A /* TempFile.h */,
-				5AD0347B1E27185D0030291A /* TempFile.m */,
 			);
 			path = Backend;
 			sourceTree = "<group>";
@@ -2131,11 +2051,7 @@
 		5ABE153F1AE5072300861C6B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			files = (
-				5AD033531E26B6840030291A /* File.h in Headers */,
 				5A34D0041AEF6DB300A154E4 /* ImageOptimGPL.h in Headers */,
-				5A34D0991AEF75CE00A154E4 /* JobQueue.h in Headers */,
-				5A7FB6D71E2C37DD00481B4A /* SvgoWorker.h in Headers */,
-				5AD0347C1E27185D0030291A /* TempFile.h in Headers */,
 			);
 		};
 		5EE5F06D7E6A1F7AE426418C /* Headers */ = {
@@ -2927,27 +2843,17 @@
 		5ABE153D1AE5072300861C6B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			files = (
-				5ABE15781AE5073E00861C6B /* AdvCompWorker.m in Sources */,
-				5ABE15791AE5073E00861C6B /* CommandWorker.m in Sources */,
-				5AD033541E26B6840030291A /* File.m in Sources */,
-				5ABE157B1AE5073E00861C6B /* GifsicleWorker.m in Sources */,
-				D047E4651E7C3D7C0036F96B /* GuetzliWorker.m in Sources */,
-				5ABE15741AE5073100861C6B /* Job.m in Sources */,
-				5A34D09A1AEF75CE00A154E4 /* JobQueue.m in Sources */,
-				5ABE157C1AE5073E00861C6B /* JpegoptimWorker.m in Sources */,
-				5ABE157D1AE5073E00861C6B /* JpegtranWorker.m in Sources */,
-				5ABE16D21AE5AD9F00861C6B /* log.c in Sources */,
-				5ABE157E1AE5073E00861C6B /* OxiPngWorker.m in Sources */,
-				5ABE157F1AE5073E00861C6B /* PngCrushWorker.m in Sources */,
-				5ABE15801AE5073E00861C6B /* PngoutWorker.m in Sources */,
-				5AE04E2E1B5301E100669E85 /* PngquantWorker.m in Sources */,
-				5ABE15771AE5073100861C6B /* ResultsDb.m in Sources */,
-				5ABE15811AE5073E00861C6B /* Save.m in Sources */,
-				5A93FD2F1FF1C452005D2F27 /* SvgcleanerWorker.m in Sources */,
-				5A7FB6F31E2C37EB00481B4A /* SvgoWorker.m in Sources */,
-				5AD0347D1E27185D0030291A /* TempFile.m in Sources */,
-				5ABE15821AE5073E00861C6B /* Worker.m in Sources */,
-				5ABE15831AE5073E00861C6B /* ZopfliWorker.m in Sources */,
+				9D6F2E88E0394956B1C2892E /* OptimizationSettings.swift in Sources */,
+				558062044F9A45D4B55F89B0 /* JobQueue.swift in Sources */,
+				3E005E23A91D476EB0574010 /* FileType.swift in Sources */,
+				9847B92B5E5C471A8914B620 /* BundleAnchor.swift in Sources */,
+				4FC44C1DEE9E46AC8EA8A276 /* File.swift in Sources */,
+				84E3AADEE84E423FA1408B7E /* ResultsDb.swift in Sources */,
+				9A866680F7734062921364E5 /* FileOperations.swift in Sources */,
+				1156D256A49346039952837E /* Job.swift in Sources */,
+				890E3833B37E429B914896C5 /* AsyncLimiter.swift in Sources */,
+				8AD510A97B42413896AB8853 /* CommandWorker.swift in Sources */,
+				CCABC85298284A06BB001416 /* Optimizer.swift in Sources */,
 			);
 		};
 		5ABE15481AE5072300861C6B /* Sources */ = {
@@ -5015,6 +4921,11 @@
 		5ABE155B1AE5072300861C6B /* Debug configuration for PBXNativeTarget "Backend" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+                DEFINES_MODULE = YES;
+                SWIFT_VERSION = 6.0;
+                SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+                SWIFT_STRICT_CONCURRENCY = complete;
+
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -5066,6 +4977,11 @@
 		5ABE155C1AE5072300861C6B /* Release configuration for PBXNativeTarget "Backend" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+                DEFINES_MODULE = YES;
+                SWIFT_VERSION = 6.0;
+                SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+                SWIFT_STRICT_CONCURRENCY = complete;
+
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -5169,7 +5085,6 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
-				SWIFT_OBJC_BRIDGING_HEADER = "Backend/Tests/BackendTests-Bridging-Header.h";
 				SWIFT_VERSION = 6.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ImageOptim.app/Contents/MacOS/ImageOptim";
 				WARNING_CFLAGS = (
@@ -5235,7 +5150,6 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
-				SWIFT_OBJC_BRIDGING_HEADER = "Backend/Tests/BackendTests-Bridging-Header.h";
 				SWIFT_VERSION = 6.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ImageOptim.app/Contents/MacOS/ImageOptim";
 				WARNING_CFLAGS = (
@@ -5303,7 +5217,6 @@
 				REGISTER_APP_GROUPS = YES;
 				SKIP_INSTALL = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
-				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/ImageOptimize/ImageOptimize-Bridging-Header.h";
 				SWIFT_STRICT_CONCURRENCY = complete;
 				SWIFT_VERSION = 6.0;
 			};
@@ -5360,7 +5273,6 @@
 				REGISTER_APP_GROUPS = YES;
 				SKIP_INSTALL = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
-				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/ImageOptimize/ImageOptimize-Bridging-Header.h";
 				SWIFT_STRICT_CONCURRENCY = complete;
 				SWIFT_VERSION = 6.0;
 			};
@@ -6999,7 +6911,6 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				REGISTER_APP_GROUPS = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
-				SWIFT_OBJC_BRIDGING_HEADER = "ImageOptim-Bridging-Header.h";
 				SWIFT_STRICT_CONCURRENCY = complete;
 				SWIFT_VERSION = 6.0;
 			};
@@ -7036,7 +6947,6 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				REGISTER_APP_GROUPS = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
-				SWIFT_OBJC_BRIDGING_HEADER = "ImageOptim-Bridging-Header.h";
 				SWIFT_STRICT_CONCURRENCY = complete;
 				SWIFT_VERSION = 6.0;
 			};

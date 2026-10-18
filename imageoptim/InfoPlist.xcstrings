@@ -136,12 +136,6 @@
             "value" : "ImageOptim"
           }
         },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ImageOptim"
-          }
-        },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -154,13 +148,13 @@
             "value" : "ImageOptim"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "ImageOptim"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "ImageOptim"
@@ -236,7 +230,6 @@
     },
     "CFBundleName" : {
       "comment" : "Bundle name",
-      "extractionState" : "extracted_with_value",
       "localizations" : {
         "ar" : {
           "stringUnit" : {
@@ -370,12 +363,6 @@
             "value" : "ImageOptim"
           }
         },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ImageOptim"
-          }
-        },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -388,13 +375,13 @@
             "value" : "ImageOptim"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "ImageOptim"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "ImageOptim"
@@ -470,7 +457,6 @@
     },
     "NSHumanReadableCopyright" : {
       "comment" : "Copyright (human-readable)",
-      "extractionState" : "extracted_with_value",
       "localizations" : {
         "ar" : {
           "stringUnit" : {
@@ -604,12 +590,6 @@
             "value" : "Gratis, open source (GNU GPL)"
           }
         },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Gratis, åpen kildekode (GNU GPL)"
-          }
-        },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -622,13 +602,13 @@
             "value" : "Gratuito e de código aberto (GNU GPL)"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Gratuito e de código aberto (GNU GPL)"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Gratuito e de código aberto (GNU GPL)"

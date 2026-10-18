@@ -1,4 +1,5 @@
 import SwiftUI
+import ImageOptimGPL
 
 @Observable
 final class FilesController {
@@ -16,7 +17,6 @@ final class FilesController {
     private var isEnabled = false
     private var nextInsertRow = -1
     private var scans: [UUID: Task<Void, Never>] = [:]
-    private var queueObservation: NSKeyValueObservation?
     private var pendingDirectories: [URL] = []
     private var scanLimit = 1
 
@@ -27,11 +27,9 @@ final class FilesController {
         queue = JobQueue(cpus: defaults.integer(forKey: "RunConcurrentFiles"),
                          files: defaults.integer(forKey: "RunConcurrentFileops"), defaults: defaults)
         isEnabled = queue != nil
-        queueObservation = queue?.observe(\.isBusy, options: [.new]) { [weak self] _, _ in
-            Task { @MainActor [weak self] in
-                guard let self, self.isEnabled else { return }
-                self.updateBusyState()
-            }
+        queue?.onBusyChanged = { [weak self] in
+            guard let self, self.isEnabled else { return }
+            self.updateBusyState()
         }
         updateBusyState()
     }
@@ -45,7 +43,7 @@ final class FilesController {
 
     func cleanup() {
         isEnabled = false
-        queueObservation = nil
+        queue?.onBusyChanged = nil
         for task in scans.values { task.cancel() }
         scans.removeAll()
         pendingDirectories.removeAll()
