@@ -120,10 +120,6 @@
 	</array>
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
-	<key>CFBundleHelpBookFolder</key>
-	<string>Help</string>
-	<key>CFBundleHelpBookName</key>
-	<string>ImageOptim Help</string>
 	<key>CFBundleIconFile</key>
 	<string>ImageOptim.icns</string>
 	<key>CFBundleIdentifier</key>

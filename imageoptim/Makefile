@@ -1,9 +1,8 @@
-HELPINDEXES=$(addsuffix Help.helpindex, $(wildcard *.lproj/Help/))
 SUBMODULES=../svgcleaner/src
 
 build: all
 
-all: $(SUBMODULES) pngout helpindexes
+all: $(SUBMODULES) pngout
 
 $(SUBMODULES): ../.gitmodules
 	../scripts/fetch-submodule $(shell dirname $@) && touch $@
@@ -18,10 +17,5 @@ clean:
 	-rm -rf pngout pngout-20230322-mac.zip
 
 install:
-
-helpindexes:: $(HELPINDEXES)
-
-%/Help.helpindex: %/index.html %/prefs.html
-	./makehelp.sh $(patsubst %.lproj/Help/Help.helpindex,%,$@)
 
 .PHONY: build all install clean

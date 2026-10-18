@@ -150,7 +150,6 @@ zlib/projects
 zlib/qnx
 zlib/README
 zlib/win32
-imageoptim/*.lproj/Help/Help.helpindex
 pngquant/build/*
 pngcrush/Makefile-nolib
 pngcrush/pngcrush.c.orig

@@ -1,0 +1,14 @@
+ImageOptim by Kornel Lesiński and contributors is a GUI for 3rd party utilities:
+OxiPNG by Josh Holmer,
+pngquant by Kornel Lesiński,
+PNGCrush by Glenn Randers-Pehrson,
+MozJPEG by Mozilla and contributors,
+Guetzli, Zopfli by Jyrki Alakuijala, Lode Vandevenne,
+AdvPNG by Andrea Mazzoleni, Filipe Estima,
+Jpegoptim by Timo Kokkonen,
+Gifsicle by Eddie Kohler,
+SVGO by Kir Belevich,
+svgcleaner by Evgeniy Reizner,
+and PNGOUT by Ken Silverman.
+ImageOptim can be redistributed and modified under GNU General Public License version 2 or later.
+Bundled PNGOUT is not covered by the GPL and is included with permission of Ardfry Imaging, LLC.
