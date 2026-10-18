@@ -10,6 +10,18 @@
             "value" : "ImageOptim"
           }
         },
+        "be" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ImageOptim"
+          }
+        },
+        "ca" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ImageOptim"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -64,6 +76,30 @@
             "value" : "ImageOptim"
           }
         },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ImageOptim"
+          }
+        },
+        "hr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ImageOptim"
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ImageOptim"
+          }
+        },
+        "is" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ImageOptim"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -100,6 +136,12 @@
             "value" : "ImageOptim"
           }
         },
+        "no" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ImageOptim"
+          }
+        },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -113,6 +155,12 @@
           }
         },
         "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ImageOptim"
+          }
+        },
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "ImageOptim"
@@ -136,7 +184,19 @@
             "value" : "ImageOptim"
           }
         },
+        "sl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ImageOptim"
+          }
+        },
         "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ImageOptim"
+          }
+        },
+        "th" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "ImageOptim"
@@ -184,6 +244,18 @@
             "value" : "ImageOptim"
           }
         },
+        "be" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ImageOptim"
+          }
+        },
+        "ca" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ImageOptim"
+          }
+        },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
@@ -238,6 +310,30 @@
             "value" : "ImageOptim"
           }
         },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ImageOptim"
+          }
+        },
+        "hr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ImageOptim"
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ImageOptim"
+          }
+        },
+        "is" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ImageOptim"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -274,6 +370,12 @@
             "value" : "ImageOptim"
           }
         },
+        "no" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ImageOptim"
+          }
+        },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -287,6 +389,12 @@
           }
         },
         "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ImageOptim"
+          }
+        },
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "ImageOptim"
@@ -310,7 +418,19 @@
             "value" : "ImageOptim"
           }
         },
+        "sl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ImageOptim"
+          }
+        },
         "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ImageOptim"
+          }
+        },
+        "th" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "ImageOptim"
@@ -356,6 +476,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "مجاني ومفتوح المصدر (GNU GPL)"
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Бясплатнае праграмнае забеспячэнне з адкрытым зыходным кодам (GNU GPL)"
+          }
+        },
+        "ca" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gratuït i de codi obert (GNU GPL)"
           }
         },
         "cs" : {
@@ -412,6 +544,30 @@
             "value" : "Gratuit, code source ouvert (GNU GPL)"
           }
         },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "חינמי ובקוד פתוח (GNU GPL)"
+          }
+        },
+        "hr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Besplatno, otvorenog izvornog kôda (GNU GPL)"
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ingyenes, nyílt forráskódú (GNU GPL)"
+          }
+        },
+        "is" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ókeypis og opinn hugbúnaður (GNU GPL)"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -448,6 +604,12 @@
             "value" : "Gratis, open source (GNU GPL)"
           }
         },
+        "no" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gratis, åpen kildekode (GNU GPL)"
+          }
+        },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -461,6 +623,12 @@
           }
         },
         "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gratuito e de código aberto (GNU GPL)"
+          }
+        },
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Gratuito e de código aberto (GNU GPL)"
@@ -484,10 +652,22 @@
             "value" : "Zadarmo, s otvoreným zdrojovým kódom (GNU GPL)"
           }
         },
+        "sl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brezplačno, odprtokodno (GNU GPL)"
+          }
+        },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Gratis, öppen källkod (GNU GPL)"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ฟรีและเป็นโอเพนซอร์ส (GNU GPL)"
           }
         },
         "tr" : {
