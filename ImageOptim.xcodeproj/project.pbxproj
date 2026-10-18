@@ -213,6 +213,7 @@
 		A11111111111111111111111 /* DirectoryScannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E960A96C0DA9EE13F105BDCC /* DirectoryScannerTests.swift */; };
 		A17E00000000000000000003 /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = A17E00000000000000000002 /* ScrechKit */; };
 		A17E00000000000000000005 /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = A17E00000000000000000004 /* ScrechKit */; };
+		A17E00000000000000000020 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F3ABD54E3085647D00916586 /* Localizable.xcstrings */; };
 		A3F1830D2D6D7CB10BACE36A /* optimize.c in Sources */ = {isa = PBXBuildFile; fileRef = ADE2CB30461EC56CDAB06E3D /* optimize.c */; };
 		A4ED6ABA85B0BA461B4BEE0C /* jpeg_data_reader.cc in Sources */ = {isa = PBXBuildFile; fileRef = 5FC05999A73F088AB409463C /* jpeg_data_reader.cc */; };
 		A5BA3F47F92A0D71C3BF3193 /* jdpostct.c in Sources */ = {isa = PBXBuildFile; fileRef = 275735108F055A808DAAE603 /* jdpostct.c */; };
@@ -292,7 +293,6 @@
 		F35DF1BCDEB29D9D635E3823 /* jfdctint.c in Sources */ = {isa = PBXBuildFile; fileRef = 26263BA7D068FB4F4F3B8D69 /* jfdctint.c */; };
 		F3ABD54D3085647D00916586 /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F3ABD54C3085647D00916586 /* InfoPlist.xcstrings */; };
 		F3ABD54F3085647D00916586 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F3ABD54E3085647D00916586 /* Localizable.xcstrings */; };
-		A17E00000000000000000020 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F3ABD54E3085647D00916586 /* Localizable.xcstrings */; };
 		F61BED89696446FBF67DF6B5 /* pngrtran.c in Sources */ = {isa = PBXBuildFile; fileRef = C79D97EDF8D68E708D029B93 /* pngrtran.c */; };
 		FA4AE51B6771FE1212CBCFA0 /* jsimd_none.c in Sources */ = {isa = PBXBuildFile; fileRef = F86286B4CE3ABD5EF601887D /* jsimd_none.c */; };
 		FC420D721D7E7CDE62BF483B /* infback.c in Sources */ = {isa = PBXBuildFile; fileRef = 178EECDA6AAE7E0E2D05B04D /* infback.c */; };
@@ -2628,7 +2628,6 @@
 			hasScannedForEncodings = 1;
 			knownRegions = (
 				pt,
-				pt_PT,
 				ru,
 				es,
 				da,
@@ -2667,8 +2666,6 @@
 				pt_BR,
 				sl,
 				th,
-				zh_CN,
-				zh_TW,
 			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* .. */;
 			packageReferences = (

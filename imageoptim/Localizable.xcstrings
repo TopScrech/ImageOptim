@@ -107,13 +107,13 @@
             "value" : "O %@ falhou ao iniciar"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "O %@ falhou ao iniciar"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "O %@ falhou ao iniciar"
@@ -280,13 +280,13 @@
             "value" : "Adicionar"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Adicionar"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Adicionar"
@@ -454,13 +454,13 @@
             "value" : "Adicionar imagens"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Adicionar imagens"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Adicionar imagens"
@@ -628,13 +628,13 @@
             "value" : "Adicionar imagens ou pastas para otimizar"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Adicionar imagens ou pastas para otimizar"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Adicionar imagens ou pastas para otimizar"
@@ -807,13 +807,13 @@
             "value" : "Todas as ferramentas necessárias foram desactivadas nas Preferências"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Todas as ferramentas necessárias foram desativadas nas Preferências"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Todas as ferramentas necessárias foram desativadas nas Preferências"
@@ -980,13 +980,13 @@
             "value" : "Já otimizado"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Já otimizado"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Já otimizado"
@@ -1154,13 +1154,13 @@
             "value" : "Saltar o ícone na Dock ao terminar"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Fazer o ícone no Dock saltar ao terminar"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Fazer o ícone no Dock saltar ao terminar"
@@ -1328,13 +1328,13 @@
             "value" : "Não é possivel mapear o ficheiro para memória"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Não foi possível mapear o arquivo na memória"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Não foi possível mapear o arquivo na memória"
@@ -1502,13 +1502,13 @@
             "value" : "Limpar concluídas"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Limpar concluídas"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Limpar concluídas"
@@ -1676,13 +1676,13 @@
             "value" : "Copiar"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Copiar"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Copiar"
@@ -1850,13 +1850,13 @@
             "value" : "Copiar como URL de dados"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Copiar como URL de dados"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Copiar como URL de dados"
@@ -2024,13 +2024,13 @@
             "value" : "Não foi possível adicionar imagens"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Não foi possível adicionar imagens"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Não foi possível adicionar imagens"
@@ -2198,13 +2198,13 @@
             "value" : "Cortar"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cortar"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cortar"
@@ -2372,13 +2372,13 @@
             "value" : "Fazer um donativo"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Fazer uma doação"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Fazer uma doação"
@@ -2546,13 +2546,13 @@
             "value" : "Largue imagens aqui"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Solte imagens aqui"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Solte imagens aqui"
@@ -2720,13 +2720,13 @@
             "value" : "Ativar compressão com perdas"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ativar compressão com perdas"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ativar compressão com perdas"
@@ -2894,13 +2894,13 @@
             "value" : "Ficheiro"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Arquivo"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Arquivo"
@@ -3068,13 +3068,13 @@
             "value" : "O ficheiro não pode ser optimizado para além do estado actual"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "O arquivo não pode ser melhor otimizado"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "O arquivo não pode ser melhor otimizado"
@@ -3242,13 +3242,13 @@
             "value" : "O ficheiro não é PNG ou JPEG"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "O arquivo não é PNG ou JPEG"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "O arquivo não é PNG ou JPEG"
@@ -3416,13 +3416,13 @@
             "value" : "Ficheiros"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Arquivos"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Arquivos"
@@ -3590,13 +3590,13 @@
             "value" : "Geral"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Geral"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Geral"
@@ -3764,13 +3764,13 @@
             "value" : "GIF e SVG"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "GIF e SVG"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "GIF e SVG"
@@ -3938,13 +3938,13 @@
             "value" : "Qualidade GIF: %@%%"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Qualidade GIF: %@%%"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Qualidade GIF: %@%%"
@@ -4122,13 +4122,13 @@
             "value" : "O Guetzli pode ser muito lento"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "O Guetzli pode ser muito lento"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "O Guetzli pode ser muito lento"
@@ -4296,13 +4296,13 @@
             "value" : "O Guetzli é muito lento"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "O Guetzli é muito lento"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "O Guetzli é muito lento"
@@ -4475,13 +4475,13 @@
             "value" : "Ajuda do ImageOptim"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ajuda do ImageOptim"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ajuda do ImageOptim"
@@ -4649,13 +4649,13 @@
             "value" : "O ImageOptim será encerrado quando as otimizações terminarem"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "O ImageOptim será encerrado quando as otimizações terminarem"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "O ImageOptim será encerrado quando as otimizações terminarem"
@@ -4823,13 +4823,13 @@
             "value" : "As imagens são otimizadas nos ficheiros originais"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "As imagens são otimizadas nos arquivos originais"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "As imagens são otimizadas nos arquivos originais"
@@ -4997,13 +4997,13 @@
             "value" : "A inspeccionar ficheiro"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Analisando arquivo"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Analisando arquivo"
@@ -5171,13 +5171,13 @@
             "value" : "Pode demorar até 30 minutos por imagem e fazer com que o sistema deixe de responder"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pode levar até 30 minutos por imagem e fazer com que o sistema pare de responder"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pode levar até 30 minutos por imagem e fazer com que o sistema pare de responder"
@@ -5350,13 +5350,13 @@
             "value" : "Qualidade JPEG: %@%%"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Qualidade JPEG: %@%%"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Qualidade JPEG: %@%%"
@@ -5534,13 +5534,13 @@
             "value" : "KB"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "KB"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "KB"
@@ -5707,13 +5707,13 @@
             "value" : "Habilitada a minificação com perdas"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Compressão com perdas ativada"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Compressão com perdas ativada"
@@ -5881,13 +5881,13 @@
             "value" : "Reduz bastante o tamanho dos ficheiros, mas pode alterar o aspeto das imagens"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Reduz bastante o tamanho dos arquivos, mas pode alterar a aparência das imagens"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Reduz bastante o tamanho dos arquivos, mas pode alterar a aparência das imagens"
@@ -6055,13 +6055,13 @@
             "value" : "MB"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "MB"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "MB"
@@ -6229,13 +6229,13 @@
             "value" : "Novo ficheiro"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Novo arquivo"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Novo arquivo"
@@ -6403,13 +6403,13 @@
             "value" : "OK"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "OK"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "OK"
@@ -6577,13 +6577,13 @@
             "value" : "Abrir definições"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Abrir ajustes"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Abrir ajustes"
@@ -6751,13 +6751,13 @@
             "value" : "Otimização"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Otimização"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Otimização"
@@ -6925,13 +6925,13 @@
             "value" : "Nível de otimização"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nível de otimização"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nível de otimização"
@@ -7099,13 +7099,13 @@
             "value" : "Otimizar"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Otimizar"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Otimizar"
@@ -7273,13 +7273,13 @@
             "value" : "Otimizar novamente"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Otimizar novamente"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Otimizar novamente"
@@ -7447,13 +7447,13 @@
             "value" : "Otimizar novamente com ficheiros mais pequenos"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Otimizar novamente com arquivos menores"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Otimizar novamente com arquivos menores"
@@ -7621,13 +7621,13 @@
             "value" : "Otimizar imagens novamente"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Otimizar imagens novamente"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Otimizar imagens novamente"
@@ -7795,13 +7795,13 @@
             "value" : "Otimize imagens PNG, JPEG, GIF e SVG ou adicione uma pasta"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Otimize imagens PNG, JPEG, GIF e SVG ou adicione uma pasta"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Otimize imagens PNG, JPEG, GIF e SVG ou adicione uma pasta"
@@ -7969,13 +7969,13 @@
             "value" : "Otimizado"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Otimizado"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Otimizado"
@@ -8143,13 +8143,13 @@
             "value" : "Não foi possível guardar o ficheiro optimizado"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Não foi possível salvar o arquivo otimizado"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Não foi possível salvar o arquivo otimizado"
@@ -8317,13 +8317,13 @@
             "value" : "Optimizado com sucesso com o %@"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Optimizado com sucesso com o %@"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Optimizado com sucesso com o %@"
@@ -8490,13 +8490,13 @@
             "value" : "Otimizado com %@"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Otimizado com %@"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Otimizado com %@"
@@ -8663,13 +8663,13 @@
             "value" : "A otimizar imagem"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Otimizando imagem"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Otimizando imagem"
@@ -8837,13 +8837,13 @@
             "value" : "A otimizar imagens"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Otimizando imagens"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Otimizando imagens"
@@ -9011,13 +9011,13 @@
             "value" : "Original"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Original"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Original"
@@ -9190,13 +9190,13 @@
             "value" : "Colar"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Colar"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Colar"
@@ -9369,13 +9369,13 @@
             "value" : "Qualidade PNG: %@%%"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Qualidade PNG: %@%%"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Qualidade PNG: %@%%"
@@ -9553,13 +9553,13 @@
             "value" : "Preservar permissões dos ficheiros"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Preservar permissões dos arquivos"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Preservar permissões dos arquivos"
@@ -9727,13 +9727,13 @@
             "value" : "Preservar datas de modificação"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Preservar datas de modificação"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Preservar datas de modificação"
@@ -9901,13 +9901,13 @@
             "value" : "As alterações de prioridade têm efeito após reiniciar o ImageOptim"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "As alterações de prioridade entram em vigor após reiniciar o ImageOptim"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "As alterações de prioridade entram em vigor após reiniciar o ImageOptim"
@@ -10075,13 +10075,13 @@
             "value" : "Qualidade"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Qualidade"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Qualidade"
@@ -10249,13 +10249,13 @@
             "value" : "Vista rápida"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Visualização Rápida"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Visualização Rápida"
@@ -10422,13 +10422,13 @@
             "value" : "Remover"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Remover"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Remover"
@@ -10596,13 +10596,13 @@
             "value" : "Remover imagens concluídas da lista"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Remover imagens concluídas da lista"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Remover imagens concluídas da lista"
@@ -10770,13 +10770,13 @@
             "value" : "Restaurar original"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Restaurar original"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Restaurar original"
@@ -10944,13 +10944,13 @@
             "value" : "Mostrar no Finder"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mostrar no Finder"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mostrar no Finder"
@@ -11118,13 +11118,13 @@
             "value" : "Reverter para a versão original"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Original restaurado"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Original restaurado"
@@ -11292,13 +11292,13 @@
             "value" : "Executar com prioridade baixa"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Executar com prioridade baixa"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Executar com prioridade baixa"
@@ -11472,13 +11472,13 @@
             "value" : "Poupados %@ de %@"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Economizados %@ de %@"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Economizados %@ de %@"
@@ -11646,13 +11646,13 @@
             "value" : "Salvo %1$@ de %2$@. %3$@ global (até %4$@ por ficheiro)"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Economizados %@ de %@, %@ no total (até %@ por arquivo)"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Economizados %@ de %@, %@ no total (até %@ por arquivo)"
@@ -11820,13 +11820,13 @@
             "value" : "Salvo %1$@ de %2$@. %3$@ por ficheiro, em média( até %4$@)"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Economizados %@ de %@, %@ por arquivo em média (até %@)"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Economizados %@ de %@, %@ por arquivo em média (até %@)"
@@ -11994,13 +11994,13 @@
             "value" : "Poupança"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Economia"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Economia"
@@ -12168,13 +12168,13 @@
             "value" : "Definições"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ajustes"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ajustes"
@@ -12341,13 +12341,13 @@
             "value" : "Não foi possível abrir alguns ficheiros"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Não foi possível abrir alguns arquivos"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Não foi possível abrir alguns arquivos"
@@ -12515,13 +12515,13 @@
             "value" : "Código-fonte"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Código-fonte"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Código-fonte"
@@ -12689,13 +12689,13 @@
             "value" : "Iniciado o %@"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Iniciado o %@"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Iniciado o %@"
@@ -12863,13 +12863,13 @@
             "value" : "Parar"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Parar"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Parar"
@@ -13037,13 +13037,13 @@
             "value" : "Parar otimização"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Parar otimização"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Parar otimização"
@@ -13211,13 +13211,13 @@
             "value" : "Remover metadados JPEG"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Remover metadados JPEG"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Remover metadados JPEG"
@@ -13385,13 +13385,13 @@
             "value" : "Remover metadados PNG"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Remover metadados PNG"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Remover metadados PNG"
@@ -13569,13 +13569,13 @@
             "value" : "O SVGO requer o Node.js instalado em /usr/local/bin ou /opt/homebrew/bin"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "O SVGO requer o Node.js instalado em /usr/local/bin ou /opt/homebrew/bin"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "O SVGO requer o Node.js instalado em /usr/local/bin ou /opt/homebrew/bin"
@@ -13743,13 +13743,13 @@
             "value" : "Ferramenta"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ferramenta"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ferramenta"
@@ -13917,13 +13917,13 @@
             "value" : "Ferramentas"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ferramentas"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ferramentas"
@@ -14091,13 +14091,13 @@
             "value" : "A aguardar para iniciar mais optimizações"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Aguardando para iniciar mais otimizações"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Aguardando para iniciar mais otimizações"
@@ -14265,13 +14265,13 @@
             "value" : "A aguardar o início de mais otimizações"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Aguardando para iniciar mais otimizações"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Aguardando para iniciar mais otimizações"
