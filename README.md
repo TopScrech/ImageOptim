@@ -45,9 +45,13 @@ Matching version numbers indicate the same release base, not identical source co
 - `--check` exits with status 1 when updates are available
 - Incomplete audits, including network failures or missing sources, exit with status 2
 
-SVGO is pinned in `svgo/package-lock.json` and built with `npm ci`; the build and runtime require Node.js 16 or newer
+SVGO is pinned in `svgo/package-lock.json` and its prebuilt bundle is tracked in `svgo/prebuilt`
+Normal Xcode builds copy this bundle without installing npm dependencies or running Webpack
+SVGO still requires Node.js at runtime
 The Swift backend locates Node.js in the standard installation directories or the app’s inherited PATH
-Run `make -C svgo && npm --prefix svgo test` to check both SVG modes and the bundled script
+Run `make -C svgo && node --test svgo/test.cjs` to check both SVG modes and the bundled script without npm dependencies
+After changing SVGO dependencies or its wrapper, run `make -C svgo rebuild` and commit the updated prebuilt files alongside the source and lockfile
+This explicit rebuild installs npm dependencies and tests both the source and bundles; `make -C svgo clean` removes the dependencies and copied build output while preserving the prebuilt bundle
 Run `python3 -B scripts/test-tool-versions.py` for offline version-checker tests
 
 The updated native tools are built by the existing Xcode targets

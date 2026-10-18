@@ -11,7 +11,10 @@ const fixture = `<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100
 <rect x="10" y="10" width="80" height="80" fill="url(#paint)"/>
 </svg>`;
 
-for (const entry of ['index.js', 'build/svgo.js']) {
+const entries = ['prebuilt/svgo.js', 'build/svgo.js'];
+if (process.env.SVGO_TEST_SOURCE === '1') entries.push('index.js');
+
+for (const entry of entries) {
     for (const lossy of ['0', '1']) {
         test(`${entry} optimizes SVG in mode ${lossy}`, () => {
             const directory = mkdtempSync(path.join(tmpdir(), 'imageoptim-svgo-'));
