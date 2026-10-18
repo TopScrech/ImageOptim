@@ -292,6 +292,7 @@
 		F35DF1BCDEB29D9D635E3823 /* jfdctint.c in Sources */ = {isa = PBXBuildFile; fileRef = 26263BA7D068FB4F4F3B8D69 /* jfdctint.c */; };
 		F3ABD54D3085647D00916586 /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F3ABD54C3085647D00916586 /* InfoPlist.xcstrings */; };
 		F3ABD54F3085647D00916586 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F3ABD54E3085647D00916586 /* Localizable.xcstrings */; };
+		A17E00000000000000000020 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F3ABD54E3085647D00916586 /* Localizable.xcstrings */; };
 		F61BED89696446FBF67DF6B5 /* pngrtran.c in Sources */ = {isa = PBXBuildFile; fileRef = C79D97EDF8D68E708D029B93 /* pngrtran.c */; };
 		FA4AE51B6771FE1212CBCFA0 /* jsimd_none.c in Sources */ = {isa = PBXBuildFile; fileRef = F86286B4CE3ABD5EF601887D /* jsimd_none.c */; };
 		FC420D721D7E7CDE62BF483B /* infback.c in Sources */ = {isa = PBXBuildFile; fileRef = 178EECDA6AAE7E0E2D05B04D /* infback.c */; };
@@ -2737,6 +2738,7 @@
 		5AC64EFC1AF3FDEE0032AA7F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			files = (
+				A17E00000000000000000020 /* Localizable.xcstrings in Resources */,
 				5A05C5B91B55B40A000E32E3 /* ImageOptim.icns in Resources */,
 			);
 		};

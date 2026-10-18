@@ -3,7 +3,7 @@ import UniformTypeIdentifiers
 
 @Observable
 final class ExtensionViewModel {
-    var status = "Optimizing image"
+    var status = String(localized: "Optimizing image")
     @ObservationIgnored weak var context: NSExtensionContext?
     private var task: Task<Void, Never>?
     private var currentFile: Job?
@@ -54,7 +54,9 @@ final class ExtensionViewModel {
             }
             try Task.checkCancellation()
             let optimized = job.isOptimized
-            status = optimized ? "Optimized with \(job.bestToolName ?? "ImageOptim")" : "Already optimized"
+            status = optimized
+                ? String(localized: "Optimized with \(job.bestToolName ?? "ImageOptim")")
+                : String(localized: "Already optimized")
             currentFile = nil
             try await Task.sleep(for: .seconds(1))
             guard optimized, let result = NSItemProvider(contentsOf: url), let context else {
