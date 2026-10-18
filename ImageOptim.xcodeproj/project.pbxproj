@@ -241,7 +241,7 @@
 		5AD0347C1E27185D0030291A /* TempFile.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AD0347A1E27185D0030291A /* TempFile.h */; };
 		5AD0347D1E27185D0030291A /* TempFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AD0347B1E27185D0030291A /* TempFile.m */; };
 		5AE04E2E1B5301E100669E85 /* PngquantWorker.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AA9F4371899D063006C64C8 /* PngquantWorker.m */; };
-		5B027C7635112E7C53DF5548 /* SUUnarchiver.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F97DF07F23811BB6CFB121F /* SUUnarchiver.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		5B027C7635112E7C53DF5548 /* SUUnarchiver.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F97DF07F23811BB6CFB121F /* SUUnarchiver.h */; };
 		5B1705D13ADDFCFE79C30934 /* inftrees.c in Sources */ = {isa = PBXBuildFile; fileRef = 7EC01EEE5EECDDD6A38E8B19 /* inftrees.c */; };
 		5C1C788A41AEFB5B63E3D340 /* ed25519.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = 6E1317492D36C577FEF316E5 /* ed25519.h */; };
 		5C373AC9318BDE7E57413B70 /* jpeg_data_encoder.cc in Sources */ = {isa = PBXBuildFile; fileRef = 4F2681541903DC3E1C5E9CD0 /* jpeg_data_encoder.cc */; };
