@@ -3,7 +3,7 @@ ARCHIVE=/tmp/imageoptim-advancecomp-$(VERSION).tar.gz
 
 build: all
 
-all: .source-$(VERSION) fix-compiler
+all: .source-$(VERSION) fix-compiler remove-source-headers
 
 $(ARCHIVE):
 	curl -fL https://github.com/amadvance/advancecomp/releases/download/v$(VERSION)/advancecomp-$(VERSION).tar.gz -o $@.tmp
@@ -30,3 +30,8 @@ fix-compiler: .source-$(VERSION) compiler.patch
 	../scripts/apply-vendor-patch . compiler.patch
 
 .PHONY: fix-compiler
+
+remove-source-headers: fix-compiler source-headers.patch
+	../scripts/apply-vendor-patch . source-headers.patch
+
+.PHONY: remove-source-headers

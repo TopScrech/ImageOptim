@@ -17,6 +17,7 @@ struct ImageOptimApp: App {
         .defaultSize(width: 800, height: 480)
         .commands {
             OptimizationCommands()
+            SettingsCommands()
         }
 
         Settings {

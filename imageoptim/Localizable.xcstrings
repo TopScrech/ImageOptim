@@ -131,12 +131,6 @@
             "value" : "%@ kon niet starten"
           }
         },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%@ kunne ikke startes"
-          }
-        },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -149,13 +143,13 @@
             "value" : "O %@ falhou ao iniciar"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "O %@ falhou ao iniciar"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "O %@ falhou ao iniciar"
@@ -358,12 +352,6 @@
             "value" : "Voeg toe"
           }
         },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Legg til"
-          }
-        },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -376,13 +364,13 @@
             "value" : "Adicionar"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Adicionar"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Adicionar"
@@ -586,12 +574,6 @@
             "value" : "Afbeeldingen toevoegen"
           }
         },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Legg til bilder"
-          }
-        },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -604,13 +586,13 @@
             "value" : "Adicionar imagens"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Adicionar imagens"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Adicionar imagens"
@@ -814,12 +796,6 @@
             "value" : "Afbeeldingen of mappen toevoegen om te optimaliseren"
           }
         },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Legg til bilder eller mapper for optimalisering"
-          }
-        },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -832,13 +808,13 @@
             "value" : "Adicionar imagens ou pastas para otimizar"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Adicionar imagens ou pastas para otimizar"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Adicionar imagens ou pastas para otimizar"
@@ -1047,12 +1023,6 @@
             "value" : "Alle benodigde programma’s zijn uitgeschakeld via Voorkeuren"
           }
         },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Alle nødvendige verktøy er slått av i Valg"
-          }
-        },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1065,13 +1035,13 @@
             "value" : "Todas as ferramentas necessárias foram desactivadas nas Preferências"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Todas as ferramentas necessárias foram desativadas nas Preferências"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Todas as ferramentas necessárias foram desativadas nas Preferências"
@@ -1274,12 +1244,6 @@
             "value" : "Al geoptimaliseerd"
           }
         },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Allerede optimalisert"
-          }
-        },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1292,13 +1256,13 @@
             "value" : "Já otimizado"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Já otimizado"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Já otimizado"
@@ -1502,12 +1466,6 @@
             "value" : "Dock-symbool laten stuiteren na voltooiing"
           }
         },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "La Dock-symbolet hoppe når arbeidet er ferdig"
-          }
-        },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1520,13 +1478,13 @@
             "value" : "Saltar o ícone na Dock ao terminar"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Fazer o ícone no Dock saltar ao terminar"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Fazer o ícone no Dock saltar ao terminar"
@@ -1730,12 +1688,6 @@
             "value" : "Het bestand kon niet in het geheugen ingelezen worden"
           }
         },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Kan ikke laste fil til minnet"
-          }
-        },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1748,13 +1700,13 @@
             "value" : "Não é possivel mapear o ficheiro para memória"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Não foi possível mapear o arquivo na memória"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Não foi possível mapear o arquivo na memória"
@@ -1958,12 +1910,6 @@
             "value" : "Voltooide taken wissen"
           }
         },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Fjern fullførte"
-          }
-        },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1976,13 +1922,13 @@
             "value" : "Limpar concluídas"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Limpar concluídas"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Limpar concluídas"
@@ -2186,12 +2132,6 @@
             "value" : "Kopiëren"
           }
         },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Kopier"
-          }
-        },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2204,13 +2144,13 @@
             "value" : "Copiar"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Copiar"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Copiar"
@@ -2414,12 +2354,6 @@
             "value" : "Kopiëren als data-URL"
           }
         },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Kopier som data-URL"
-          }
-        },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2432,13 +2366,13 @@
             "value" : "Copiar como URL de dados"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Copiar como URL de dados"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Copiar como URL de dados"
@@ -2642,12 +2576,6 @@
             "value" : "Afbeeldingen konden niet worden toegevoegd"
           }
         },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Kunne ikke legge til bilder"
-          }
-        },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2660,13 +2588,13 @@
             "value" : "Não foi possível adicionar imagens"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Não foi possível adicionar imagens"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Não foi possível adicionar imagens"
@@ -2870,12 +2798,6 @@
             "value" : "Knip"
           }
         },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Klipp ut"
-          }
-        },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2888,13 +2810,13 @@
             "value" : "Cortar"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cortar"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cortar"
@@ -3098,12 +3020,6 @@
             "value" : "Doneren"
           }
         },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Doner"
-          }
-        },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3116,13 +3032,13 @@
             "value" : "Fazer um donativo"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Fazer uma doação"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Fazer uma doação"
@@ -3326,12 +3242,6 @@
             "value" : "Sleep afbeeldingen hierheen"
           }
         },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Slipp bilder her"
-          }
-        },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3344,13 +3254,13 @@
             "value" : "Largue imagens aqui"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Solte imagens aqui"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Solte imagens aqui"
@@ -3554,12 +3464,6 @@
             "value" : "Compressie met kwaliteitsverlies inschakelen"
           }
         },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Aktiver komprimering med tap"
-          }
-        },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3572,13 +3476,13 @@
             "value" : "Ativar compressão com perdas"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ativar compressão com perdas"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ativar compressão com perdas"
@@ -3782,12 +3686,6 @@
             "value" : "Bestand"
           }
         },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Fil"
-          }
-        },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3800,13 +3698,13 @@
             "value" : "Ficheiro"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Arquivo"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Arquivo"
@@ -4010,12 +3908,6 @@
             "value" : "Het bestand kan niet verder geoptimaliseerd worden"
           }
         },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Filen kan ikke optimaliseres videre"
-          }
-        },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4028,13 +3920,13 @@
             "value" : "O ficheiro não pode ser optimizado para além do estado actual"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "O arquivo não pode ser melhor otimizado"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "O arquivo não pode ser melhor otimizado"
@@ -4238,12 +4130,6 @@
             "value" : "Het bestand is noch PNG noch JPEG"
           }
         },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Filen er verken en PNG eller JPEG"
-          }
-        },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4256,13 +4142,13 @@
             "value" : "O ficheiro não é PNG ou JPEG"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "O arquivo não é PNG ou JPEG"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "O arquivo não é PNG ou JPEG"
@@ -4466,12 +4352,6 @@
             "value" : "Bestanden"
           }
         },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Filer"
-          }
-        },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4484,13 +4364,13 @@
             "value" : "Ficheiros"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Arquivos"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Arquivos"
@@ -4694,12 +4574,6 @@
             "value" : "Algemeen"
           }
         },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Generelt"
-          }
-        },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4712,13 +4586,13 @@
             "value" : "Geral"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Geral"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Geral"
@@ -4922,12 +4796,6 @@
             "value" : "GIF en SVG"
           }
         },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "GIF og SVG"
-          }
-        },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4940,13 +4808,13 @@
             "value" : "GIF e SVG"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "GIF e SVG"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "GIF e SVG"
@@ -5150,12 +5018,6 @@
             "value" : "GIF-kwaliteit: %@%%"
           }
         },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "GIF-kvalitet: %@%%"
-          }
-        },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5168,13 +5030,13 @@
             "value" : "Qualidade GIF: %@%%"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Qualidade GIF: %@%%"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Qualidade GIF: %@%%"
@@ -5388,12 +5250,6 @@
             "value" : "Guetzli kan erg traag zijn"
           }
         },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Guetzli kan være svært tregt"
-          }
-        },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5406,13 +5262,13 @@
             "value" : "O Guetzli pode ser muito lento"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "O Guetzli pode ser muito lento"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "O Guetzli pode ser muito lento"
@@ -5616,12 +5472,6 @@
             "value" : "Guetzli is erg traag"
           }
         },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Guetzli er svært tregt"
-          }
-        },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5634,13 +5484,13 @@
             "value" : "O Guetzli é muito lento"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "O Guetzli é muito lento"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "O Guetzli é muito lento"
@@ -5849,12 +5699,6 @@
             "value" : "ImageOptim Help"
           }
         },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ImageOptim-hjelp"
-          }
-        },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5867,13 +5711,13 @@
             "value" : "Ajuda do ImageOptim"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ajuda do ImageOptim"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ajuda do ImageOptim"
@@ -6077,12 +5921,6 @@
             "value" : "ImageOptim wordt afgesloten zodra de optimalisaties voltooid zijn"
           }
         },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ImageOptim avsluttes når optimaliseringene er fullført"
-          }
-        },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6095,13 +5933,13 @@
             "value" : "O ImageOptim será encerrado quando as otimizações terminarem"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "O ImageOptim será encerrado quando as otimizações terminarem"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "O ImageOptim será encerrado quando as otimizações terminarem"
@@ -6305,12 +6143,6 @@
             "value" : "Afbeeldingen worden in de oorspronkelijke bestanden geoptimaliseerd"
           }
         },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Bilder optimaliseres på den opprinnelige plasseringen"
-          }
-        },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6323,13 +6155,13 @@
             "value" : "As imagens são otimizadas nos ficheiros originais"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "As imagens são otimizadas nos arquivos originais"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "As imagens são otimizadas nos arquivos originais"
@@ -6533,12 +6365,6 @@
             "value" : "Bezig met analyseren van bestand"
           }
         },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Inspiserer fil"
-          }
-        },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6551,13 +6377,13 @@
             "value" : "A inspeccionar ficheiro"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Analisando arquivo"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Analisando arquivo"
@@ -6761,12 +6587,6 @@
             "value" : "Dit kan tot 30 minuten per afbeelding duren en ervoor zorgen dat je systeem niet meer reageert"
           }
         },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Det kan ta opptil 30 minutter per bilde og kan føre til at systemet slutter å svare"
-          }
-        },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6779,13 +6599,13 @@
             "value" : "Pode demorar até 30 minutos por imagem e fazer com que o sistema deixe de responder"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pode levar até 30 minutos por imagem e fazer com que o sistema pare de responder"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pode levar até 30 minutos por imagem e fazer com que o sistema pare de responder"
@@ -6994,12 +6814,6 @@
             "value" : "JPEG-kwaliteit: %@%%"
           }
         },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "JPEG-kvalitet: %@%%"
-          }
-        },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7012,13 +6826,13 @@
             "value" : "Qualidade JPEG: %@%%"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Qualidade JPEG: %@%%"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Qualidade JPEG: %@%%"
@@ -7232,12 +7046,6 @@
             "value" : "KB"
           }
         },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "kB"
-          }
-        },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7250,13 +7058,13 @@
             "value" : "KB"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "KB"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "KB"
@@ -7459,12 +7267,6 @@
             "value" : "Compressie met kwaliteitsverlies ingeschakeld"
           }
         },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Komprimering med tap er aktivert"
-          }
-        },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7477,13 +7279,13 @@
             "value" : "Habilitada a minificação com perdas"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Compressão com perdas ativada"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Compressão com perdas ativada"
@@ -7687,12 +7489,6 @@
             "value" : "Maakt bestanden veel kleiner, maar kan het uiterlijk van afbeeldingen veranderen"
           }
         },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Gjør filer mye mindre, men kan endre hvordan bildene ser ut"
-          }
-        },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7705,13 +7501,13 @@
             "value" : "Reduz bastante o tamanho dos ficheiros, mas pode alterar o aspeto das imagens"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Reduz bastante o tamanho dos arquivos, mas pode alterar a aparência das imagens"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Reduz bastante o tamanho dos arquivos, mas pode alterar a aparência das imagens"
@@ -7915,12 +7711,6 @@
             "value" : "MB"
           }
         },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "MB"
-          }
-        },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7933,13 +7723,13 @@
             "value" : "MB"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "MB"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "MB"
@@ -8143,12 +7933,6 @@
             "value" : "Nieuw bestand"
           }
         },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ny fil"
-          }
-        },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -8161,13 +7945,13 @@
             "value" : "Novo ficheiro"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Novo arquivo"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Novo arquivo"
@@ -8371,12 +8155,6 @@
             "value" : "OK"
           }
         },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "OK"
-          }
-        },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -8389,13 +8167,13 @@
             "value" : "OK"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "OK"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "OK"
@@ -8599,12 +8377,6 @@
             "value" : "Instellingen openen"
           }
         },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Åpne innstillinger"
-          }
-        },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -8617,13 +8389,13 @@
             "value" : "Abrir definições"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Abrir ajustes"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Abrir ajustes"
@@ -8827,12 +8599,6 @@
             "value" : "Optimalisatie"
           }
         },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Optimalisering"
-          }
-        },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -8845,13 +8611,13 @@
             "value" : "Otimização"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Otimização"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Otimização"
@@ -9055,12 +8821,6 @@
             "value" : "Optimalisatieniveau"
           }
         },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Optimaliseringsnivå"
-          }
-        },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -9073,13 +8833,13 @@
             "value" : "Nível de otimização"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nível de otimização"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nível de otimização"
@@ -9283,12 +9043,6 @@
             "value" : "Optimaliseren"
           }
         },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Optimaliser"
-          }
-        },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -9301,13 +9055,13 @@
             "value" : "Otimizar"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Otimizar"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Otimizar"
@@ -9511,12 +9265,6 @@
             "value" : "Opnieuw optimaliseren"
           }
         },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Optimaliser på nytt"
-          }
-        },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -9529,13 +9277,13 @@
             "value" : "Otimizar novamente"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Otimizar novamente"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Otimizar novamente"
@@ -9739,12 +9487,6 @@
             "value" : "Opnieuw optimaliseren met kleinere bestanden"
           }
         },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Optimaliser på nytt med mindre filer"
-          }
-        },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -9757,13 +9499,13 @@
             "value" : "Otimizar novamente com ficheiros mais pequenos"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Otimizar novamente com arquivos menores"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Otimizar novamente com arquivos menores"
@@ -9967,12 +9709,6 @@
             "value" : "Afbeeldingen opnieuw optimaliseren"
           }
         },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Optimaliser bilder på nytt"
-          }
-        },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -9985,13 +9721,13 @@
             "value" : "Otimizar imagens novamente"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Otimizar imagens novamente"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Otimizar imagens novamente"
@@ -10195,12 +9931,6 @@
             "value" : "Optimaliseer PNG-, JPEG-, GIF- en SVG-afbeeldingen of voeg een map toe"
           }
         },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Optimaliser PNG-, JPEG-, GIF- og SVG-bilder eller legg til en mappe"
-          }
-        },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -10213,13 +9943,13 @@
             "value" : "Otimize imagens PNG, JPEG, GIF e SVG ou adicione uma pasta"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Otimize imagens PNG, JPEG, GIF e SVG ou adicione uma pasta"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Otimize imagens PNG, JPEG, GIF e SVG ou adicione uma pasta"
@@ -10423,12 +10153,6 @@
             "value" : "Geoptimaliseerd"
           }
         },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Optimalisert"
-          }
-        },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -10441,13 +10165,13 @@
             "value" : "Otimizado"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Otimizado"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Otimizado"
@@ -10651,12 +10375,6 @@
             "value" : "Het geoptimaliseerde bestand kon niet bewaard worden"
           }
         },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Optimalisert fil kunne ikke lagres"
-          }
-        },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -10669,13 +10387,13 @@
             "value" : "Não foi possível guardar o ficheiro optimizado"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Não foi possível salvar o arquivo otimizado"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Não foi possível salvar o arquivo otimizado"
@@ -10879,12 +10597,6 @@
             "value" : "De optimalisatie is geslaagd (%@)"
           }
         },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Vellykket optimalisering med %@"
-          }
-        },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -10897,13 +10609,13 @@
             "value" : "Optimizado com sucesso com o %@"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Optimizado com sucesso com o %@"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Optimizado com sucesso com o %@"
@@ -11106,12 +10818,6 @@
             "value" : "Geoptimaliseerd met %@"
           }
         },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Optimalisert med %@"
-          }
-        },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -11124,13 +10830,13 @@
             "value" : "Otimizado com %@"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Otimizado com %@"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Otimizado com %@"
@@ -11333,12 +11039,6 @@
             "value" : "Afbeelding optimaliseren"
           }
         },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Optimaliserer bilde"
-          }
-        },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -11351,13 +11051,13 @@
             "value" : "A otimizar imagem"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Otimizando imagem"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Otimizando imagem"
@@ -11561,12 +11261,6 @@
             "value" : "Afbeeldingen optimaliseren"
           }
         },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Optimaliserer bilder"
-          }
-        },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -11579,13 +11273,13 @@
             "value" : "A otimizar imagens"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Otimizando imagens"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Otimizando imagens"
@@ -11789,12 +11483,6 @@
             "value" : "Origineel"
           }
         },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Opprinnelig"
-          }
-        },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -11807,13 +11495,13 @@
             "value" : "Original"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Original"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Original"
@@ -12022,12 +11710,6 @@
             "value" : "Plakken"
           }
         },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Lim inn"
-          }
-        },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -12040,13 +11722,13 @@
             "value" : "Colar"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Colar"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Colar"
@@ -12255,12 +11937,6 @@
             "value" : "PNG-kwaliteit: %@%%"
           }
         },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "PNG-kvalitet: %@%%"
-          }
-        },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -12273,13 +11949,13 @@
             "value" : "Qualidade PNG: %@%%"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Qualidade PNG: %@%%"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Qualidade PNG: %@%%"
@@ -12493,12 +12169,6 @@
             "value" : "Bestandsbevoegdheden behouden"
           }
         },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Behold filrettigheter"
-          }
-        },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -12511,13 +12181,13 @@
             "value" : "Preservar permissões dos ficheiros"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Preservar permissões dos arquivos"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Preservar permissões dos arquivos"
@@ -12721,12 +12391,6 @@
             "value" : "Wijzigingsdatums behouden"
           }
         },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Behold endringsdatoer"
-          }
-        },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -12739,13 +12403,13 @@
             "value" : "Preservar datas de modificação"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Preservar datas de modificação"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Preservar datas de modificação"
@@ -12949,12 +12613,6 @@
             "value" : "Prioriteitswijzigingen worden van kracht na het herstarten van ImageOptim"
           }
         },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Prioritetsendringer trer i kraft etter omstart av ImageOptim"
-          }
-        },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -12967,13 +12625,13 @@
             "value" : "As alterações de prioridade têm efeito após reiniciar o ImageOptim"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "As alterações de prioridade entram em vigor após reiniciar o ImageOptim"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "As alterações de prioridade entram em vigor após reiniciar o ImageOptim"
@@ -13177,12 +12835,6 @@
             "value" : "Kwaliteit"
           }
         },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Kvalitet"
-          }
-        },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -13195,13 +12847,13 @@
             "value" : "Qualidade"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Qualidade"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Qualidade"
@@ -13405,12 +13057,6 @@
             "value" : "Snelle weergave"
           }
         },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Hurtigvisning"
-          }
-        },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -13423,13 +13069,13 @@
             "value" : "Vista rápida"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Visualização Rápida"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Visualização Rápida"
@@ -13632,12 +13278,6 @@
             "value" : "Verwijderen"
           }
         },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Fjern"
-          }
-        },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -13650,13 +13290,13 @@
             "value" : "Remover"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Remover"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Remover"
@@ -13860,12 +13500,6 @@
             "value" : "Voltooide afbeeldingen uit de lijst verwijderen"
           }
         },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Fjern fullførte bilder fra listen"
-          }
-        },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -13878,13 +13512,13 @@
             "value" : "Remover imagens concluídas da lista"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Remover imagens concluídas da lista"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Remover imagens concluídas da lista"
@@ -14088,12 +13722,6 @@
             "value" : "Origineel herstellen"
           }
         },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Gjenopprett original"
-          }
-        },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -14106,13 +13734,13 @@
             "value" : "Restaurar original"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Restaurar original"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Restaurar original"
@@ -14316,12 +13944,6 @@
             "value" : "Toon in Finder"
           }
         },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Vis i Finder"
-          }
-        },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -14334,13 +13956,13 @@
             "value" : "Mostrar no Finder"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mostrar no Finder"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mostrar no Finder"
@@ -14544,12 +14166,6 @@
             "value" : "Origineel hersteld"
           }
         },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Gjenopprettet originalen"
-          }
-        },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -14562,13 +14178,13 @@
             "value" : "Reverter para a versão original"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Original restaurado"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Original restaurado"
@@ -14772,12 +14388,6 @@
             "value" : "Uitvoeren met lage prioriteit"
           }
         },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Kjør med lav prioritet"
-          }
-        },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -14790,13 +14400,13 @@
             "value" : "Executar com prioridade baixa"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Executar com prioridade baixa"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Executar com prioridade baixa"
@@ -15006,12 +14616,6 @@
             "value" : "%@ bespaard van %@"
           }
         },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Spart %@ av %@"
-          }
-        },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -15024,13 +14628,13 @@
             "value" : "Poupados %@ de %@"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Economizados %@ de %@"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Economizados %@ de %@"
@@ -15234,12 +14838,6 @@
             "value" : "%@ bespaard van %@, %@ in totaal (tot %@ per bestand)"
           }
         },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Spart %@ av %@. %@ totalt (opptil %@ per fil)"
-          }
-        },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -15252,13 +14850,13 @@
             "value" : "Salvo %1$@ de %2$@. %3$@ global (até %4$@ por ficheiro)"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Economizados %@ de %@, %@ no total (até %@ por arquivo)"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Economizados %@ de %@, %@ no total (até %@ por arquivo)"
@@ -15462,12 +15060,6 @@
             "value" : "%@ bespaard van %@, gemiddeld %@ per bestand (tot %@)"
           }
         },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Spart %@ av %@. %@ per fil i gjennomsnitt (opptil %@)"
-          }
-        },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -15480,13 +15072,13 @@
             "value" : "Salvo %1$@ de %2$@. %3$@ por ficheiro, em média( até %4$@)"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Economizados %@ de %@, %@ por arquivo em média (até %@)"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Economizados %@ de %@, %@ por arquivo em média (até %@)"
@@ -15690,12 +15282,6 @@
             "value" : "Besparing"
           }
         },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Besparelse"
-          }
-        },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -15708,13 +15294,13 @@
             "value" : "Poupança"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Economia"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Economia"
@@ -15918,12 +15504,6 @@
             "value" : "Instellingen"
           }
         },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Innstillinger"
-          }
-        },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -15936,13 +15516,13 @@
             "value" : "Definições"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ajustes"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ajustes"
@@ -16015,6 +15595,10 @@
           }
         }
       }
+    },
+    "Settings…" : {
+      "comment" : "A button that opens the app settings when pressed.",
+      "isCommentAutoGenerated" : true
     },
     "Some files could not be opened" : {
       "comment" : "Error when one or more selected files cannot be opened",
@@ -16145,12 +15729,6 @@
             "value" : "Sommige bestanden konden niet worden geopend"
           }
         },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Noen filer kunne ikke åpnes"
-          }
-        },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -16163,13 +15741,13 @@
             "value" : "Não foi possível abrir alguns ficheiros"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Não foi possível abrir alguns arquivos"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Não foi possível abrir alguns arquivos"
@@ -16373,12 +15951,6 @@
             "value" : "Broncode"
           }
         },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Kildekode"
-          }
-        },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -16391,13 +15963,13 @@
             "value" : "Código-fonte"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Código-fonte"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Código-fonte"
@@ -16601,12 +16173,6 @@
             "value" : "%@ gestart"
           }
         },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Bearbeider %@"
-          }
-        },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -16619,13 +16185,13 @@
             "value" : "Iniciado o %@"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Iniciado o %@"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Iniciado o %@"
@@ -16829,12 +16395,6 @@
             "value" : "Stoppen"
           }
         },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Stopp"
-          }
-        },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -16847,13 +16407,13 @@
             "value" : "Parar"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Parar"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Parar"
@@ -17057,12 +16617,6 @@
             "value" : "Optimalisatie stoppen"
           }
         },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Stopp optimalisering"
-          }
-        },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -17075,13 +16629,13 @@
             "value" : "Parar otimização"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Parar otimização"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Parar otimização"
@@ -17285,12 +16839,6 @@
             "value" : "JPEG-metadata verwijderen"
           }
         },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Fjern JPEG-metadata"
-          }
-        },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -17303,13 +16851,13 @@
             "value" : "Remover metadados JPEG"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Remover metadados JPEG"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Remover metadados JPEG"
@@ -17513,12 +17061,6 @@
             "value" : "PNG-metadata verwijderen"
           }
         },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Fjern PNG-metadata"
-          }
-        },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -17531,13 +17073,13 @@
             "value" : "Remover metadados PNG"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Remover metadados PNG"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Remover metadados PNG"
@@ -17751,12 +17293,6 @@
             "value" : "SVGO vereist dat Node.js is geïnstalleerd in /usr/local/bin of /opt/homebrew/bin"
           }
         },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "SVGO krever at Node.js er installert i /usr/local/bin eller /opt/homebrew/bin"
-          }
-        },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -17769,13 +17305,13 @@
             "value" : "O SVGO requer o Node.js instalado em /usr/local/bin ou /opt/homebrew/bin"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "O SVGO requer o Node.js instalado em /usr/local/bin ou /opt/homebrew/bin"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "O SVGO requer o Node.js instalado em /usr/local/bin ou /opt/homebrew/bin"
@@ -17979,12 +17515,6 @@
             "value" : "Hulpprogramma"
           }
         },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Verktøy"
-          }
-        },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -17997,13 +17527,13 @@
             "value" : "Ferramenta"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ferramenta"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ferramenta"
@@ -18207,12 +17737,6 @@
             "value" : "Hulpprogramma’s"
           }
         },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Verktøy"
-          }
-        },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -18225,13 +17749,13 @@
             "value" : "Ferramentas"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ferramentas"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ferramentas"
@@ -18435,12 +17959,6 @@
             "value" : "Wachten op verdere optimalisaties"
           }
         },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Venter med å starte ytterligere optimalisering"
-          }
-        },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -18453,13 +17971,13 @@
             "value" : "A aguardar para iniciar mais optimizações"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Aguardando para iniciar mais otimizações"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Aguardando para iniciar mais otimizações"
@@ -18663,12 +18181,6 @@
             "value" : "Wachten om meer optimalisaties te starten"
           }
         },
-        "no" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Venter på å starte flere optimaliseringer"
-          }
-        },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -18681,13 +18193,13 @@
             "value" : "A aguardar o início de mais otimizações"
           }
         },
-        "pt-BR" : {
+        "pt_BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Aguardando para iniciar mais otimizações"
           }
         },
-        "pt_BR" : {
+        "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Aguardando para iniciar mais otimizações"

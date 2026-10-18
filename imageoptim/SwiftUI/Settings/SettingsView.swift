@@ -1,6 +1,7 @@
 import ScrechKit
 
 struct SettingsView: View {
+    @Environment(\.dismiss) private var dismiss
     @State private var model = SettingsViewModel()
 
     var body: some View {
@@ -15,6 +16,7 @@ struct SettingsView: View {
                 .tabItem { Label("Tools", systemImage: "wrench.and.screwdriver") }
         }
         .environment(model)
+        .focusedSceneValue(\.closeSettings, { dismiss() })
         .frame(width: 520, height: 560)
     }
 }
