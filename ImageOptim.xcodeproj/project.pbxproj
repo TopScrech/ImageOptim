@@ -99,7 +99,6 @@
 		5A16343E140BF97400758D99 /* ImageOptim.icns in Resources */ = {isa = PBXBuildFile; fileRef = 5AACA80F0CAFE3CA004D45CA /* ImageOptim.icns */; };
 		5A1D3E8C14366933004EE809 /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = 5A1D3E8B14366933004EE809 /* style.css */; };
 		5A34D0031AEF6DA300A154E4 /* BackendTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ABE15551AE5072300861C6B /* BackendTests.swift */; };
-		5A34D0041AEF6DB300A154E4 /* ImageOptimGPL.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A34CFEE1AEF6D9800A154E4 /* ImageOptimGPL.h */; };
 		5A7D24E513E5BC3100815AAA /* Help in Resources */ = {isa = PBXBuildFile; fileRef = 5A95FEBE0CB8041A00737B79 /* Help */; };
 		5A7D24E613E5BC3100815AAA /* err.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A9EE4490CB59CDC00F08CC5 /* err.png */; };
 		5A7D24E813E5BC3100815AAA /* noopt.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A9EE44A0CB59CDC00F08CC5 /* noopt.png */; };
@@ -934,7 +933,6 @@
 		5A1DD6E3C9335386A21B121D /* libstatic.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libstatic.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A27B956139B03090095FC2F /* release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = release.xcconfig; sourceTree = "<group>"; };
 		5A27B9C2139B079A0095FC2F /* debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = debug.xcconfig; sourceTree = "<group>"; };
-		5A34CFEE1AEF6D9800A154E4 /* ImageOptimGPL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageOptimGPL.h; sourceTree = "<group>"; };
 		5A5B696B28174B1DF6CEDAC4 /* jpeg_data_writer.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = jpeg_data_writer.cc; sourceTree = "<group>"; };
 		5A5E8ABF1B6508D9003012E9 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "zh-Hans"; path = "zh-Hans.lproj/Help"; sourceTree = "<group>"; };
 		5A7D24F113EDF5F100815AAA /* es */ = {isa = PBXFileReference; lastKnownFileType = folder; name = es; path = es.lproj/Help; sourceTree = "<group>"; };
@@ -1935,7 +1933,6 @@
 				BE53EAA4DCF5485EB58B512C /* AsyncLimiter.swift */,
 				4BEF8AD4662109E4A0CD9834 /* Tests */,
 				086039FE725498C11E5926DE /* Workers */,
-				5A34CFEE1AEF6D9800A154E4 /* ImageOptimGPL.h */,
 			);
 			path = Backend;
 			sourceTree = "<group>";
@@ -2033,7 +2030,6 @@
 		5ABE153F1AE5072300861C6B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			files = (
-				5A34D0041AEF6DB300A154E4 /* ImageOptimGPL.h in Headers */,
 			);
 		};
 		5EE5F06D7E6A1F7AE426418C /* Headers */ = {

@@ -16,7 +16,7 @@ struct SettingsView: View {
                 .tabItem { Label("Tools", systemImage: "wrench.and.screwdriver") }
         }
         .environment(model)
-        .focusedSceneValue(\.closeSettings, { dismiss() })
+        .focusedSceneValue(\.closeSettings, dismiss)
         .frame(width: 520, height: 560)
     }
 }

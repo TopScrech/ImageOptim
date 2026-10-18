@@ -1,5 +1,5 @@
 import SwiftUI
 
 extension FocusedValues {
-    @Entry var closeSettings: (() -> Void)?
+    @Entry var closeSettings: DismissAction?
 }
