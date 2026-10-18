@@ -11,9 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
     NSString *bestToolName;
     NSMutableDictionary *bestTools;
 
-    NSString *statusImageName;
     NSString *statusText;
-    NSInteger statusOrder;
 
     NSMutableArray *workers;
     NSMutableDictionary *workersPreviousResults;
@@ -30,9 +28,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (BOOL)stop;
 - (BOOL)revert;
-
-- (NSURL *)previewItemURL;
-- (NSString *)previewItemTitle;
 
 @property (readonly) BOOL canRevert;
 @property (readonly) BOOL isDone, isFailed;
@@ -52,14 +47,11 @@ NS_ASSUME_NONNULL_BEGIN
 @property (strong, nullable) NSString *statusText, *bestToolName;
 @property (strong) NSString *displayName;
 @property (strong, nonatomic) NSURL *filePath;
-@property (strong, nullable) NSString *statusImageName;
 @property (readonly, nonatomic, nullable) NSNumber *byteSizeOriginal;
 @property (readonly, nonatomic, nullable) NSNumber *byteSizeOptimized;
-@property (readonly, nonatomic, nullable) NSNumber *percentOptimized;
-@property (assign, readonly) NSInteger statusOrder;
 @property (strong, readonly) NSMutableDictionary *workersPreviousResults;
 
-- (void)setStatus:(NSString *)name order:(NSInteger)order text:(NSString *)text;
+- (void)setStatus:(NSString *)name text:(NSString *)text;
 - (void)setError:(NSString *)text;
 - (void)cleanup;
 

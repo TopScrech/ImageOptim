@@ -17,8 +17,6 @@
 
 - (instancetype)initWithFile:(Job *)aFile;
 
-- (BOOL)isRelatedTo:(Job *)f;
-
 @property (readonly) BOOL makesNonOptimizingModifications;
 
 - (void)run;

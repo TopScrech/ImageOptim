@@ -12,6 +12,6 @@ NS_ASSUME_NONNULL_BEGIN
 - (NSNumber *)queueCount;
 @property (assign, atomic) BOOL isBusy;
 
-- (nullable instancetype)initWithCPUs:(NSInteger)cpus dirs:(NSInteger)dirs files:(NSInteger)fileops defaults:(NSUserDefaults *)defaults;
+- (nullable instancetype)initWithCPUs:(NSInteger)cpus files:(NSInteger)fileops defaults:(NSUserDefaults *)defaults;
 @end
 NS_ASSUME_NONNULL_END

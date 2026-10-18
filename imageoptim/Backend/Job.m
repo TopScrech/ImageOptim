@@ -48,7 +48,7 @@
     BOOL preserveDates;
 }
 
-@synthesize workersPreviousResults, filePath, displayName, statusText, statusOrder, statusImageName, bestToolName, isFailed, isDone;
+@synthesize workersPreviousResults, filePath, displayName, statusText, bestToolName, isFailed, isDone;
 
 - (instancetype)initWithFilePath:(nonnull NSURL *)aPath resultsDatabase:(nullable ResultsDb *)aDb {
     if (self = [self init]) {
@@ -57,7 +57,7 @@
         filePath = aPath;
         db = aDb;
         self.displayName = [[NSFileManager defaultManager] displayNameAtPath:filePath.path];
-        [self setStatus:@"wait" order:0 text:NSLocalizedString(@"Waiting to be optimized", @"tooltip")];
+        [self setStatus:@"wait" text:NSLocalizedString(@"Waiting to be optimized", @"tooltip")];
     }
     return self;
 }
@@ -81,28 +81,6 @@
     } else {
         return nil;
     }
-}
-
-- (NSNumber *)percentOptimized {
-    File *optimizedFile = self.wipInput;
-    if (optimizedFile == self.unoptimizedInput && !self.savedOutput) {
-        return nil; // early work in progress, don't display anything
-    }
-
-    optimizedFile = [self optimizedFileWithFallback:false];
-    if (!optimizedFile && self.isDone && !self.isFailed) {
-        return [NSNumber numberWithInteger:0];
-    }
-
-    NSUInteger byteSizeOptimized = [self optimizedFileWithFallback:false].byteSize;
-    NSUInteger byteSizeOriginal = self.initialInput.byteSize;
-
-    if (!byteSizeOptimized) {
-        return nil;
-    }
-    double p = 100.0 - 100.0 * (double)byteSizeOptimized / (double)byteSizeOriginal;
-    if (p < 0) return [NSNumber numberWithInteger:0];
-    return [NSNumber numberWithDouble:p];
 }
 
 - (BOOL)isOptimized {
@@ -169,9 +147,7 @@
 
 - (void)setFileOptimized:(nullable File *)newFile {
     [self willChangeValueForKey:@"byteSizeOptimized"];
-    [self willChangeValueForKey:@"percentOptimized"];
     self.wipInput = newFile;
-    [self didChangeValueForKey:@"percentOptimized"];
     [self didChangeValueForKey:@"byteSizeOptimized"];
 }
 
@@ -303,7 +279,7 @@
     }
     [filePath removeAllCachedResourceValues];
     [self setNewFileInitial:[self.revertFile copyOfPath:filePath]];
-    [self setStatus:@"noopt" order:6 text:NSLocalizedString(@"Reverted to original", @"tooltip")];
+    [self setStatus:@"noopt" text:NSLocalizedString(@"Reverted to original", @"tooltip")];
     return YES;
 }
 
@@ -457,7 +433,7 @@
 
 - (void)setNooptStatus {
     [self setFileOptimized:nil]; // Needed to update 0% optimized display
-    [self setStatus:@"noopt" order:5 text:NSLocalizedString(@"File cannot be optimized any further", @"tooltip")];
+    [self setStatus:@"noopt" text:NSLocalizedString(@"File cannot be optimized any further", @"tooltip")];
     self.isDone = YES;
     [self stopAllWorkers];
 }
@@ -469,7 +445,7 @@
         self.isDone = YES;
         [self stopAllWorkers];
         if (saved) {
-            [self setStatus:@"ok" order:7 text:[NSString stringWithFormat:NSLocalizedString(@"Optimized successfully with %@", @"tooltip"), bestToolName]];
+            [self setStatus:@"ok" text:[NSString stringWithFormat:NSLocalizedString(@"Optimized successfully with %@", @"tooltip"), bestToolName]];
         } else {
             [self setError:NSLocalizedString(@"Optimized file could not be saved", @"tooltip")];
         }
@@ -522,7 +498,7 @@
 #pragma GCC diagnostic pop
 
 - (void)doEnqueueWorkersInCPUQueue:(nonnull NSOperationQueue *)queue serialQueue:(dispatch_queue_t)serialQueue defaults:(nonnull NSUserDefaults *)defs {
-    [self setStatus:@"progress" order:3 text:NSLocalizedString(@"Inspecting file", @"tooltip")];
+    [self setStatus:@"progress" text:NSLocalizedString(@"Inspecting file", @"tooltip")];
 
     NSError *err = nil;
     NSData *fileData = [NSData dataWithContentsOfURL:filePath options:NSDataReadingMappedIfSafe error:&err];
@@ -791,42 +767,30 @@
 
     if (running) {
         NSString *name = [[running className] stringByReplacingOccurrencesOfString:@"Worker" withString:@""];
-        [self setStatus:@"progress" order:4 text:[NSString stringWithFormat:NSLocalizedString(@"Started %@", @"command name, tooltip"), name]];
+        [self setStatus:@"progress" text:[NSString stringWithFormat:NSLocalizedString(@"Started %@", @"command name, tooltip"), name]];
     } else {
-        [self setStatus:@"wait" order:1 text:NSLocalizedString(@"Waiting to be optimized", @"tooltip")];
+        [self setStatus:@"wait" text:NSLocalizedString(@"Waiting to be optimized", @"tooltip")];
     }
 }
 
 - (void)setError:(nonnull NSString *)text {
     self.isFailed = YES;
-    [self setStatus:@"err" order:9 text:text];
+    [self setStatus:@"err" text:text];
 }
 
-- (void)setStatus:(nonnull NSString *)imageName order:(NSInteger)order text:(nonnull NSString *)text {
+- (void)setStatus:(nonnull NSString *)imageName text:(nonnull NSString *)text {
     // Keep failed status visible instead of replacing with progress/noopt/etc
     if (self.isFailed && ![imageName isEqualToString:@"ok"] && ![imageName isEqualToString:@"err"]) {
         return;
     }
 
-    self->statusOrder = order;
     self.statusText = text;
-    self.statusImageName = imageName;
 }
 
 - (nonnull NSString *)description {
     return [NSString stringWithFormat:@"%@ %ld/%ld/%ld (workers %ld) s=%d d=%d/%d %@", self.filePath,
             [self.byteSizeOriginal longValue],(long)self.wipInput.byteSize,(long)self.savedOutput.byteSize,
             [workers count], stopping, isDone, isFailed, self.statusText];
-}
-
-#pragma mark QL
-
-- (NSURL *)previewItemURL {
-    return [self optimizedFileWithFallback:true].path;
-}
-
-- (NSString *)previewItemTitle {
-    return displayName;
 }
 
 @end

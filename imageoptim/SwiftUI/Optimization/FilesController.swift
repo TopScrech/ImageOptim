@@ -25,7 +25,6 @@ final class FilesController {
         scanLimit = max(1, defaults.integer(forKey: "RunConcurrentDirscans"))
         database = ResultsDb()
         queue = JobQueue(cpus: defaults.integer(forKey: "RunConcurrentFiles"),
-                         dirs: defaults.integer(forKey: "RunConcurrentDirscans"),
                          files: defaults.integer(forKey: "RunConcurrentFileops"), defaults: defaults)
         isEnabled = queue != nil
         queueObservation = queue?.observe(\.isBusy, options: [.new]) { [weak self] _, _ in

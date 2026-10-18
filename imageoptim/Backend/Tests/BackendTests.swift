@@ -25,7 +25,7 @@ final class BackendTests {
 
         let job = try #require(Job(filePath: fileURL, resultsDatabase: nil))
         defer { job.cleanup() }
-        let queue = try #require(JobQueue(cpus: 4, dirs: 1, files: 4, defaults: defaults))
+        let queue = try #require(JobQueue(cpus: 4, files: 4, defaults: defaults))
         defer { queue.cleanup() }
         queue.add(job)
         #expect(job.isBusy)

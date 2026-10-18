@@ -19,10 +19,6 @@
     return self;
 }
 
-- (BOOL)isRelatedTo:(Job *)f {
-    return (f == job);
-}
-
 - (BOOL)canSkip {
     if (![self isIdempotent]) return NO;
 

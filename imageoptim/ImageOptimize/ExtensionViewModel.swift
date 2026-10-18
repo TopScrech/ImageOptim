@@ -43,7 +43,7 @@ final class ExtensionViewModel {
                 "GifsicleEnabled": true, "PngMinQuality": 70,
                 "JpegOptimMaxQuality": 80, "LossyEnabled": true
             ])
-            guard let queue = JobQueue(cpus: 0, dirs: 1, files: 1, defaults: defaults) else {
+            guard let queue = JobQueue(cpus: 0, files: 1, defaults: defaults) else {
                 cancel()
                 return
             }
