@@ -175,3 +175,6 @@ advpng/*.orig
 # Generated Xcode caches
 CachedSpecifications-*
 *.xcplugincache
+
+# Shared application test scheme
+!ImageOptim.xcodeproj/xcshareddata/xcschemes/ImageOptimTests.xcscheme

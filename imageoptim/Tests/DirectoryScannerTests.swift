@@ -1,6 +1,8 @@
 import Foundation
 import Testing
+#if canImport(ImageOptimImport)
 @testable import ImageOptimImport
+#endif
 
 struct DirectoryScannerTests {
     @Test func recursivelyImportedMatchingFiles() async throws {

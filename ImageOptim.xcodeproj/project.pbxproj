@@ -5,6 +5,15 @@
 	objectVersion = 110;
 	archiveVersion = 1;
 	objects = {
+		A11111111111111111111111 = {
+			isa = PBXBuildFile;
+			fileRef = E960A96C0DA9EE13F105BDCC;
+		};
+		A11111111111111111111112 = {
+			isa = PBXBuildFile;
+			fileRef = 668D53A4D98E9F30871C8E26;
+		};
+
 		A17E00000000000000000001 /* ScrechKit */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/TopScrech/ScrechKit.git";
@@ -2490,6 +2499,8 @@
 			isa = PBXSourcesBuildPhase;
 			files = (
 				5A34D0031AEF6DA300A154E4 /* PBXBuildFile */,
+				A11111111111111111111111 /* DirectoryScannerTests.swift in Sources */,
+				A11111111111111111111112 /* DirectoryScanner.swift in Sources */,
 			);
 		};
 		92C6F0532A421B6622028D4A /* entropy_encode.h */ = {
@@ -3905,6 +3916,9 @@
 		5ABE155E1AE5072300861C6B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				SWIFT_VERSION = 6.0;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_OBJC_BRIDGING_HEADER = "Backend/Tests/BackendTests-Bridging-Header.h";
 				DEVELOPMENT_TEAM = "";
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
@@ -6052,7 +6066,7 @@
 		};
 		5A34D0031AEF6DA300A154E4 /* PBXBuildFile */ = {
 			isa = PBXBuildFile;
-			fileRef = 5ABE15551AE5072300861C6B /* BackendTests.m */;
+			fileRef = 5ABE15551AE5072300861C6B /* BackendTests.swift */;
 		};
 		796355E5F58E9D5C3188B81C /* PBXBuildFile */ = {
 			isa = PBXBuildFile;
@@ -13080,6 +13094,9 @@
 		5ABE155D1AE5072300861C6B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				SWIFT_VERSION = 6.0;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_OBJC_BRIDGING_HEADER = "Backend/Tests/BackendTests-Bridging-Header.h";
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				PRODUCT_BUNDLE_IDENTIFIER = net.pornel.ImageOptimizeExtension;
@@ -15839,7 +15856,7 @@
 			isa = PBXGroup;
 			name = Tests;
 			children = (
-				5ABE15551AE5072300861C6B /* BackendTests.m */,
+				5ABE15551AE5072300861C6B /* BackendTests.swift */,
 				5AC64EC11AF3FCFE0032AA7F /* unoptimized.png */,
 			);
 			sourceTree = "<group>";
@@ -17166,11 +17183,11 @@
 			sourceTree = SOURCE_ROOT;
 			fileEncoding = 4;
 		};
-		5ABE15551AE5072300861C6B /* BackendTests.m */ = {
-			path = Backend/Tests/BackendTests.m;
+		5ABE15551AE5072300861C6B /* BackendTests.swift */ = {
+			path = Backend/Tests/BackendTests.swift;
 			isa = PBXFileReference;
-			name = BackendTests.m;
-			lastKnownFileType = sourcecode.c.objc;
+			name = BackendTests.swift;
+			lastKnownFileType = sourcecode.swift;
 			sourceTree = SOURCE_ROOT;
 		};
 		F3472510307BDE880093BBD6 /* PBXContainerItemProxy */ = {
