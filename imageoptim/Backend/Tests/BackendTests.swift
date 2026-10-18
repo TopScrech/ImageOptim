@@ -30,9 +30,9 @@ final class BackendTests {
             defaults.set(false, forKey: key)
         }
 
-        let job = try #require(Job(filePath: fileURL, resultsDatabase: nil))
+        let job = Job(filePath: fileURL, resultsDatabase: nil)
         defer { job.cleanup() }
-        let queue = try #require(JobQueue(cpus: 4, files: 4, defaults: defaults))
+        let queue = JobQueue(cpus: 4, files: 4, defaults: defaults)
         defer { queue.cleanup() }
         queue.add(job)
         #expect(job.isBusy)
@@ -47,8 +47,8 @@ final class BackendTests {
         #expect(!job.isStoppable)
         #expect(!optimizedData.isEmpty)
         #expect(optimizedData.count < originalData.count)
-        #expect(job.byteSizeOptimized?.intValue == optimizedData.count)
-        #expect(job.byteSizeOriginal?.intValue == originalData.count)
+        #expect(job.byteSizeOptimized == Int64(optimizedData.count))
+        #expect(job.byteSizeOriginal == Int64(originalData.count))
         if preserveMetadata {
             let attributes = try FileManager.default.attributesOfItem(atPath: fileURL.path)
             #expect(attributes[.modificationDate] as? Date == originalDate)
@@ -63,8 +63,8 @@ final class BackendTests {
         let url = URL.temporaryDirectory.appending(path: UUID().uuidString)
         try Data("not an image".utf8).write(to: url)
         defer { try? FileManager.default.removeItem(at: url) }
-        let job = try #require(Job(filePath: url, resultsDatabase: nil))
-        let queue = try #require(JobQueue(cpus: 1, files: 1, defaults: .standard))
+        let job = Job(filePath: url, resultsDatabase: nil)
+        let queue = JobQueue(cpus: 1, files: 1, defaults: .standard)
         queue.add(job)
         await queue.wait()
         #expect(job.isFailed)
@@ -75,8 +75,8 @@ final class BackendTests {
     }
 
     @Test func cancelledQueuedJobFinishes() async throws {
-        let job = try #require(Job(filePath: URL(filePath: "/nonexistent.png"), resultsDatabase: nil))
-        let queue = try #require(JobQueue(cpus: 1, files: 1, defaults: .standard))
+        let job = Job(filePath: URL(filePath: "/nonexistent.png"), resultsDatabase: nil)
+        let queue = JobQueue(cpus: 1, files: 1, defaults: .standard)
         queue.add(job)
         #expect(job.stop())
         await queue.wait()

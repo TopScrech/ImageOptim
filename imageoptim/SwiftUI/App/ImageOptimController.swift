@@ -54,7 +54,6 @@ final class ImageOptimController: NSObject, NSApplicationDelegate {
     }
 
     func application(_ sender: NSApplication, openFiles filenames: [String]) {
-        filesController.setRow(-1)
         sender.reply(toOpenOrPrint: filesController.addPaths(filenames) ? .success : .failure)
     }
 
@@ -80,8 +79,8 @@ final class ImageOptimController: NSObject, NSApplicationDelegate {
             guard let file = job.savedOutputOrInput, file.byteSize <= 100_000 else { continue }
             totalSize += file.byteSize
             guard totalSize <= 1_000_000 else { break }
-            if let mimeType = file.mimeType, let data = try? Data(contentsOf: file.path) {
-                urls.append("data:\(mimeType);base64,\(data.base64EncodedString())")
+            if let data = try? Data(contentsOf: file.path) {
+                urls.append("data:\(file.mimeType);base64,\(data.base64EncodedString())")
             }
         }
         guard !urls.isEmpty else { return }

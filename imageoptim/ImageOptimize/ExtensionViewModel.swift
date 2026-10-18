@@ -30,10 +30,7 @@ final class ExtensionViewModel {
             let url = URL.temporaryDirectory.appending(path: UUID().uuidString)
             temporaryURL = url
             try data.write(to: url)
-            guard let job = Job(filePath: url, resultsDatabase: nil) else {
-                cancel()
-                return
-            }
+            let job = Job(filePath: url, resultsDatabase: nil)
             currentFile = job
             let defaults = SharedPreferences.shared.defaults ?? .standard
             defaults.register(defaults: [
@@ -44,13 +41,10 @@ final class ExtensionViewModel {
                 "GifsicleEnabled": true, "PngMinQuality": 70,
                 "JpegOptimMaxQuality": 80, "LossyEnabled": true
             ])
-            guard let queue = JobQueue(cpus: 0, files: 1, defaults: defaults) else {
-                cancel()
-                return
-            }
+            let queue = JobQueue(cpus: 0, files: 1, defaults: defaults)
             self.queue = queue
             queue.add(job)
-            while queue.queueCount().intValue > 0 {
+            while queue.queueCount() > 0 {
                 try await Task.sleep(for: .milliseconds(100))
             }
             try Task.checkCancellation()
@@ -109,7 +103,7 @@ final class ExtensionViewModel {
         queue?.cleanup()
         context?.cancelRequest(withError: CocoaError(.userCancelled))
         Task {
-            while (queue?.queueCount().intValue ?? 0) > 0 {
+            while (queue?.queueCount() ?? 0) > 0 {
                 try? await Task.sleep(for: .milliseconds(100))
             }
             cleanup()

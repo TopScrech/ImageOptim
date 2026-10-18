@@ -34,7 +34,7 @@ public nonisolated struct File: Sendable {
 
     public var isLarge: Bool { byteSize > (fileType == .png ? 250 * 1024 : 1024 * 1024) }
     public var isSmall: Bool { byteSize < (fileType == .png ? 2048 : 10 * 1024) }
-    public var mimeType: String? {
+    public var mimeType: String {
         switch fileType {
         case .png: "image/png"
         case .jpeg: "image/jpeg"

@@ -53,7 +53,6 @@ final class OptimizationViewModel {
 
     func add(_ urls: [URL]) {
         guard let controller = delegate?.filesController else { return }
-        controller.setRow(-1)
         if !controller.add(urls) {
             errorMessage = String(localized: "Some files could not be opened")
         }

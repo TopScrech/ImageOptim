@@ -24,7 +24,7 @@ public final class Job {
     @ObservationIgnored var task: Task<Void, Never>?
     @ObservationIgnored private var runner: CommandWorker?
 
-    public init?(filePath: URL, resultsDatabase: ResultsDb?) {
+    public init(filePath: URL, resultsDatabase: ResultsDb?) {
         self.filePath = filePath
         database = resultsDatabase
         displayName = FileManager.default.displayName(atPath: filePath.path)
@@ -36,8 +36,8 @@ public final class Job {
     }
     public var isStoppable: Bool { isBusy && !isDone }
     public var canRevert: Bool { revertFile != nil && isDone && !isBusy }
-    public var byteSizeOriginal: NSNumber? { initialInput.map { NSNumber(value: $0.byteSize) } }
-    public var byteSizeOptimized: NSNumber? { (workingInput ?? savedOutput ?? unoptimizedInput).map { NSNumber(value: $0.byteSize) } }
+    public var byteSizeOriginal: Int64? { initialInput.map { Int64($0.byteSize) } }
+    public var byteSizeOptimized: Int64? { (workingInput ?? savedOutput ?? unoptimizedInput).map { Int64($0.byteSize) } }
 
     func prepare() {
         isBusy = true

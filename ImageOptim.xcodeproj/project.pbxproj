@@ -847,7 +847,6 @@
 		399E942314B00C460F997BEB /* inffast.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = inffast.c; sourceTree = "<group>"; };
 		3A0877C1BFF4B252CEAE549D /* AriBitCoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AriBitCoder.h; sourceTree = "<group>"; };
 		3A7DEEC7FCE8EEA3CD4CEA17 /* pngwtran.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pngwtran.c; sourceTree = "<group>"; };
-		3C1ACBB8083B45EF58E8A7CD /* test-swift.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "test-swift.sh"; sourceTree = "<group>"; };
 		3DE21E53E825F6B27312370D /* IInOutStreams.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IInOutStreams.h; sourceTree = "<group>"; };
 		3DE2239918C90C007A82F5C6 /* jdtrans.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = jdtrans.c; sourceTree = "<group>"; };
 		3DE2BC3C7568AD72B943DB45 /* jidctflt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = jidctflt.c; sourceTree = "<group>"; };
@@ -1178,6 +1177,11 @@
 			path = imageoptim;
 			sourceTree = "<group>";
 		};
+		F3AB36A73085746E00916586 /* scripts */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = scripts;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1397,7 +1401,7 @@
 			children = (
 				8EC9A00BFD09B3190AC6B222 /* README.md */,
 				B1B967F576F8BFB9D355DD40 /* imageoptim */,
-				81E6D20B6D012443C21CEBA8 /* scripts */,
+				F3AB36A73085746E00916586 /* scripts */,
 				2BFD5B5844B1C23EA2BF6FBD /* Dependencies */,
 				8496E90F56E24549F8FBCDA8 /* Frameworks */,
 				BA4CB4D4B9FA1FD16846CCFB /* Products */,
@@ -1570,14 +1574,6 @@
 				DB57A30F8BB8B3BF0B37946B /* butteraugli.h */,
 			);
 			path = butteraugli;
-			sourceTree = "<group>";
-		};
-		81E6D20B6D012443C21CEBA8 /* scripts */ = {
-			isa = PBXGroup;
-			children = (
-				3C1ACBB8083B45EF58E8A7CD /* test-swift.sh */,
-			);
-			path = scripts;
 			sourceTree = "<group>";
 		};
 		8419F70AF5E221A34B34D8EF /* zopfli-png */ = {

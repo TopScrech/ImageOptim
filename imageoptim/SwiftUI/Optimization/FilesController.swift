@@ -15,7 +15,6 @@ final class FilesController {
     private var queue: JobQueue?
     private var database: ResultsDb?
     private var isEnabled = false
-    private var nextInsertRow = -1
     private var scans: [UUID: Task<Void, Never>] = [:]
     private var pendingDirectories: [URL] = []
     private var scanLimit = 1
@@ -26,7 +25,7 @@ final class FilesController {
         database = ResultsDb()
         queue = JobQueue(cpus: defaults.integer(forKey: "RunConcurrentFiles"),
                          files: defaults.integer(forKey: "RunConcurrentFileops"), defaults: defaults)
-        isEnabled = queue != nil
+        isEnabled = true
         queue?.onBusyChanged = { [weak self] in
             guard let self, self.isEnabled else { return }
             self.updateBusyState()
@@ -34,8 +33,7 @@ final class FilesController {
         updateBusyState()
     }
 
-    func setRow(_ row: Int) { nextInsertRow = row }
-    var queueCount: Int { (queue?.queueCount().intValue ?? 0) + scans.count + pendingDirectories.count }
+    var queueCount: Int { (queue?.queueCount() ?? 0) + scans.count + pendingDirectories.count }
     var canRevert: Bool { selectedObjects.contains { $0.canRevert } }
     var canClearComplete: Bool { arrangedObjects.contains { $0.isDone } }
 
@@ -70,12 +68,11 @@ final class FilesController {
                 scan(path)
             } else if let existing = (arrangedObjects + additions).first(where: { $0.filePath == path }) {
                 if !existing.isBusy { queue.add(existing.job) }
-            } else if let job = Job(filePath: path, resultsDatabase: database) {
+            } else {
+                let job = Job(filePath: path, resultsDatabase: database)
                 let proxy = JobProxy(job: job)
                 additions.append(proxy)
                 queue.add(job)
-            } else {
-                allSucceeded = false
             }
         }
         addJobObjects(additions)
@@ -106,12 +103,7 @@ final class FilesController {
         guard !jobs.isEmpty else { return }
         undoManager?.registerUndo(withTarget: self) { $0.remove(contentsOf: jobs) }
         undoManager?.setActionName(String(localized: "Add", comment: "undo command name"))
-        if nextInsertRow < 0 || nextInsertRow >= arrangedObjects.count {
-            arrangedObjects.append(contentsOf: jobs)
-        } else {
-            arrangedObjects.insert(contentsOf: jobs, at: nextInsertRow)
-            nextInsertRow += jobs.count
-        }
+        arrangedObjects.append(contentsOf: jobs)
     }
 
     func remove(contentsOf jobs: [JobProxy]) {
@@ -136,7 +128,6 @@ final class FilesController {
 
     func clearComplete() {
         remove(contentsOf: arrangedObjects.filter { $0.isDone })
-        setRow(-1)
     }
 
     func canStartAgainOptimized(_ optimizedOnly: Bool) -> Bool {

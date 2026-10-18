@@ -13,8 +13,8 @@ final class JobProxy {
     var isOptimized: Bool { job.isOptimized }
     var canRevert: Bool { job.canRevert }
     var isStoppable: Bool { job.isStoppable }
-    var byteSizeOriginal: Int64? { job.byteSizeOriginal?.int64Value }
-    var byteSizeOptimized: Int64? { job.byteSizeOptimized?.int64Value }
+    var byteSizeOriginal: Int64? { job.byteSizeOriginal }
+    var byteSizeOptimized: Int64? { job.byteSizeOptimized }
     var bestToolName: String? { job.bestToolName }
     var statusText: String? { job.statusText }
     var filePath: URL { job.filePath }
