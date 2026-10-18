@@ -77,3 +77,15 @@ index d0c387e..4f8e107 100644
        " | This is a free, open-source program.  Permission is irrevocably\n"
        " | granted to everyone to use this version of pngcrush without\n"
        " | payment of any fee.\n"
+
+--- a/pngcrush.c
++++ b/pngcrush.c
+@@ -5520,8 +5520,10 @@
+                      * function
+                      */
++#ifdef PNG_IGNORE_ADLER32
+                     png_set_option(read_ptr, PNG_IGNORE_ADLER32,
+                         PNG_OPTION_ON);
++#endif
+                     png_set_crc_action(read_ptr, PNG_CRC_QUIET_USE,
+                                        PNG_CRC_QUIET_USE);

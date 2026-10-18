@@ -84,15 +84,16 @@
 
 /* Define to the full name of this package. */
 #define PACKAGE_NAME "AdvanceCOMP"
+#define PACKAGE_URL "https://www.advancemame.it"
 
 /* Define to the full name and version of this package. */
-#define PACKAGE_STRING "AdvanceCOMP 1.15"
+#define PACKAGE_STRING "AdvanceCOMP 2.6"
 
 /* Define to the one symbol short name of this package. */
 #define PACKAGE_TARNAME "advancecomp"
 
 /* Define to the version of this package. */
-#define PACKAGE_VERSION "1.15"
+#define PACKAGE_VERSION "2.6"
 
 /* Define to 1 if you have the ANSI C header files. */
 #define STDC_HEADERS 1
@@ -102,11 +103,13 @@
 
 /* Use the 7z library */
 #define USE_7Z 1
+#define USE_COMPRESS 1
+#define HAVE_STDINT_H 1
 
 #define USE_ERROR_SILENT 1
 
 /* Version number of package */
-#define VERSION "1.15"
+#define VERSION "2.6"
 
 /* Define to empty if `const' does not conform to ANSI C. */
 /* #undef const */

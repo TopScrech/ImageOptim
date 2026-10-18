@@ -2,16 +2,17 @@ build: all
 
 all: patched
 
-patched: orig/src gifsicle-1.89-imageoptim.patch compiler.patch
-	-rm -rf gifsicle
-	cp -R orig gifsicle
-	patch --forward -p1 -d gifsicle < gifsicle-1.89-imageoptim.patch
-	patch --forward -p1 -d gifsicle < compiler.patch && touch patched
+# Upstream now includes lossy compression and the full color implementation
+patched: orig/src/gifsicle.c Makefile
+	rm -rf gifsicle
+	mkdir gifsicle
+	cp -R orig/src orig/include gifsicle/
+	touch patched
 
-orig/src: ../.gitmodules
-	../scripts/fetch-submodule orig && touch orig/src
+orig/src/gifsicle.c:
+	../scripts/fetch-submodule orig
 
 clean:
-	-rm -rf patched gifsicle
+	rm -rf patched gifsicle
 
 .PHONY: build all install clean

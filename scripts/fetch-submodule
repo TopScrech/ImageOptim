@@ -1,5 +1,13 @@
 #!/bin/bash
 
+set -eu
+
+# Preserve initialized checkouts, including dependency updates not yet committed
+if [ -e "$1/.git" ]; then
+    git -C "$1" rev-parse --verify HEAD >/dev/null
+    exit 0
+fi
+
 # Set lock file path to this script dir
 LOCKFILE="$(dirname "$PWD/$0")/.lock"
 
@@ -12,4 +20,4 @@ trap removelockfile EXIT
 
 while test -f "$LOCKFILE"; do echo "locked, waiting (delete $LOCKFILE if stuck)"; sleep 1; done
 touch "$LOCKFILE"
-git submodule update --init $1 || git submodule update --init --recursive $1 || { echo "warning: could not update $1 submodule"; exit 0; }
+git submodule update --init --recursive -- "$1"

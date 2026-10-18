@@ -4,7 +4,7 @@
   "description": "Internal glue",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "node --test test.cjs"
   },
   "repository": {
     "type": "git",
@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/pornel/ImageOptim#readme",
   "dependencies": {
-    "svgo": "^1.0.0"
+    "svgo": "4.1.0"
   },
   "devDependencies": {
     "json-loader": "^0.5.7",

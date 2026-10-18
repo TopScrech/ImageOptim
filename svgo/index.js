@@ -1,6 +1,6 @@
 "use strict";
 
-const SVGO = require('svgo');
+const { optimize } = require('svgo');
 const fs = require('fs');
 
 const defaults = [
@@ -23,20 +23,16 @@ const defaults = [
 ];
 
 const lossy = [
-    'addAttributesToSVGElement',
-    'addClassesToSVGElement',
     'cleanupEnableBackground',
-    'cleanupIDs',
+    'cleanupIds',
     'collapseGroups',
     'convertPathData',
     'convertShapeToPath',
     'convertTransform',
     'mergePaths',
     'moveElemsAttrsToGroup',
-    'removeAttrs',
     'removeDesc',
     'removeDimensions',
-    'removeElementsByAttr',
     'removeHiddenElems',
     'removeMetadata',
     'removeRasterImages',
@@ -59,25 +55,11 @@ try {
 
     const plugins = useLossy == "1" ? defaults.concat(lossy) : defaults;
 
-    const svgo = new SVGO({
-        full: true,
-        plugins: plugins,
-    });
-    svgo.optimize(svgstr).then(result => {
-        if (result.error || !result.data) {
-            console.error(result.error);
-            process.exit(1);
-        }
-        try {
-            fs.writeFileSync(outFile, result.data);
-        } catch(err) {
-            console.error(err);
-            process.exit(1);
-        }
-    }, err => {
-        console.error(err);
-        process.exit(1);
-    });
+    const result = optimize(svgstr.toString(), { path: inFile, plugins });
+    if (!result.data) {
+        throw new Error('SVGO produced no output');
+    }
+    fs.writeFileSync(outFile, result.data);
 } catch(err) {
     console.error(err);
     process.exit(1);

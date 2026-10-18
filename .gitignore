@@ -162,3 +162,12 @@ svgo/build/
 svgo/node_modules/
 pngcrush/tmp/
 pngcrush/LICENSE
+
+advpng/.source-*
+advpng/.version
+advpng/autover.sh
+advpng/depcomp
+advpng/libdeflate/
+advpng/zopfli/
+advpng/compile
+advpng/*.orig

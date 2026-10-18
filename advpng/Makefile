@@ -1,9 +1,18 @@
+VERSION=2.6
+ARCHIVE=/tmp/imageoptim-advancecomp-$(VERSION).tar.gz
+
 build: all
 
-all: repng.cc fix-compiler
+all: .source-$(VERSION) fix-compiler
 
-repng.cc:
-	curl -L https://snapshot.debian.org/archive/debian/20120101T000000Z/pool/main/a/advancecomp/advancecomp_1.15.orig.tar.gz | tar xz --strip-components=1
+$(ARCHIVE):
+	curl -fL https://github.com/amadvance/advancecomp/releases/download/v$(VERSION)/advancecomp-$(VERSION).tar.gz -o $@.tmp
+	mv $@.tmp $@
+
+.source-$(VERSION): $(ARCHIVE) Makefile
+	printf '%s  %s\n' b07d77735540409771cbe1b6df165b5151c11bb9c3d8f01290be0ec88ec3498f $(ARCHIVE) | shasum -a 256 -c -
+	tar xzf $(ARCHIVE) --strip-components=1 --exclude=Makefile --exclude=config.h
+	touch $@
 
 clean:
 
@@ -12,7 +21,7 @@ install:
 .PHONY: build all install clean
 
 # The match byte is unused for literal symbols, but must still be initialized
-fix-compiler: repng.cc compiler.patch
+fix-compiler: .source-$(VERSION) compiler.patch
 	@if grep -q 'BYTE aMatchByte;' 7z/LZMAEncoder.cc; then \
 		sed -i.bak 's/BYTE aMatchByte;/BYTE aMatchByte = 0;/' 7z/LZMAEncoder.cc; \
 		rm 7z/LZMAEncoder.cc.bak; \

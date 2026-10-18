@@ -34,6 +34,26 @@ make clean
 make
 ```
 
+## Optimization tool versions
+
+Run `python3 scripts/check-tool-versions.py` from any directory to compare this checkout's tool versions with upstream stable releases/tags
+The script requires Python 3.9+ and curl, reads source manifests and the SVGO lockfile, and makes no dependency changes
+It includes all tools, including dependencies that use patched forks
+Matching version numbers indicate the same release base, not identical source code
+
+- `--json` prints versions, source revisions, upstream URLs, and any lookup errors as JSON
+- `--check` exits with status 1 when updates are available
+- Incomplete audits, including network failures or missing sources, exit with status 2
+
+SVGO is pinned in `svgo/package-lock.json` and built with `npm ci`; the build and runtime require Node.js 16 or newer
+Run `make -C svgo && npm --prefix svgo test` to check both SVG modes and the bundled script
+Run `python3 -B scripts/test-tool-versions.py` for offline version-checker tests
+
+The updated native tools are built by the existing Xcode targets
+AdvanceCOMP and PNGCrush archives are versioned and checksum-verified during source preparation
+Gifsicle uses upstream's integrated lossy compression
+For local ad hoc validation of tools that load bundled libraries, build with `ENABLE_HARDENED_RUNTIME=NO`; distribution builds require a shared signing identity
+
 ## Interface
 
 The main app uses SwiftUI for its window, sortable results table, toolbar, menus, Quick Look, and settings
