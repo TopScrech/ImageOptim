@@ -10,7 +10,7 @@ struct OptimizationToolbar: ToolbarContent {
             }
             .help("Add images or folders to optimize")
 
-            if !model.results.isEmpty {
+            if !model.results.isEmpty || model.isBusy {
                 Button("Stop", systemImage: "stop", action: model.stop)
                     .help("Stop optimization")
                     .disabled(!model.canStop)

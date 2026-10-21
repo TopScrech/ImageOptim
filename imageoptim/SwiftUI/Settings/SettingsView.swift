@@ -17,6 +17,9 @@ struct SettingsView: View {
         }
         .environment(model)
         .focusedSceneValue(\.closeSettings, dismiss)
+        .onExitCommand {
+            dismiss()
+        }
         .frame(width: 520, height: 560)
     }
 }

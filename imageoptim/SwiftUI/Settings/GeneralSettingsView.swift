@@ -5,6 +5,7 @@ struct GeneralSettingsView: View {
     @AppStorage("PreservePermissions") private var preservePermissions = true
     @AppStorage("PreserveDates") private var preserveDates = false
     @AppStorage("BounceDock") private var bounceDock = true
+    @AppStorage("AlwaysOnTop") private var alwaysOnTop = false
     @AppStorage("RunLowPriority") private var runLowPriority = false
     @AppStorage("JpegTranStripAll") private var stripJPEG = true
     @AppStorage("PngOutRemoveChunks") private var stripPNG = true
@@ -12,6 +13,10 @@ struct GeneralSettingsView: View {
 
     var body: some View {
         Form {
+            Section("Window") {
+                Toggle("Always keep window on top", isOn: $alwaysOnTop)
+            }
+
             Section("Files") {
                 Toggle("Preserve file permissions", isOn: $preservePermissions)
                 Toggle("Preserve modification dates", isOn: $preserveDates)

@@ -11,7 +11,9 @@ final class FilesController {
     var undoManager: UndoManager?
     var onQueueFinished: (() -> Void)?
     private(set) var isBusy = false
-    var isStoppable: Bool { isBusy && selectedObjects.contains { $0.isStoppable } }
+    var isStoppable: Bool {
+        !scans.isEmpty || !pendingDirectories.isEmpty || arrangedObjects.contains { $0.isStoppable }
+    }
     private var queue: JobQueue?
     private var database: ResultsDb?
     private var isEnabled = false
@@ -116,8 +118,12 @@ final class FilesController {
         selectedObjects.removeAll { ids.contains($0.filePath) }
     }
 
-    func stopSelected() {
-        for job in selectedObjects { _ = job.stop() }
+    func stop() {
+        for task in scans.values { task.cancel() }
+        scans.removeAll()
+        pendingDirectories.removeAll()
+        for job in arrangedObjects { _ = job.stop() }
+        updateBusyState()
     }
 
     func revert() {

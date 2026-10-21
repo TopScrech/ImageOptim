@@ -1144,6 +1144,8 @@
 				SwiftUI/App/ImageOptimController.swift,
 				SwiftUI/App/OptimizationCommands.swift,
 				SwiftUI/App/SettingsCommands.swift,
+				SwiftUI/App/WindowLevelHostView.swift,
+				SwiftUI/App/WindowLevelView.swift,
 				SwiftUI/Optimization/DirectoryScanner.swift,
 				SwiftUI/Optimization/FilesController.swift,
 				SwiftUI/Optimization/JobProxy.swift,

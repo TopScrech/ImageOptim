@@ -66,7 +66,7 @@ final class OptimizationViewModel {
     }
 
     func stop() {
-        delegate?.filesController.stopSelected()
+        delegate?.filesController.stop()
     }
 
     func optimizeAgain(optimizedOnly: Bool = false) {
