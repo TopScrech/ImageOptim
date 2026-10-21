@@ -1072,6 +1072,7 @@
 		EE94F9DA088003707F276A67 /* dct_double.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = dct_double.cc; sourceTree = "<group>"; };
 		EF1A304CCFB629EF586A3589 /* zlib_container.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = zlib_container.c; sourceTree = "<group>"; };
 		F1879560279BDF7A09392431 /* blocksplitter.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = blocksplitter.c; sourceTree = "<group>"; };
+		F35038F53089669D00E99FC8 /* AGENTS.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = AGENTS.md; sourceTree = "<group>"; };
 		F3FA000BDE2BE7DE251B8EE4 /* LenCoder.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LenCoder.cc; sourceTree = "<group>"; };
 		F4328FF9675526536A688813 /* inffast.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = inffast.h; sourceTree = "<group>"; };
 		F45A23A0E59FFBEFA49C9F46 /* arm/cpu_features.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = arm/cpu_features.c; sourceTree = "<group>"; };
@@ -1402,6 +1403,7 @@
 			isa = PBXGroup;
 			children = (
 				8EC9A00BFD09B3190AC6B222 /* README.md */,
+				F35038F53089669D00E99FC8 /* AGENTS.md */,
 				B1B967F576F8BFB9D355DD40 /* imageoptim */,
 				F3AB36A73085746E00916586 /* scripts */,
 				2BFD5B5844B1C23EA2BF6FBD /* Dependencies */,
