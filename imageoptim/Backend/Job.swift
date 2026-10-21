@@ -156,7 +156,7 @@ public final class Job {
         if let smallest, let largestGain, smallest != largestGain {
             bestToolName = "\(largestGain) + \(smallest)"
         } else {
-            bestToolName = smallest ?? largestGain
+            bestToolName = smallest
         }
     }
 

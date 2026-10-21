@@ -88,7 +88,7 @@ final class ExtensionVM {
     }
 
     func stop() {
-        if let currentFile, currentFile.isStoppable, currentFile.isBusy {
+        if let currentFile, currentFile.isStoppable {
             _ = currentFile.stop()
         } else {
             cancel()

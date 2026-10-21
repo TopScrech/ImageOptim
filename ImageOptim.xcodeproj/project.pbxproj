@@ -812,7 +812,6 @@
 		19965B1922BFB8803F229407 /* butteraugli_comparator.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = butteraugli_comparator.cc; sourceTree = "<group>"; };
 		1CC853DB3BACC4A424ABFD53 /* pngcrush.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pngcrush.c; sourceTree = "<group>"; };
 		201B56E6EA37FDC7659A0A8E /* zlib_container.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zlib_container.c; sourceTree = "<group>"; };
-		207E5E0596954CD2514CA5FD /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 		2267AE59DEDE2CD94033FA36 /* pngread.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pngread.c; sourceTree = "<group>"; };
 		22DE1DA5E058C64E40B923CC /* preprocess_downsample.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = preprocess_downsample.cc; sourceTree = "<group>"; };
 		24771B9B01CEB0943C6D9C7D /* jccolor.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = jccolor.c; sourceTree = "<group>"; };
@@ -834,7 +833,6 @@
 		2E2638FA1D277401A6C0218F /* jpegdest.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = jpegdest.c; sourceTree = "<group>"; };
 		2EFB7592E47BC123AFFCB619 /* jcapimin.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = jcapimin.c; sourceTree = "<group>"; };
 		3055982C61A11EFDD0755970 /* pngwio.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pngwio.c; sourceTree = "<group>"; };
-		316B552EE5C49BB624A96B89 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		328BBC4A2FBF6569146A215D /* svgcleaner */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = svgcleaner; sourceTree = BUILT_PRODUCTS_DIR; };
 		32B41E005D23D09D7E083F7C /* RangeCoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RangeCoder.h; sourceTree = "<group>"; };
 		33457F4EBDE1675ACC3C5D3D /* tree.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tree.c; sourceTree = "<group>"; };
@@ -882,7 +880,6 @@
 		5B28C078CBE60493483B66F3 /* CRC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRC.h; sourceTree = "<group>"; };
 		5D01C9D4E926B4807AACE31E /* xform.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = xform.c; sourceTree = "<group>"; };
 		5D04B57679EF59F205AB0EC4 /* processor.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = processor.cc; sourceTree = "<group>"; };
-		5E2DE7F0A41D46B9DC3E2BED /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		5FC05999A73F088AB409463C /* jpeg_data_reader.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = jpeg_data_reader.cc; sourceTree = "<group>"; };
 		5FE9D5E7FC7AD6D854C0A85C /* config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
 		604D96442ADF9B69597256CE /* lodepng_util.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = lodepng_util.cpp; sourceTree = "<group>"; };
@@ -906,7 +903,6 @@
 		69AA081095E8403444E80863 /* output_image.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = output_image.cc; sourceTree = "<group>"; };
 		69C291FF5A421923E946AC56 /* inflate.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = inflate.c; sourceTree = "<group>"; };
 		69CBD9C363151A12ADE6596E /* png.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = png.c; sourceTree = "<group>"; };
-		6BFDEF6B715EAAC5869CFD62 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		6C1416F448EEBDD0548BE584 /* color_transform.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = color_transform.h; sourceTree = "<group>"; };
 		6C5E7F2E9BBE86D50B2597DE /* extra.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = extra.h; sourceTree = "<group>"; };
 		6CA5D5EDE744D1840A7DA1B1 /* InByte.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = InByte.cc; sourceTree = "<group>"; };
@@ -1594,11 +1590,7 @@
 			children = (
 				5AEF1B1D10F2BCA900E3E4F0 /* AppKit.framework */,
 				00CED99D6058298BDF4450C4 /* Foundation.framework */,
-				207E5E0596954CD2514CA5FD /* IOKit.framework */,
 				5A99FE83140AE80600BB2F79 /* Quartz.framework */,
-				5E2DE7F0A41D46B9DC3E2BED /* Security.framework */,
-				316B552EE5C49BB624A96B89 /* SystemConfiguration.framework */,
-				6BFDEF6B715EAAC5869CFD62 /* WebKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

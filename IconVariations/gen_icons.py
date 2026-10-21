@@ -15,11 +15,6 @@ def lg(id, x1, y1, x2, y2, stops):
     return f'<linearGradient id="{id}" x1="{x1}" y1="{y1}" x2="{x2}" y2="{y2}">{s}</linearGradient>'
 
 
-def rg(id, cx, cy, r, stops):
-    s = "".join(f'<stop offset="{o}" stop-color="{c}"/>' for o, c in stops)
-    return f'<radialGradient id="{id}" cx="{cx}" cy="{cy}" r="{r}">{s}</radialGradient>'
-
-
 def shell(p, bg_stops, inner, extra_defs="", angle=(0, 0, 0, 1)):
     """Squircle body with gradient, soft drop shadow, top sheen, and clipped artwork."""
     defs = (
@@ -145,7 +140,6 @@ icons.append(("05-photo-badge", shell(p, [(0, "#ffffff"), (1, "#dfe5ee")], inner
 # 6 — Pixels: sunset rendered as pixels shrinking left→right
 p = "f"
 rows = ["#3b1a6b", "#6a2380", "#a8358a", "#e0567a", "#ff8a4a", "#ffb84d", "#5a2a4a", "#2a1530"]
-cols = 8
 cells = []
 sizes = [72, 66, 60, 54, 48, 42, 36, 30]
 x = 512 - (sum(sizes) + 8 * (len(sizes) - 1)) / 2
@@ -205,7 +199,6 @@ inner = (
     f'<ellipse cx="512" cy="360" rx="282" ry="30" fill="#b7c0cd"/>'
     f'<ellipse cx="512" cy="360" rx="262" ry="20" fill="#7d8796"/>'
     + photo(p, 437, 700, 150, 112, border=9, r=10, uid="2")
-    + f'<path d="M640 760 h70 M820 760 h-0" stroke="#fff" stroke-width="0"/>'
     + "".join(f'<circle cx="{x}" cy="756" r="{r}" fill="#fff" opacity=".7"/>' for x, r in [(620, 9), (655, 7), (684, 5)])
 )
 icons.append(("09-funnel", shell(p, [(0, "#3ee08f"), (1, "#0f9f8f")], inner, fn + scene_defs(p), (0, 0, 1, 1))))
