@@ -3,7 +3,7 @@ import SwiftUI
 @main
 struct ImageOptimApp: App {
     @NSApplicationDelegateAdaptor(ImageOptimController.self) private var delegate
-    @State private var model = OptimizationViewModel()
+    @State private var vm = OptimizationVM()
     @AppStorage("AlwaysOnTop") private var alwaysOnTop = false
 
     var body: some Scene {
@@ -12,10 +12,10 @@ struct ImageOptimApp: App {
                 .background {
                     WindowLevelView(alwaysOnTop: alwaysOnTop)
                 }
-                .environment(model)
-                .focusedSceneValue(\.optimizationModel, model)
+                .environment(vm)
+                .focusedSceneValue(\.optimizationModel, vm)
                 .onAppear {
-                    model.connect(to: delegate)
+                    vm.connect(to: delegate)
                 }
         }
         .defaultSize(width: 800, height: 480)

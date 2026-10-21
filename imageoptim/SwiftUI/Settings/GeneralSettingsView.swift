@@ -1,7 +1,7 @@
 import ScrechKit
 
 struct GeneralSettingsView: View {
-    @Environment(SettingsViewModel.self) private var model
+    @Environment(SettingsVM.self) private var model
     @AppStorage("PreservePermissions") private var preservePermissions = true
     @AppStorage("PreserveDates") private var preserveDates = false
     @AppStorage("BounceDock") private var bounceDock = true

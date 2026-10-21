@@ -1097,7 +1097,7 @@
 				ImageOptim.icns,
 				ImageOptimize/ExtensionController.swift,
 				ImageOptimize/ExtensionStatusView.swift,
-				ImageOptimize/ExtensionViewModel.swift,
+				ImageOptimize/ExtensionVM.swift,
 				Localizable.xcstrings,
 				SwiftUI/Shared/SharedPreferences.swift,
 			);
@@ -1156,11 +1156,11 @@
 				SwiftUI/Optimization/OptimizationTableView.swift,
 				SwiftUI/Optimization/OptimizationToolbar.swift,
 				SwiftUI/Optimization/OptimizationView.swift,
-				SwiftUI/Optimization/OptimizationViewModel.swift,
+				SwiftUI/Optimization/OptimizationVM.swift,
 				SwiftUI/Settings/GeneralSettingsView.swift,
 				SwiftUI/Settings/QualitySettingsView.swift,
 				SwiftUI/Settings/SettingsView.swift,
-				SwiftUI/Settings/SettingsViewModel.swift,
+				SwiftUI/Settings/SettingsVM.swift,
 				SwiftUI/Settings/ToolSettingsView.swift,
 				SwiftUI/Shared/SharedPreferences.swift,
 			);

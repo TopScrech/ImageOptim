@@ -1,7 +1,8 @@
 import ScrechKit
 
 struct ToolSettingsView: View {
-    @Environment(SettingsViewModel.self) private var model
+    @Environment(SettingsVM.self) private var vm
+    
     @AppStorage("JpegOptimEnabled") private var jpegOptim = true
     @AppStorage("JpegTranEnabled") private var jpegTran = true
     @AppStorage("GuetzliEnabled") private var guetzli = false
@@ -15,7 +16,7 @@ struct ToolSettingsView: View {
     @AppStorage("SvgoEnabled") private var svgo = false
 
     var body: some View {
-        @Bindable var model = model
+        @Bindable var vm = vm
 
         Form {
             Section("JPEG") {
@@ -40,14 +41,14 @@ struct ToolSettingsView: View {
                     Text("SVGO")
                     Text("SVGO requires Node.js installed in /usr/local/bin or /opt/homebrew/bin")
                 }
-                .disabled(!model.supportsSVGO)
+                .disabled(!vm.supportsSVGO)
             }
         }
         .formStyle(.grouped)
         .onChange(of: guetzli) {
-            model.updateGuetzli(isEnabled: guetzli)
+            vm.updateGuetzli(isEnabled: guetzli)
         }
-        .alert("Guetzli is very slow", isPresented: $model.showsGuetzliWarning) {
+        .alert("Guetzli is very slow", isPresented: $vm.showsGuetzliWarning) {
             Button("OK", role: .cancel) {}
         } message: {
             Text("It can take up to 30 minutes per image and may make your system unresponsive")

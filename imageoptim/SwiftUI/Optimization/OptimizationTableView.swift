@@ -1,13 +1,14 @@
 import ScrechKit
 
 struct OptimizationTableView: View {
-    @Environment(OptimizationViewModel.self) private var model
+    @Environment(OptimizationVM.self) private var vm
+    
     @State private var sortOrder = [KeyPathComparator(\OptimizationResult.name)]
 
     var body: some View {
-        @Bindable var model = model
+        @Bindable var vm = vm
 
-        Table(model.results.sorted(using: sortOrder), selection: $model.selection, sortOrder: $sortOrder) {
+        Table(vm.results.sorted(using: sortOrder), selection: $vm.selection, sortOrder: $sortOrder) {
             TableColumn("File", value: \.name) {
                 OptimizationFileView(result: $0)
             }
@@ -30,18 +31,18 @@ struct OptimizationTableView: View {
             TableColumn("Tool", value: \.tool)
         }
         .contextMenu {
-            Button("Quick Look", systemImage: "eye", action: model.preview)
-                .disabled(model.selection.isEmpty)
+            Button("Quick Look", systemImage: "eye", action: vm.preview)
+                .disabled(vm.selection.isEmpty)
 
-            Button("Reveal in Finder", systemImage: "folder", action: model.reveal)
-                .disabled(model.selection.isEmpty)
+            Button("Reveal in Finder", systemImage: "folder", action: vm.reveal)
+                .disabled(vm.selection.isEmpty)
 
-            Button("Restore original", systemImage: "arrow.uturn.backward", action: model.revert)
-                .disabled(!model.canRevert)
+            Button("Restore original", systemImage: "arrow.uturn.backward", action: vm.revert)
+                .disabled(!vm.canRevert)
 
-            Button("Remove", systemImage: "trash", action: model.removeSelected)
-                .disabled(model.selection.isEmpty)
+            Button("Remove", systemImage: "trash", action: vm.removeSelected)
+                .disabled(vm.selection.isEmpty)
         }
-        .onDeleteCommand(perform: model.removeSelected)
+        .onDeleteCommand(perform: vm.removeSelected)
     }
 }

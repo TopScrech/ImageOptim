@@ -1,5 +1,5 @@
 import SwiftUI
 
 extension FocusedValues {
-    @Entry var optimizationModel: OptimizationViewModel?
+    @Entry var optimizationModel: OptimizationVM?
 }

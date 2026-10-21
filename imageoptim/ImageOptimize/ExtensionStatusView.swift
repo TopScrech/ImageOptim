@@ -1,16 +1,16 @@
 import ScrechKit
 
 struct ExtensionStatusView: View {
-    @Environment(ExtensionViewModel.self) private var model
+    @Environment(ExtensionVM.self) private var vm
 
     var body: some View {
         VStack {
             ProgressView()
 
-            Text(model.status)
+            Text(vm.status)
                 .secondary()
 
-            Button("Stop", systemImage: "stop", action: model.stop)
+            Button("Stop", systemImage: "stop", action: vm.stop)
         }
         .padding()
         .frame(minWidth: 300, minHeight: 150)

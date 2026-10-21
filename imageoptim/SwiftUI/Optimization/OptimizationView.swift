@@ -3,21 +3,21 @@ import UniformTypeIdentifiers
 import QuickLook
 
 struct OptimizationView: View {
-    @Environment(OptimizationViewModel.self) private var model
+    @Environment(OptimizationVM.self) private var vm
     @Environment(\.undoManager) private var undoManager
 
     var body: some View {
-        @Bindable var model = model
+        @Bindable var vm = vm
 
         VStack {
-            if model.results.isEmpty {
+            if vm.results.isEmpty {
                 ContentUnavailableView {
                     Label("Drop images here", systemImage: "photo.on.rectangle.angled")
                 } description: {
                     Text("Optimize PNG, JPEG, GIF, and SVG images or add a folder")
                 } actions: {
                     Button("Add images", systemImage: "plus") {
-                        model.isImporting = true
+                        vm.isImporting = true
                     }
                     .buttonStyle(.borderedProminent)
                 }
@@ -34,22 +34,22 @@ struct OptimizationView: View {
         .toolbar {
             OptimizationToolbar()
         }
-        .fileImporter(isPresented: $model.isImporting,
+        .fileImporter(isPresented: $vm.isImporting,
                       allowedContentTypes: [.png, .jpeg, .gif, .svg, .folder],
                       allowsMultipleSelection: true,
-                      onCompletion: model.importFiles)
+                      onCompletion: vm.importFiles)
         .dropDestination(for: URL.self) { urls, _ in
-            model.add(urls)
+            vm.add(urls)
             return !urls.isEmpty
         }
-        .quickLookPreview($model.previewURL)
-        .alert("Could not add images", isPresented: $model.showsError) {
-            Button("OK") { model.errorMessage = nil }
+        .quickLookPreview($vm.previewURL)
+        .alert("Could not add images", isPresented: $vm.showsError) {
+            Button("OK") { vm.errorMessage = nil }
         } message: {
-            Text(model.errorMessage ?? "")
+            Text(vm.errorMessage ?? "")
         }
         .onAppear {
-            model.setUndoManager(undoManager)
+            vm.setUndoManager(undoManager)
         }
     }
 }

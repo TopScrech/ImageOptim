@@ -1,29 +1,29 @@
 import ScrechKit
 
 struct OptimizationToolbar: ToolbarContent {
-    @Environment(OptimizationViewModel.self) private var model
+    @Environment(OptimizationVM.self) private var vm
 
     var body: some ToolbarContent {
         ToolbarItemGroup {
             Button("Add images", systemImage: "plus") {
-                model.isImporting = true
+                vm.isImporting = true
             }
             .help("Add images or folders to optimize")
 
-            if !model.results.isEmpty || model.isBusy {
-                Button("Stop", systemImage: "stop", action: model.stop)
+            if !vm.results.isEmpty || vm.isBusy {
+                Button("Stop", systemImage: "stop", action: vm.stop)
                     .help("Stop optimization")
-                    .disabled(!model.canStop)
+                    .disabled(!vm.canStop)
 
                 Button("Optimize again", systemImage: "arrow.clockwise") {
-                    model.optimizeAgain()
+                    vm.optimizeAgain()
                 }
                 .help("Optimize images again")
-                .disabled(!model.canOptimizeAgain)
+                .disabled(!vm.canOptimizeAgain)
 
-                Button("Clear completed", systemImage: "trash", action: model.clearCompleted)
+                Button("Clear completed", systemImage: "trash", action: vm.clearCompleted)
                     .help("Remove completed images from the list")
-                    .disabled(!model.canClearCompleted)
+                    .disabled(!vm.canClearCompleted)
             }
 
             SettingsLink {

@@ -1,19 +1,20 @@
 import ScrechKit
 
 struct OptimizationStatusView: View {
-    @Environment(OptimizationViewModel.self) private var model
+    @Environment(OptimizationVM.self) private var vm
+    
     @AppStorage("LossyEnabled") private var lossyEnabled = false
     @AppStorage("GuetzliEnabled") private var guetzliEnabled = false
 
     var body: some View {
         HStack {
-            if model.isBusy {
+            if vm.isBusy {
                 ProgressView()
                     .controlSize(.small)
 
                 Text("Optimizing images")
-            } else if model.originalBytes > 0 {
-                Text("Saved \(model.bytesSaved.formatted(.byteCount(style: .file))) out of \(model.originalBytes.formatted(.byteCount(style: .file)))")
+            } else if vm.originalBytes > 0 {
+                Text("Saved \(vm.bytesSaved.formatted(.byteCount(style: .file))) out of \(vm.originalBytes.formatted(.byteCount(style: .file)))")
                     .enableSelection()
             } else {
                 Text("Images are optimized in place")

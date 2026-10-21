@@ -1,7 +1,7 @@
 import SwiftUI
 
 @Observable
-final class OptimizationViewModel {
+final class OptimizationVM {
     var results: [OptimizationResult] { filesController?.arrangedObjects.map(OptimizationResult.init) ?? [] }
     var selection: Set<URL> = [] {
         didSet { synchronizeSelection() }

@@ -1,7 +1,7 @@
 import SwiftUI
 
 @Observable
-final class SettingsViewModel {
+final class SettingsVM {
     var showsGuetzliWarning = false
     let supportsSVGO = FileManager.default.isExecutableFile(atPath: "/usr/local/bin/node")
         || FileManager.default.isExecutableFile(atPath: "/opt/homebrew/bin/node")

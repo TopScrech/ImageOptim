@@ -1,9 +1,9 @@
-import ImageOptimGPL
 import SwiftUI
+import ImageOptimGPL
 import UniformTypeIdentifiers
 
 @Observable
-final class ExtensionViewModel {
+final class ExtensionVM {
     var status = String(localized: "Optimizing image")
     @ObservationIgnored weak var context: NSExtensionContext?
     private var task: Task<Void, Never>?
