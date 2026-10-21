@@ -38,10 +38,6 @@
 	<true/>
 	<key>PreserveDates</key>
 	<false/>
-	<key>RunConcurrentDirscans</key>
-	<integer>2</integer>
-	<key>RunConcurrentFiles</key>
-	<integer>4</integer>
 	<key>RunLowPriority</key>
 	<false/>
 	<key>BounceDock</key>

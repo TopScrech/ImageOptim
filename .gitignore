@@ -177,3 +177,8 @@ CachedSpecifications-*
 # Shared application schemes
 !ImageOptim.xcodeproj/xcshareddata/xcschemes/ImageOptimTests.xcscheme
 !ImageOptim.xcodeproj/xcshareddata/xcschemes/ImageOptimize.xcscheme
+
+# Retained vendor attribution and license notices
+!advpng/AUTHORS
+!advpng/COPYING
+!libpng/LICENSE
