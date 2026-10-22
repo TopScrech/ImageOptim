@@ -175,6 +175,7 @@ CachedSpecifications-*
 *.xcplugincache
 
 # Shared application schemes
+!ImageOptim.xcodeproj/xcshareddata/xcschemes/ImageOptim.xcscheme
 !ImageOptim.xcodeproj/xcshareddata/xcschemes/ImageOptimTests.xcscheme
 !ImageOptim.xcodeproj/xcshareddata/xcschemes/ImageOptimize.xcscheme
 
