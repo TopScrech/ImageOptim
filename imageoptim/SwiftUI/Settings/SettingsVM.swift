@@ -6,6 +6,22 @@ final class SettingsVM {
     let supportsSVGO = FileManager.default.isExecutableFile(atPath: "/usr/local/bin/node")
         || FileManager.default.isExecutableFile(atPath: "/opt/homebrew/bin/node")
 
+    func resetTools() {
+        updateGuetzli(isEnabled: false)
+        showsGuetzliWarning = false
+
+        let toolKeys = [
+            "JpegOptimEnabled", "JpegTranEnabled", "GuetzliEnabled",
+            "OptiPngEnabled", "AdvPngEnabled", "PngCrush2Enabled",
+            "PngOutEnabled", "ZopfliEnabled", "GifsicleEnabled",
+            "SvgcleanerEnabled", "SvgoEnabled"
+        ]
+
+        for key in toolKeys {
+            UserDefaults.standard.removeObject(forKey: key)
+        }
+    }
+
     func updateGuetzli(isEnabled: Bool) {
         let defaults = UserDefaults.standard
         if isEnabled {

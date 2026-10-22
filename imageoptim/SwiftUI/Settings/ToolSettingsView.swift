@@ -43,6 +43,10 @@ struct ToolSettingsView: View {
                 }
                 .disabled(!vm.supportsSVGO)
             }
+
+            Section {
+                Button("Reset to Defaults", systemImage: "arrow.counterclockwise", action: vm.resetTools)
+            }
         }
         .formStyle(.grouped)
         .onChange(of: guetzli) {
