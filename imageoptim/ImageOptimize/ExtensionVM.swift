@@ -4,7 +4,7 @@ import UniformTypeIdentifiers
 
 @Observable
 final class ExtensionVM {
-    var status = String(localized: "Optimizing image")
+    var status: LocalizedStringKey = "Optimizing image"
     @ObservationIgnored weak var context: NSExtensionContext?
     private var task: Task<Void, Never>?
     private var currentFile: Job?
@@ -18,12 +18,15 @@ final class ExtensionVM {
     }
 
     private func optimize() async {
-        guard let item = context?.inputItems.first as? NSExtensionItem,
-              let provider = item.attachments?.first,
-              provider.hasItemConformingToTypeIdentifier(UTType.image.identifier) else {
+        guard
+            let item = context?.inputItems.first as? NSExtensionItem,
+            let provider = item.attachments?.first,
+            provider.hasItemConformingToTypeIdentifier(UTType.image.identifier)
+        else {
             cancel()
             return
         }
+        
         do {
             let data = try await loadImage(from: provider)
             try Task.checkCancellation()
@@ -41,23 +44,26 @@ final class ExtensionVM {
                 "GifsicleEnabled": true, "PngMinQuality": 70,
                 "JpegOptimMaxQuality": 80, "LossyEnabled": true
             ])
+            
             let queue = JobQueue(cpus: 0, files: 1, defaults: defaults)
             self.queue = queue
             queue.add(job)
+            
             while queue.queueCount() > 0 {
                 try await Task.sleep(for: .milliseconds(100))
             }
+            
             try Task.checkCancellation()
             let optimized = job.isOptimized
-            status = optimized
-                ? String(localized: "Optimized with \(job.bestToolName ?? "ImageOptim")")
-                : String(localized: "Already optimized")
+            status = optimized ? "Optimized with \(job.bestToolName ?? "ImageOptim")" : "Already optimized"
             currentFile = nil
             try await Task.sleep(for: .seconds(1))
+            
             guard optimized, let result = NSItemProvider(contentsOf: url), let context else {
                 cancel()
                 return
             }
+            
             item.attachments = [result]
             hasFinished = true
             await complete(context, returning: item)
