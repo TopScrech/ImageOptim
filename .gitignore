@@ -2,6 +2,7 @@
 *.pbxuser
 *.xcscheme
 *.xcuserdatad
+xcuserdata/
 *.xcworkspace
 *.zip
 .DS_Store
