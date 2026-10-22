@@ -15,24 +15,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5AC64EFD1AF3FDEE0032AA7F"
-               BuildableName = "ImageOptimize.appex"
-               BlueprintName = "ImageOptimize"
-               ReferencedContainer = "container:ImageOptim.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
                BlueprintIdentifier = "8D1107260486CEB800E47090"
-               BuildableName = "ImageOptim.app"
-               BlueprintName = "ImageOptim"
-               ReferencedContainer = "container:ImageOptim.xcodeproj">
+               BuildableName = "PicPress.app"
+               BlueprintName = "PicPress"
+               ReferencedContainer = "container:PicPress.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -59,9 +45,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8D1107260486CEB800E47090"
-            BuildableName = "ImageOptim.app"
-            BlueprintName = "ImageOptim"
-            ReferencedContainer = "container:ImageOptim.xcodeproj">
+            BuildableName = "PicPress.app"
+            BlueprintName = "PicPress"
+            ReferencedContainer = "container:PicPress.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -76,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8D1107260486CEB800E47090"
-            BuildableName = "ImageOptim.app"
-            BlueprintName = "ImageOptim"
-            ReferencedContainer = "container:ImageOptim.xcodeproj">
+            BuildableName = "PicPress.app"
+            BlueprintName = "PicPress"
+            ReferencedContainer = "container:PicPress.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

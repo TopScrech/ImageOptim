@@ -2,7 +2,7 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>ImageOptimAppGroup</key>
+	<key>PicPressAppGroup</key>
 	<string>$(IMAGEOPTIM_APP_GROUP)</string>
 	<key>CFBundleAllowMixedLocalizations</key>
 	<true/>
@@ -123,7 +123,7 @@
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIconFile</key>
-	<string>ImageOptim.icns</string>
+	<string>PicPress.icns</string>
 	<key>CFBundleIdentifier</key>
 	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
@@ -171,10 +171,10 @@
 				<string>public.svg-image</string>
 			</array>
 			<key>NSServiceDescription</key>
-			<string>Losslessly reduce image file sizes with ImageOptim</string>
+			<string>Losslessly reduce image file sizes with PicPress</string>
 		</dict>
 	</array>
 	<key>OSAScriptingDefinition</key>
-	<string>ImageOptimVerbs.sdef</string>
+	<string>PicPressVerbs.sdef</string>
 </dict>
 </plist>

@@ -32,7 +32,7 @@ if [ "${CODE_SIGNING_ALLOWED:-YES}" = YES ]; then
     signing_identity="${EXPANDED_CODE_SIGN_IDENTITY:--}"
     if [ -z "$signing_identity" ]; then signing_identity=-; fi
     for helper in advpng gifsicle guetzli jpegoptim jpegtran oxipng pngcrush pngout pngquant svgcleaner zopflipng node; do
-        set -- --force --sign "$signing_identity" --entitlements "$SRCROOT/imageoptim/Helper.entitlements"
+        set -- --force --sign "$signing_identity" --entitlements "$SRCROOT/PicPress/Helper.entitlements"
         if [ "${ENABLE_HARDENED_RUNTIME:-NO}" = YES ]; then
             set -- "$@" --options runtime
         fi

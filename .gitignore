@@ -59,12 +59,12 @@ gifsicle/missing
 gifsicle/NEWS
 gifsicle/README
 gifsicle/src
-imageoptim/*.pch
-imageoptim/*~.*
-imageoptim/build
-imageoptim/DerivedData
-imageoptim/optipng
-imageoptim/pngout
+PicPress/*.pch
+PicPress/*~.*
+PicPress/build
+PicPress/DerivedData
+PicPress/optipng
+PicPress/pngout
 jpegoptim/*.1
 jpegoptim/*.c
 jpegoptim/*.h
@@ -154,7 +154,7 @@ zlib/win32
 pngquant/build/*
 pngcrush/Makefile-nolib
 pngcrush/pngcrush.c.orig
-imageoptim/pngout-20130221-darwin/*
+PicPress/pngout-20130221-darwin/*
 gifsicle/patched
 pngcrush/patched
 svgo/build/
@@ -176,9 +176,9 @@ CachedSpecifications-*
 *.xcplugincache
 
 # Shared application schemes
-!ImageOptim.xcodeproj/xcshareddata/xcschemes/ImageOptim.xcscheme
-!ImageOptim.xcodeproj/xcshareddata/xcschemes/ImageOptimTests.xcscheme
-!ImageOptim.xcodeproj/xcshareddata/xcschemes/ImageOptimize.xcscheme
+!PicPress.xcodeproj/xcshareddata/xcschemes/PicPress.xcscheme
+!PicPress.xcodeproj/xcshareddata/xcschemes/PicPressTests.xcscheme
+!PicPress.xcodeproj/xcshareddata/xcschemes/ImageOptimize.xcscheme
 
 # Retained vendor attribution and license notices
 !advpng/AUTHORS

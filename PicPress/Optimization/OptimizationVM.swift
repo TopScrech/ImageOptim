@@ -22,7 +22,7 @@ final class OptimizationVM {
     var bytesSaved: Int64 {
         completedJobs.reduce(0) { $0 + max(0, ($1.byteSizeOriginal ?? 0) - ($1.byteSizeOptimized ?? 0)) }
     }
-    private var delegate: ImageOptimController?
+    private var delegate: PicPressController?
     private var undoManager: UndoManager?
     private var filesController: FilesController? { delegate?.filesController }
     private var completedJobs: [JobProxy] {
@@ -31,7 +31,7 @@ final class OptimizationVM {
         } ?? []
     }
 
-    func connect(to delegate: ImageOptimController) {
+    func connect(to delegate: PicPressController) {
         filesController?.onFilesChanged = nil
         self.delegate = delegate
         delegate.filesController.undoManager = undoManager

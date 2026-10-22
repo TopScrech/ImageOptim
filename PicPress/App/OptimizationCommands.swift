@@ -59,7 +59,7 @@ struct OptimizationCommands: Commands {
             }
 
             CommandGroup(replacing: .help) {
-                if let url = URL(string: "https://github.com/ImageOptim/ImageOptim") {
+                if let url = URL(string: "https://github.com/TopScrech/PicPress") {
                     Link("Source code", destination: url)
                 }
                 if let url = URL(string: "https://imageoptim.com/donate.html") {

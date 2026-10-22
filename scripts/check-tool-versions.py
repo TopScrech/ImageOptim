@@ -101,7 +101,7 @@ TOOLS = [
     # Guetzli has no source version constant; its nearest release tag is the base
     ('Guetzli', lambda: re.match(r'v?([\d.]+)', source_revision('guetzli/guetzli')).group(1), 'google/guetzli', 'guetzli/guetzli'),
     ('svgcleaner', lambda: cargo_version('svgcleaner/src/Cargo.toml'), 'RazrFalcon/svgcleaner', 'svgcleaner/src'),
-    ('PNGOUT (macOS)', lambda: read_version('imageoptim/Makefile', r'pngout-(\d{8})-mac'), pngout_latest, None),
+    ('PNGOUT (macOS)', lambda: read_version('PicPress/Makefile', r'pngout-(\d{8})-mac'), pngout_latest, None),
 ]
 
 

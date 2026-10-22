@@ -1,6 +1,6 @@
-# ImageOptim
+# PicPress
 
-[ImageOptim](https://imageoptim.com) is a GUI for lossless image optimization tools: Zopfli, PNGOUT, [OxiPNG](https://lib.rs/crates/oxipng), AdvPNG, PNGCrush, [JPEGOptim](https://github.com/tjko/jpegoptim), Jpegtran, [Guetzli](https://github.com/google/guetzli), [Gifsicle](https://kornel.ski/lossygif), [SVGO](https://github.com/svg/svgo), [svgcleaner](https://github.com/RazrFalcon/svgcleaner) and [MozJPEG](https://github.com/mozilla/mozjpeg).
+PicPress is a macOS app based on [ImageOptim](https://imageoptim.com), providing a GUI for lossless image optimization tools: Zopfli, PNGOUT, [OxiPNG](https://lib.rs/crates/oxipng), AdvPNG, PNGCrush, [JPEGOptim](https://github.com/tjko/jpegoptim), Jpegtran, [Guetzli](https://github.com/google/guetzli), [Gifsicle](https://kornel.ski/lossygif), [SVGO](https://github.com/svg/svgo), [svgcleaner](https://github.com/RazrFalcon/svgcleaner) and [MozJPEG](https://github.com/mozilla/mozjpeg).
 
 ## Building
 
@@ -11,11 +11,11 @@ Requires:
 * [Rust](https://rust-lang.org/) installed via [rustup](https://www.rustup.rs/) (not Homebrew).
 
 ```sh
-git clone --recursive https://imageoptim.com ImageOptim
-cd ImageOptim
+git clone --recursive https://github.com/TopScrech/PicPress.git
+cd PicPress
 ```
 
-To get started, initialize submodules with `git submodule update --init --recursive` and open `ImageOptim.xcodeproj`
+To get started, initialize submodules with `git submodule update --init --recursive` and open `PicPress.xcodeproj`
 It builds the app and bundled dependencies from this single project
 Local builds use ad hoc signing, so the original author’s developer certificates are not required
 Debug builds use separate entitlements that allow Xcode to attach its debugger; Release builds keep debugger access disabled
@@ -67,10 +67,10 @@ For local ad hoc validation of tools that load bundled libraries, build with `EN
 The main app uses SwiftUI for its window, sortable results table, toolbar, menus, Quick Look, and settings
 The app lifecycle, file list, folder scanner, scripting command, shared preferences, and action extension are implemented in Swift 6
 The Swift 6 optimization engine schedules bundled command-line tools using async tasks, with observable job state, cancellation, result caching, and recoverable file replacement
-`imageoptim/SwiftUI` contains the main interface and observable view models
+`PicPress/SwiftUI` contains the main interface and observable view models
 The ImageOptimize action extension uses async image loading and a SwiftUI progress view hosted by a Swift native entry point
 The app and extension no longer load XIB files
-`ImageOptimController` provides native file-opening, Finder services, update checks, and application lifecycle integration
+`PicPressController` provides native file-opening, Finder services, update checks, and application lifecycle integration
 
 The root Xcode project contains all optimizer and updater targets, with no nested dependency projects
 The navigator groups each source file once under its physical folder

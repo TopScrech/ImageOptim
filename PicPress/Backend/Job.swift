@@ -131,7 +131,7 @@ public final class Job {
                     savedOutput = output.at(filePath)
                     lastContentHash = savedHash
                     isFailed = false
-                    statusText = String(localized: "Optimized successfully with \(bestToolName ?? "ImageOptim")")
+                    statusText = String(localized: "Optimized successfully with \(bestToolName ?? "PicPress")")
                 } catch {
                     fileLimiter.release()
                     throw error

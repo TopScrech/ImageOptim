@@ -55,7 +55,7 @@ final class ExtensionVM {
             
             try Task.checkCancellation()
             let optimized = job.isOptimized
-            status = optimized ? "Optimized with \(job.bestToolName ?? "ImageOptim")" : "Already optimized"
+            status = optimized ? "Optimized with \(job.bestToolName ?? "PicPress")" : "Already optimized"
             currentFile = nil
             try await Task.sleep(for: .seconds(1))
             

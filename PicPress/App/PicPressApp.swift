@@ -1,13 +1,13 @@
 import SwiftUI
 
 @main
-struct ImageOptimApp: App {
-    @NSApplicationDelegateAdaptor(ImageOptimController.self) private var delegate
+struct PicPressApp: App {
+    @NSApplicationDelegateAdaptor(PicPressController.self) private var delegate
     @State private var vm = OptimizationVM()
     @AppStorage("AlwaysOnTop") private var alwaysOnTop = false
 
     var body: some Scene {
-        Window("ImageOptim", id: "optimization") {
+        Window("PicPress", id: "optimization") {
             OptimizationView()
                 .background {
                     WindowLevelView(alwaysOnTop: alwaysOnTop)

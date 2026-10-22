@@ -1,7 +1,7 @@
 import SwiftUI
 
-final class ImageOptimController: NSObject, NSApplicationDelegate {
-    static weak var current: ImageOptimController?
+final class PicPressController: NSObject, NSApplicationDelegate {
+    static weak var current: PicPressController?
     let filesController = FilesController()
     private let commandLinePaths: [String]
 

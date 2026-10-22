@@ -2,7 +2,7 @@ import Foundation
 
 final class SharedPreferences: NSObject {
     static let shared = SharedPreferences()
-    let defaults = (Bundle.main.object(forInfoDictionaryKey: "ImageOptimAppGroup") as? String)
+    let defaults = (Bundle.main.object(forInfoDictionaryKey: "PicPressAppGroup") as? String)
         .flatMap { $0.isEmpty ? nil : UserDefaults(suiteName: $0) }
     private static let keys = [
         "AdvPngEnabled", "AdvPngLevel", "GifsicleEnabled", "JpegOptimEnabled",

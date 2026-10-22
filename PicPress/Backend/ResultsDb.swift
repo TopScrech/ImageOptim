@@ -6,7 +6,7 @@ public final class ResultsDb {
     private var database: OpaquePointer?
 
     public init?() {
-        let directory = URL.cachesDirectory.appending(path: Bundle.main.bundleIdentifier ?? "ImageOptim", directoryHint: .isDirectory)
+        let directory = URL.cachesDirectory.appending(path: Bundle.main.bundleIdentifier ?? "PicPress", directoryHint: .isDirectory)
         do {
             try FileManager.default.createDirectory(at: directory, withIntermediateDirectories: true)
         } catch { return nil }

@@ -31,7 +31,7 @@ struct GeneralSettingsView: View {
 
                 Toggle(isOn: $runLowPriority) {
                     Text("Run at low priority")
-                    Text("Priority changes take effect after restarting ImageOptim")
+                    Text("Priority changes take effect after restarting PicPress")
                 }
 
                 Toggle("Bounce Dock icon when finished", isOn: $bounceDock)
