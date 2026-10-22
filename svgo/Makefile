@@ -1,5 +1,7 @@
 all: ./build/svgo.js
 
+build install: all
+
 ./build/svgo.js: prebuilt/svgo.js prebuilt/svgo.js.LICENSE.txt
 	mkdir -p build
 	cp prebuilt/svgo.js prebuilt/svgo.js.LICENSE.txt build/
@@ -13,4 +15,4 @@ rebuild:
 clean:
 	-rm -rf build node_modules
 
-.PHONY: all clean rebuild
+.PHONY: all build install clean rebuild

@@ -6,3 +6,6 @@ DEPLOYMENT_POSTPROCESSING = NO;
 ONLY_ACTIVE_ARCH = YES;
 ENABLE_TESTABILITY = YES;
 OTHER_CODE_SIGN_FLAGS = --timestamp=none
+
+// Ad hoc helper signatures cannot satisfy hardened runtime library validation
+ENABLE_HARDENED_RUNTIME = NO;

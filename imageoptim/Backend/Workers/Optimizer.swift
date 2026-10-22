@@ -68,14 +68,11 @@ nonisolated struct Optimizer: Sendable {
         var timeout: Int?
         var executableURL: URL
         if executable == "svgo" {
-            let searchPaths = (ProcessInfo.processInfo.environment["PATH"] ?? "").split(separator: ":").map { URL(filePath: String($0)).appending(path: "node").path }
-            let candidates = ["/usr/local/bin/node", "/opt/homebrew/bin/node"] + searchPaths
-            guard let script = Bundle(for: BundleAnchor.self).url(forResource: "svgo", withExtension: "js"),
-                  let node = candidates.first(where: { FileManager.default.isExecutableFile(atPath: $0) }) else {
-                throw CocoaError(.executableNotLoadable, userInfo: [NSLocalizedDescriptionKey: "SVGO requires Node.js and its bundled script"])
+            guard let script = try CommandWorker.resourceBundle().url(forResource: "svgo", withExtension: "js") else {
+                throw CocoaError(.executableNotLoadable, userInfo: [NSLocalizedDescriptionKey: "The bundled SVGO script is missing"])
             }
-            executableURL = URL(filePath: node)
-            arguments = [script.path, s.lossy ? "1" : "0", file.path.path, output.path]
+            executableURL = try CommandWorker.executable("node")
+            arguments = ["--jitless", script.path, s.lossy ? "1" : "0", file.path.path, output.path]
         } else {
             executableURL = try CommandWorker.executable(executable)
             switch executable {

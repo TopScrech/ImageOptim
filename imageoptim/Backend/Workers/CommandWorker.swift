@@ -14,9 +14,13 @@ final class CommandWorker {
         process.currentDirectoryURL = executable.deletingLastPathComponent()
         process.arguments = arguments
         process.qualityOfService = lowPriority ? .utility : .userInitiated
-        var environment = ProcessInfo.processInfo.environment
-        environment["NSUnbufferedIO"] = "YES"
-        process.environment = environment
+        // Never inherit NODE_OPTIONS, NODE_PATH, or dynamic-loader overrides
+        process.environment = [
+            "PATH": "/usr/bin:/bin",
+            "HOME": NSHomeDirectory(),
+            "TMPDIR": URL.temporaryDirectory.path,
+            "NSUnbufferedIO": "YES"
+        ]
         let inputHandle = try input.map { try FileHandle(forReadingFrom: $0) }
         let outputHandle = try output.map {
             try Data().write(to: $0)
@@ -66,8 +70,25 @@ final class CommandWorker {
         }
     }
 
+    static func resourceBundle() throws -> Bundle {
+        // Xcode may load the backend from outside the sandboxed app bundle
+        let main = Bundle.main
+        let application: Bundle?
+        if main.bundleURL.pathExtension == "appex" {
+            application = Bundle(url: main.bundleURL.deletingLastPathComponent()
+                .deletingLastPathComponent().deletingLastPathComponent())
+        } else {
+            application = main
+        }
+        guard let frameworks = application?.privateFrameworksURL,
+              let bundle = Bundle(url: frameworks.appending(path: "ImageOptimGPL.framework")) else {
+            throw CocoaError(.executableNotLoadable, userInfo: [NSLocalizedDescriptionKey: "The bundled optimization framework is missing"])
+        }
+        return bundle
+    }
+
     static func executable(_ name: String) throws -> URL {
-        let bundle = Bundle(for: BundleAnchor.self)
+        let bundle = try resourceBundle()
         guard let url = bundle.url(forAuxiliaryExecutable: name) ?? bundle.url(forResource: name, withExtension: nil),
               FileManager.default.isExecutableFile(atPath: url.path) else {
             throw CocoaError(.executableNotLoadable, userInfo: [NSLocalizedDescriptionKey: String(localized: "\(name) failed to start")])

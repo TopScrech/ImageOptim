@@ -34,8 +34,10 @@ nonisolated enum FileOperations {
         let data = try Data(contentsOf: output.path)
         guard data.count == output.byteSize, !data.isEmpty else { throw CocoaError(.fileReadCorruptFile) }
         let attributes = try manager.attributesOfItem(atPath: input.path.path)
-        // Keep a recovery copy beside the original until replacement has succeeded
-        let backup = input.path.deletingLastPathComponent().appending(path: ".\(UUID().uuidString).imageoptim-backup")
+        // Keep recovery copies in the container, without requiring access to sibling files
+        let recovery = URL.applicationSupportDirectory.appending(path: "ImageOptim/Recovery/\(UUID().uuidString)", directoryHint: .isDirectory)
+        try manager.createDirectory(at: recovery, withIntermediateDirectories: true)
+        let backup = recovery.appending(path: input.path.lastPathComponent)
         try manager.copyItem(at: input.path, to: backup)
         do {
             if settings.preservePermissions {
@@ -53,18 +55,26 @@ nonisolated enum FileOperations {
             }
         } catch {
             // Leave the backup recoverable if restoring the destination also fails
-            _ = try? manager.replaceItemAt(input.path, withItemAt: backup)
+            try? restore(backup, to: input.path)
             throw error
         }
         for attribute in ["com.apple.FinderInfo", "com.apple.ResourceFork", "com.apple.quarantine", "com.apple.metadata:kMDItemWhereFroms"] {
             _ = input.path.path.withCString { path in attribute.withCString { removexattr(path, $0, 0) } }
         }
-        var trashed: NSURL?
-        do {
-            try manager.trashItem(at: backup, resultingItemURL: &trashed)
-            return trashed as URL? ?? backup
-        } catch {
-            return backup
-        }
+        return backup
+    }
+
+    static func restore(_ backup: URL, to destination: URL) throws {
+        let manager = FileManager.default
+        let data = try Data(contentsOf: backup)
+        let attributes = try manager.attributesOfItem(atPath: backup.path)
+        // Write through the authorized file instead of moving a file across container boundaries
+        let handle = try FileHandle(forWritingTo: destination)
+        defer { try? handle.close() }
+        try handle.write(contentsOf: data)
+        try handle.truncate(atOffset: UInt64(data.count))
+        try handle.synchronize()
+        let metadata = attributes.filter { [.creationDate, .modificationDate, .posixPermissions].contains($0.key) }
+        try manager.setAttributes(metadata, ofItemAtPath: destination.path)
     }
 }

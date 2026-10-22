@@ -79,7 +79,9 @@ public final class Job {
                 lossyConverted = false
             }
             unoptimizedInput = input
-            workingInput = input
+            let stagedInput = directory.appending(path: "input." + (input.fileType == .svg ? "svg" : "image"))
+            try await FileOperations.copy(input.path, to: stagedInput)
+            workingInput = input.at(stagedInput)
             let optimizers = Optimizer.plan(for: input.fileType, settings: settings, repeated: repeated, lossyConverted: lossyConverted)
             guard !optimizers.isEmpty else {
                 throw CocoaError(.executableNotLoadable, userInfo: [NSLocalizedDescriptionKey: "All necessary tools have been disabled in Preferences"])
@@ -121,7 +123,11 @@ public final class Job {
                     let savedHash = try await FileOperations.hash(output.path, settings: "")
                     let backup = try await FileOperations.save(output, over: input, settings: settings, expectedHash: inputHash)
                     fileLimiter.release()
-                    if revertFile == nil { revertFile = input.at(backup) }
+                    if revertFile == nil {
+                        revertFile = input.at(backup)
+                    } else {
+                        await FileOperations.remove(backup.deletingLastPathComponent())
+                    }
                     savedOutput = output.at(filePath)
                     lastContentHash = savedHash
                     isFailed = false
@@ -178,7 +184,8 @@ public final class Job {
         do {
             let data = try Data(contentsOf: backup.path)
             guard data.count == backup.byteSize else { return false }
-            _ = try FileManager.default.replaceItemAt(filePath, withItemAt: backup.path, options: .usingNewMetadataOnly)
+            try FileOperations.restore(backup.path, to: filePath)
+            try? FileManager.default.removeItem(at: backup.path.deletingLastPathComponent())
             let restored = backup.at(filePath)
             initialInput = restored
             unoptimizedInput = restored

@@ -20,6 +20,7 @@ final class FilesController {
     private var scans: [UUID: Task<Void, Never>] = [:]
     private var pendingDirectories: [URL] = []
     private var scanLimit = 1
+    private var accessedURLs: Set<URL> = []
 
     func configure() {
         let defaults = UserDefaults.standard
@@ -49,6 +50,13 @@ final class FilesController {
         pendingDirectories.removeAll()
         queue?.cleanup()
         for proxy in arrangedObjects { proxy.job.cleanup() }
+        let urls = accessedURLs
+        accessedURLs.removeAll()
+        let queue = queue
+        Task {
+            await queue?.wait()
+            for url in urls { url.stopAccessingSecurityScopedResource() }
+        }
     }
 
     @discardableResult
@@ -60,6 +68,11 @@ final class FilesController {
         var allSucceeded = true
         var additions: [JobProxy] = []
         for url in urls {
+            guard isEnabled else { return false }
+            // Retain original URLs through scans, optimization, preview, and undo
+            if !accessedURLs.contains(url), url.startAccessingSecurityScopedResource() {
+                accessedURLs.insert(url)
+            }
             let path = url.resolvingSymlinksInPath()
             var isDirectory: ObjCBool = false
             guard FileManager.default.fileExists(atPath: path.path, isDirectory: &isDirectory) else {

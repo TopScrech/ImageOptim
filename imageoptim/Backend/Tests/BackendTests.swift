@@ -6,6 +6,18 @@ import UniformTypeIdentifiers
 
 @MainActor
 final class BackendTests {
+    @Test func helpersUseEmbeddedFramework() throws {
+        let frameworks = try #require(Bundle.main.privateFrameworksURL)
+        let expected = frameworks.appending(path: "ImageOptimGPL.framework").resolvingSymlinksInPath()
+        let bundle = try CommandWorker.resourceBundle()
+        #expect(bundle.bundleURL.resolvingSymlinksInPath() == expected)
+        for name in ["node", "zopflipng"] {
+            let executable = try CommandWorker.executable(name).resolvingSymlinksInPath()
+            #expect(executable.path.hasPrefix(expected.path + "/"))
+        }
+        #expect(bundle.url(forResource: "svgo", withExtension: "js") != nil)
+    }
+
     @Test(arguments: [false, true]) func compressOne(preserveMetadata: Bool) async throws {
         let originalURL = try #require(Bundle(for: Self.self).url(forResource: "unoptimized", withExtension: "png"))
         let directory = URL.temporaryDirectory.appending(path: UUID().uuidString)
@@ -55,7 +67,12 @@ final class BackendTests {
             #expect((attributes[.posixPermissions] as? NSNumber)?.intValue == 0o640)
         }
         #expect(job.canRevert)
+        let backup = try #require(job.revertFile?.path)
+        #expect(backup.path.hasPrefix(URL.applicationSupportDirectory.path))
+        #expect(try FileManager.default.contentsOfDirectory(atPath: directory.path) == ["image.png"])
+        #expect(try Data(contentsOf: backup) == originalData)
         #expect(job.revert())
+        #expect(!FileManager.default.fileExists(atPath: backup.path))
         #expect(try Data(contentsOf: fileURL) == originalData)
     }
 
@@ -89,7 +106,7 @@ final class BackendTests {
     @Test func cancelledProcessExits() async throws {
         let runner = CommandWorker()
         let task = Task {
-            try await runner.run(executable: URL(filePath: "/bin/sleep"), arguments: ["30"], lowPriority: false)
+            try await runner.run(executable: CommandWorker.executable("node"), arguments: ["--jitless", "-e", "setTimeout(() => {}, 30000)"], lowPriority: false)
         }
         try await Task.sleep(for: .milliseconds(100))
         task.cancel()

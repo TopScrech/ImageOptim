@@ -47,8 +47,11 @@ Matching version numbers indicate the same release base, not identical source co
 
 SVGO is pinned in `svgo/package-lock.json` and its prebuilt bundle is tracked in `svgo/prebuilt`
 Normal Xcode builds copy this bundle without installing npm dependencies or running Webpack
-SVGO still requires Node.js at runtime
-The Swift backend locates Node.js in the standard installation directories or the app’s inherited PATH
+SVGO uses bundled Node.js 22.23.4 for both Apple silicon and Intel, with JIT disabled
+The backend build downloads the pinned official archives, checks their SHA-256 hashes, and embeds a universal runtime and license notices
+Downloads are cached in Xcode DerivedData; the first build requires access to nodejs.org
+No Node installation or network access is required when running the app
+`scripts/bundle-sandbox-helpers.sh` pins the version and checksums and signs all embedded optimizer executables with sandbox inheritance
 Run `make -C svgo && node --test svgo/test.cjs` to check both SVG modes and the bundled script without npm dependencies
 After changing SVGO dependencies or its wrapper, run `make -C svgo rebuild` and commit the updated prebuilt files alongside the source and lockfile
 This explicit rebuild installs npm dependencies and tests both the source and bundles; `make -C svgo clean` removes the dependencies and copied build output while preserving the prebuilt bundle
@@ -76,3 +79,19 @@ Folder-import regression tests use Swift Testing and run with `scripts/test-swif
 
 The app and backend keep strict compiler diagnostics
 Pinned third-party targets use compatibility settings for legacy C, Objective-C, and Rust code, with `-Wall` retained for C and Objective-C
+
+## App Sandbox and App Store builds
+
+The app and action extension enable App Sandbox in Debug and Release
+The app requests read/write access to user-selected files and retains security-scoped access for folder scanning, optimization, preview, and undo
+Optimizer processes receive copies in the app container rather than paths to user documents
+Originals are replaced by the app, and recovery copies are retained under its container's `Library/Application Support/ImageOptim/Recovery`
+Reverting removes the corresponding recovery copy; remaining copies can be recovered manually after a crash or app restart
+Command-line paths alone do not grant sandbox access; use the file importer, Finder Open With, or drag and drop
+
+Set `DEVELOPMENT_TEAM`, distribution signing identities and provisioning profiles for the app and extension before archiving for App Store submission
+`IMAGEOPTIM_APP_GROUP` defaults to `$(TeamIdentifierPrefix)net.pornel.ImageOptim` and is shared by both entitlements and preference storage
+Register that app group for your team, or override the setting with your registered group identifier
+Local ad hoc builds do not validate provisioning or cross-process app-group access
+Distribution builds must set `ENABLE_HARDENED_RUNTIME=YES` consistently across targets
+Embedded Node runs with `--jitless` and does not request JIT or unsigned executable-memory entitlements
