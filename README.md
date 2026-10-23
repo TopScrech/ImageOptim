@@ -1,6 +1,6 @@
 # PicPress
 
-PicPress is a macOS app based on [ImageOptim](https://imageoptim.com), providing a GUI for lossless image optimization tools: Zopfli, PNGOUT, [OxiPNG](https://lib.rs/crates/oxipng), AdvPNG, PNGCrush, [JPEGOptim](https://github.com/tjko/jpegoptim), Jpegtran, [Guetzli](https://github.com/google/guetzli), [Gifsicle](https://kornel.ski/lossygif), [SVGO](https://github.com/svg/svgo), [svgcleaner](https://github.com/RazrFalcon/svgcleaner) and [MozJPEG](https://github.com/mozilla/mozjpeg).
+PicPress is a macOS app based on [ImageOptim](https://imageoptim.com), providing a GUI for lossless image optimization tools: Zopfli, PNGOUT, [OxiPNG](https://lib.rs/crates/oxipng), AdvPNG, PNGCrush, [JPEGOptim](https://github.com/tjko/jpegoptim), Jpegtran, [Guetzli](https://github.com/google/guetzli), [Gifsicle](https://kornel.ski/lossygif), [SVGO](https://github.com/svg/svgo), [svgcleaner](https://github.com/RazrFalcon/svgcleaner) and [MozJPEG](https://github.com/mozilla/mozjpeg)
 
 ## Building
 
@@ -8,7 +8,7 @@ Requires:
 
 * Xcode with Swift 6.2 or later support
 * macOS 14 or later to run the SwiftUI app
-* [Rust](https://rust-lang.org/) installed via [rustup](https://www.rustup.rs/) (not Homebrew).
+* [Rust](https://rust-lang.org/) installed via [rustup](https://www.rustup.rs/) (not Homebrew)
 
 ```sh
 git clone --recursive https://github.com/TopScrech/PicPress.git
