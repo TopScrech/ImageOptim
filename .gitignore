@@ -4,6 +4,13 @@
 *.xcuserdatad
 xcuserdata/
 *.xcworkspace
+!PicPress.xcodeproj/project.xcworkspace/
+PicPress.xcodeproj/project.xcworkspace/*
+!PicPress.xcodeproj/project.xcworkspace/xcshareddata/
+PicPress.xcodeproj/project.xcworkspace/xcshareddata/*
+!PicPress.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/
+PicPress.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/*
+!PicPress.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved
 *.zip
 .DS_Store
 .svn
