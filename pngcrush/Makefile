@@ -24,6 +24,6 @@ pngcrush.c: tmp/pngcrush.c
 clean:
 	-rm -rf tmp *.c *.h $(ARCHIVE) patched
 
-install:
+install: all
 
 .PHONY: all build clean

@@ -16,7 +16,7 @@ $(ARCHIVE):
 
 clean:
 
-install:
+install: all
 
 .PHONY: build all install clean
 

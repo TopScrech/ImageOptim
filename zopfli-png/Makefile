@@ -1,4 +1,4 @@
-build: all
+build install: all
 
 all: zopfli/src fix-compiler
 

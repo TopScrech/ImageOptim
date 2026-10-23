@@ -8,11 +8,11 @@ build: all
 all: zlib.h fix-platform
 
 zlib.h:
-	curl -L http://downloads.sourceforge.net/project/optipng/OptiPNG/optipng-$(VERSION)/optipng-$(VERSION).tar.gz | tar xz --strip-components=3 --exclude=Makefile optipng-$(VERSION)/src/zlib
+	curl -fL https://downloads.sourceforge.net/project/optipng/OptiPNG/optipng-$(VERSION)/optipng-$(VERSION).tar.gz | tar xz --strip-components=3 --exclude=Makefile optipng-$(VERSION)/src/zlib
 
 clean:
 
-install:
+install: all
 
 .PHONY: build all install clean
 

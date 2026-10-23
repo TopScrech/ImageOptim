@@ -11,11 +11,11 @@ png.h: /tmp/$(OPTIPNG_FILENAME)
 	touch png.h
 
 /tmp/$(OPTIPNG_FILENAME):
-	curl -L http://downloads.sourceforge.net/project/optipng/OptiPNG/optipng-$(VERSION)/$(OPTIPNG_FILENAME) -o /tmp/$(OPTIPNG_FILENAME)
+	curl -fL https://downloads.sourceforge.net/project/optipng/OptiPNG/optipng-$(VERSION)/$(OPTIPNG_FILENAME) -o /tmp/$(OPTIPNG_FILENAME)
 
 clean:
 	test \! -e png.h || rm *.c png.h
 
-install:
+install: all
 
 .PHONY: build all install clean
