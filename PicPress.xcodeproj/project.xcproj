@@ -50,6 +50,13 @@
   "packages": [
     {
       "kind": "remote",
+      "repository": "https://github.com/TopScrech/LaunchAtLogin.git",
+      "version": {
+        "up-to-next-major-version": "1.0.2",
+      },
+    },
+    {
+      "kind": "remote",
       "repository": "https://github.com/TopScrech/ScrechKit.git",
       "version": {
         "up-to-next-major-version": "1.0.15",
@@ -198,6 +205,11 @@
         },
       ],
       "package-product-members": [
+        {
+          "package": "LaunchAtLogin",
+          "product-name": "LaunchAtLogin",
+          "build-phase": { "build-phase": "frameworks" },
+        },
         {
           "package": "ScrechKit",
           "product-name": "ScrechKit",

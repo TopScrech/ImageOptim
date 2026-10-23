@@ -1,4 +1,5 @@
 import ScrechKit
+import LaunchAtLogin
 
 struct GeneralSettingsView: View {
     @Environment(SettingsVM.self) private var model
@@ -13,6 +14,10 @@ struct GeneralSettingsView: View {
 
     var body: some View {
         Form {
+            Section("Startup") {
+                LaunchAtLogin.Toggle()
+            }
+
             Section("Window") {
                 Toggle("Always keep window on top", isOn: $alwaysOnTop)
             }

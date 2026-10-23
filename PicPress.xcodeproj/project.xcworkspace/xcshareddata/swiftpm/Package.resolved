@@ -1,6 +1,15 @@
 {
-  "originHash" : "0ba05308509741f17fcfbec3d54713bddf77c977abe208fd30c8195ba9dcc000",
+  "originHash" : "e333874db39bb720d3c0472ef1ffb4404fa05e54ccc32bd83fa9b03b05c4fab1",
   "pins" : [
+    {
+      "identity" : "launchatlogin",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/TopScrech/LaunchAtLogin.git",
+      "state" : {
+        "revision" : "f902aeb6cfa478f7cba038de32e9326b7d983d66",
+        "version" : "1.0.2"
+      }
+    },
     {
       "identity" : "screchkit",
       "kind" : "remoteSourceControl",
