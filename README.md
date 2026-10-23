@@ -23,6 +23,27 @@ SVGO uses the prebuilt `Tools/svgo.js` bundle with Node.js 22.23.4 and JIT disab
 The first build downloads checksum-verified official Node archives for both architectures into DerivedData
 The app requires no Node installation or network access at runtime
 
+## Tool repositories
+
+| Tool | Repository | Bundled source |
+| --- | --- | --- |
+| AdvPNG / AdvanceCOMP | [amadvance/advancecomp](https://github.com/amadvance/advancecomp) | AdvanceCOMP with PicPress compatibility patches |
+| Gifsicle | [kohler/gifsicle](https://github.com/kohler/gifsicle) | Upstream, including lossy GIF compression |
+| Guetzli | [google/guetzli](https://github.com/google/guetzli) | Upstream with a PicPress compiler patch |
+| JPEGOptim | [tjko/jpegoptim](https://github.com/tjko/jpegoptim) | Upstream |
+| jpegtran / MozJPEG | [mozilla/mozjpeg](https://github.com/mozilla/mozjpeg) | [ImageOptim/mozjpeg-cocoa](https://github.com/ImageOptim/mozjpeg-cocoa) fork |
+| OxiPNG | [oxipng/oxipng](https://github.com/oxipng/oxipng) | Upstream |
+| PNGCrush | [PMT pngcrush branch](https://sourceforge.net/p/pmt/code/ci/pngcrush/tree/) | Official source release with a PicPress compatibility patch |
+| PNGOUT | No public source repository | [Official macOS binaries](https://www.jonof.id.au/kenutils.html) |
+| pngquant | [kornelski/pngquant](https://github.com/kornelski/pngquant) | Upstream with a PicPress Rust manifest patch |
+| svgcleaner | [RazrFalcon/svgcleaner](https://github.com/RazrFalcon/svgcleaner) | Upstream with an explicit Rust edition |
+| SVGO | [svg/svgo](https://github.com/svg/svgo) | Prebuilt bundle with the PicPress wrapper |
+| ZopfliPNG | [google/zopfli](https://github.com/google/zopfli) | [ImageOptim/zopfli](https://github.com/ImageOptim/zopfli) fork with a PicPress compiler patch |
+| Node.js | [nodejs/node](https://github.com/nodejs/node) | Official runtime binaries for SVGO |
+
+Supporting image and compression libraries include [libpng](https://github.com/pnggroup/libpng), [zlib](https://github.com/madler/zlib), and [libimagequant](https://github.com/ImageOptim/libimagequant)
+Exact bundled tool versions and source revisions are recorded in `Tools/versions.json`
+
 ## Optimization tool versions
 
 `Tools/versions.json` records the bundled tool versions and source revisions
