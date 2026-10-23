@@ -1,0 +1,8 @@
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -1,4 +1,5 @@
+ [package]
++edition = "2015"
+ name = "svgcleaner"
+ version = "0.9.6"
+ authors = ["Evgeniy Reizner <razrfalcon@gmail.com>"]

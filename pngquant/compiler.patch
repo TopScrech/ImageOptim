@@ -1,0 +1,10 @@
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -39,6 +39,7 @@
+ version = "4.0.3"
+ 
+ [features]
++sse = []
+ cocoa = ["dep:cocoa_image"]
+ default = ["lcms2"]
+ lcms2 = ["dep:lcms2-sys"]

@@ -1024,6 +1024,7 @@
           "@executable_path/../Frameworks",
           "@loader_path/Frameworks",
         ],
+        "LM_SKIP_METADATA_EXTRACTION": "YES",
         "LM_FILTER_WARNINGS": "YES",
         "MACOSX_DEPLOYMENT_TARGET": "14.0",
         "MTL_ENABLE_DEBUG_INFO[config=Debug]": "YES",
@@ -1158,12 +1159,12 @@
         "CLANG_WARN__DUPLICATE_METHOD_MATCH": "YES",
         "CODE_SIGN_ENTITLEMENTS[config=Debug]": "PicPress/ImageOptimize/ImageOptimize-Debug.entitlements",
         "CODE_SIGN_ENTITLEMENTS[config=Release]": "PicPress/ImageOptimize/ImageOptimize.entitlements",
-        "CODE_SIGN_IDENTITY": "-",
-        "CODE_SIGN_STYLE": "Manual",
+        "CODE_SIGN_IDENTITY": "Apple Development",
+        "CODE_SIGN_STYLE": "Automatic",
         "COMBINE_HIDPI_IMAGES": "YES",
         "COPY_PHASE_STRIP": "NO",
         "DEBUG_INFORMATION_FORMAT[config=Release]": "dwarf-with-dsym",
-        "DEVELOPMENT_TEAM": "",
+        "DEVELOPMENT_TEAM": "8FQUA2F388",
         "ENABLE_HARDENED_RUNTIME": "NO",
         "ENABLE_NS_ASSERTIONS[config=Release]": "NO",
         "ENABLE_STRICT_OBJC_MSGSEND": "YES",
@@ -3207,6 +3208,7 @@
       "id": "D5006DE808D8CF559F71D737",
       "product": "Products/pngquant",
       "product-type": "tool",
+      "dependencies": [ "downloads" ],
       "build-phases": [
         "compile-sources",
         {
@@ -3540,6 +3542,7 @@
       "id": "01A0EFC243719EDFE6CE15E4",
       "product": "Products/svgcleaner",
       "product-type": "tool",
+      "dependencies": [ "downloads" ],
       "build-phases": [
         "compile-sources",
         {
