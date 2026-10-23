@@ -8,7 +8,7 @@ public final class Job {
     public private(set) var isBusy = false
     public private(set) var isDone = false
     public private(set) var isFailed = false
-    public private(set) var statusText: String? = String(localized: "Waiting to be optimized")
+    public private(set) var statusText: String? = String(localized: "Waiting to be optimized", bundle: #bundle)
     public private(set) var bestToolName: String?
     public private(set) var initialInput: File?
     public private(set) var unoptimizedInput: File?
@@ -46,7 +46,7 @@ public final class Job {
         isFailed = false
         stopping = false
         discardResult = false
-        statusText = String(localized: "Waiting to be optimized")
+        statusText = String(localized: "Waiting to be optimized", bundle: #bundle)
     }
 
     func run(settings: OptimizationSettings, fileLimiter: AsyncLimiter, guetzliLimiter: AsyncLimiter) async {
@@ -54,7 +54,7 @@ public final class Job {
         do {
             try Task.checkCancellation()
             try FileManager.default.createDirectory(at: directory, withIntermediateDirectories: true)
-            statusText = String(localized: "Inspecting file")
+            statusText = String(localized: "Inspecting file", bundle: #bundle)
             await fileLimiter.acquire()
             let input: File
             let inputHash: String
@@ -100,7 +100,7 @@ public final class Job {
                 for optimizer in optimizers {
                     if stopping || Task.isCancelled { break }
                     guard let current = workingInput else { break }
-                    statusText = String(localized: "Started \(optimizer.name)")
+                    statusText = String(localized: "Started \(optimizer.name)", bundle: #bundle)
                     let command = CommandWorker()
                     runner = command
                     let serialize = optimizer.executable == "guetzli" && current.isLarge
@@ -149,17 +149,17 @@ public final class Job {
                     savedOutput = output.at(filePath)
                     lastContentHash = savedHash
                     isFailed = false
-                    statusText = String(localized: "Optimized successfully with \(bestToolName ?? "PicPress")")
+                    statusText = String(localized: "Optimized successfully with \(bestToolName ?? "PicPress")", bundle: #bundle)
                 } catch {
                     fileLimiter.release()
                     throw error
                 }
             } else if !isFailed {
-                statusText = stopping || Task.isCancelled ? String(localized: "Stopped") : String(localized: "File cannot be optimized any further")
+                statusText = stopping || Task.isCancelled ? String(localized: "Stopped", bundle: #bundle) : String(localized: "File cannot be optimized any further", bundle: #bundle)
                 if !stopping && !Task.isCancelled && !discardResult { database?.insert(cacheKey) }
             }
         } catch is CancellationError {
-            statusText = String(localized: "Stopped")
+            statusText = String(localized: "Stopped", bundle: #bundle)
         } catch {
             isFailed = true
             statusText = error.localizedDescription
@@ -215,7 +215,7 @@ public final class Job {
             lossyConverted = false
             lastContentHash = nil
             isFailed = false
-            statusText = String(localized: "Reverted to original")
+            statusText = String(localized: "Reverted to original", bundle: #bundle)
             return true
         } catch {
             statusText = error.localizedDescription

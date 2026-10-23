@@ -91,7 +91,7 @@ final class CommandWorker {
         let bundle = try resourceBundle()
         guard let url = bundle.url(forAuxiliaryExecutable: name) ?? bundle.url(forResource: name, withExtension: nil),
               FileManager.default.isExecutableFile(atPath: url.path) else {
-            throw CocoaError(.executableNotLoadable, userInfo: [NSLocalizedDescriptionKey: String(localized: "\(name) failed to start")])
+            throw CocoaError(.executableNotLoadable, userInfo: [NSLocalizedDescriptionKey: String(localized: "\(name) failed to start", bundle: #bundle)])
         }
         return url
     }

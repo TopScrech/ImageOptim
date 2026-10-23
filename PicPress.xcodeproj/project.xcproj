@@ -114,6 +114,7 @@
             "Backend/FileType.swift",
             "Backend/Job.swift",
             "Backend/JobQueue.swift",
+            "Backend/Localizable.xcstrings",
             "Backend/OptimizationSettings.swift",
             "Backend/ResultsDb.swift",
             "Backend/Workers/CommandWorker.swift",
@@ -271,6 +272,7 @@
         "compile-sources",
         "frameworks",
         "headers",
+        "resources",
         {
           "kind": "script",
           "name": "Bundle and sign sandbox helpers",
