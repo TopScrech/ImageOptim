@@ -34,6 +34,7 @@ public final class Job {
         guard let original = unoptimizedInput, let output = workingInput ?? savedOutput else { return false }
         return output.byteSize < original.byteSize
     }
+    
     public var isStoppable: Bool { isBusy && !isDone }
     public var canRevert: Bool { revertFile != nil && isDone && !isBusy }
     public var byteSizeOriginal: Int64? { initialInput.map { Int64($0.byteSize) } }
@@ -59,6 +60,7 @@ public final class Job {
             let inputHash: String
             let contentHash: String
             let repeated: Bool
+            
             do {
                 input = try await FileOperations.read(filePath)
                 contentHash = try await FileOperations.hash(filePath, settings: "")
@@ -69,7 +71,9 @@ public final class Job {
                 fileLimiter.release()
                 throw error
             }
+            
             try Task.checkCancellation()
+            
             if !repeated {
                 initialInput = input
                 revertFile = nil
@@ -78,16 +82,20 @@ public final class Job {
                 toolResults.removeAll()
                 lossyConverted = false
             }
+            
             unoptimizedInput = input
             let stagedInput = directory.appending(path: "input." + (input.fileType == .svg ? "svg" : "image"))
             try await FileOperations.copy(input.path, to: stagedInput)
             workingInput = input.at(stagedInput)
             let optimizers = Optimizer.plan(for: input.fileType, settings: settings, repeated: repeated, lossyConverted: lossyConverted)
+            
             guard !optimizers.isEmpty else {
                 throw CocoaError(.executableNotLoadable, userInfo: [NSLocalizedDescriptionKey: "All necessary tools have been disabled in Preferences"])
             }
+            
             let cacheKey = inputHash + (repeated ? "-repeat" : "-first")
             lastContentHash = contentHash
+            
             if database?.contains(cacheKey) != true {
                 for optimizer in optimizers {
                     if stopping || Task.isCancelled { break }
@@ -96,10 +104,15 @@ public final class Job {
                     let command = CommandWorker()
                     runner = command
                     let serialize = optimizer.executable == "guetzli" && current.isLarge
-                    if serialize { await guetzliLimiter.acquire() }
+                    
+                    if serialize {
+                        await guetzliLimiter.acquire()
+                    }
+                    
                     do {
                         try Task.checkCancellation()
                         let output = directory.appending(path: UUID().uuidString + "." + (input.fileType == .svg ? "svg" : "temp"))
+                        
                         if let result = try await optimizer.optimize(current, output: output, settings: settings, repeated: repeated, runner: command) {
                             workingInput = result
                             updateBestTool(optimizer.name, previous: current.byteSize, result: result.byteSize)
@@ -113,21 +126,26 @@ public final class Job {
                             statusText = error.localizedDescription
                         }
                     }
+                    
                     if serialize { guetzliLimiter.release() }
                     runner = nil
                 }
             }
+            
             if !discardResult, let output = workingInput, output.byteSize < input.byteSize {
                 await fileLimiter.acquire()
+                
                 do {
                     let savedHash = try await FileOperations.hash(output.path, settings: "")
                     let backup = try await FileOperations.save(output, over: input, settings: settings, expectedHash: inputHash)
                     fileLimiter.release()
+                    
                     if revertFile == nil {
                         revertFile = input.at(backup)
                     } else {
                         await FileOperations.remove(backup.deletingLastPathComponent())
                     }
+                    
                     savedOutput = output.at(filePath)
                     lastContentHash = savedHash
                     isFailed = false
@@ -146,6 +164,7 @@ public final class Job {
             isFailed = true
             statusText = error.localizedDescription
         }
+        
         workingInput = nil
         await FileOperations.remove(directory)
         runner = nil
