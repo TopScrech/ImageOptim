@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Compare checked-out tool sources with upstream stable releases/tags
+"""Compare bundled CLI tool versions with upstream stable releases/tags
 
 Requires Python 3.9+ and curl, does not modify dependencies
 Exit codes: 0 success, 1 outdated with --check, 2 incomplete audit
@@ -14,19 +14,6 @@ import subprocess
 import sys
 
 ROOT = Path(__file__).resolve().parent.parent
-
-
-def read_version(path, pattern):
-    match = re.search(pattern, (ROOT / path).read_text(), re.MULTILINE)
-    if not match:
-        raise ValueError(f"Version missing in {path}")
-    return match.group(1)
-
-
-def cargo_version(path):
-    # Only inspect the package section, not dependency versions
-    text = (ROOT / path).read_text().split('[package]', 1)[1].split('\n[', 1)[0]
-    return re.search(r'^version\s*=\s*"([^"]+)"', text, re.MULTILINE).group(1)
 
 
 def fetch(url):
@@ -73,35 +60,18 @@ def pngout_latest():
     return max(dates), url
 
 
-def zopfli_version():
-    return '.'.join(read_version('zopfli-png/zopfli/CMakeLists.txt',
-        rf'set\(ZOPFLI_VERSION_{part} (\d+)\)') for part in ('MAJOR', 'MINOR', 'PATCH'))
+MANIFEST = json.loads((ROOT / 'Tools/versions.json').read_text())
 
 
-def svgo_version():
-    lock = json.loads((ROOT / 'svgo/package-lock.json').read_text())
-    return lock['packages']['node_modules/svgo']['version']
-
-
-def source_revision(path):
-    return subprocess.check_output(['git', '-C', str(ROOT / path), 'describe',
-        '--tags', '--always'], text=True, stderr=subprocess.DEVNULL).strip()
+def source_revision(name):
+    return next(tool['revision'] for tool in MANIFEST if tool['tool'] == name)
 
 
 TOOLS = [
-    ('pngquant', lambda: cargo_version('pngquant/src/Cargo.toml'), 'kornelski/pngquant', 'pngquant/src'),
-    ('OxiPNG', lambda: cargo_version('oxipng/oxipng/Cargo.toml'), 'oxipng/oxipng', 'oxipng/oxipng'),
-    ('JPEGOptim', lambda: read_version('jpegoptim/src/jpegoptim.c', r'^#define VERSION "([^"]+)"'), 'tjko/jpegoptim', 'jpegoptim/src'),
-    ('Gifsicle', lambda: read_version('gifsicle/orig/configure.ac', r'AC_INIT\(\[gifsicle\],\s*\[([^]]+)\]'), 'kohler/gifsicle', 'gifsicle/orig'),
-    ('PNGCrush', lambda: read_version('pngcrush/Makefile', r'^VERSION\s*=\s*(\S+)'), pngcrush_latest, None),
-    ('AdvPNG', lambda: read_version('advpng/Makefile', r'^VERSION\s*=\s*(\S+)'), 'amadvance/advancecomp', None),
-    ('SVGO', svgo_version, 'svg/svgo', None),
-    ('jpegtran / MozJPEG', lambda: read_version('libjpeg/src/CMakeLists.txt', r'set\(VERSION ([\d.]+)\)'), 'mozilla/mozjpeg', 'libjpeg/src'),
-    ('ZopfliPNG', zopfli_version, 'google/zopfli', 'zopfli-png/zopfli'),
-    # Guetzli has no source version constant; its nearest release tag is the base
-    ('Guetzli', lambda: re.match(r'v?([\d.]+)', source_revision('guetzli/guetzli')).group(1), 'google/guetzli', 'guetzli/guetzli'),
-    ('svgcleaner', lambda: cargo_version('svgcleaner/src/Cargo.toml'), 'RazrFalcon/svgcleaner', 'svgcleaner/src'),
-    ('PNGOUT (macOS)', lambda: read_version('PicPress/Makefile', r'pngout-(\d{8})-mac'), pngout_latest, None),
+    (tool['tool'], lambda tool=tool: tool['version'],
+     {'pngout_latest': pngout_latest, 'pngcrush_latest': pngcrush_latest}.get(tool['upstream'], tool['upstream']),
+     tool['tool'] if tool.get('revision') else None)
+    for tool in MANIFEST
 ]
 
 
@@ -133,14 +103,14 @@ def main():
     if args.json:
         print(json.dumps({'checked_at': datetime.now(timezone.utc).isoformat(), 'tools': results}, indent=2))
     else:
-        print(f"{'Tool':<21} {'Local source':<15} {'Latest stable':<15} Status")
+        print(f"{'Tool':<21} {'Bundled':<15} {'Latest stable':<15} Status")
         for item in results:
             print(f"{item['tool']:<21} {item['current'] or '?':<15} {item['latest'] or '?':<15} {item['status']}")
             if 'error' in item:
                 print(f"  {item['error']}")
             if 'revision' in item:
-                print(f"  Checkout: {item['revision']}")
-        print('\nCompared source versions and stable upstream tags, not built app binaries')
+                print(f"  Source revision: {item['revision']}")
+        print('\nCompared the bundled tool manifest with stable upstream tags')
         print('Matching base versions may still contain fork-specific patches')
     if any(item['status'] == 'error' for item in results):
         return 2

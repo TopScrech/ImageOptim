@@ -1,0 +1,74 @@
+[
+  {
+    "tool": "pngquant",
+    "version": "3.0.2",
+    "upstream": "kornelski/pngquant",
+    "revision": "3.0.1-11-g515575a"
+  },
+  {
+    "tool": "OxiPNG",
+    "version": "10.2.1",
+    "upstream": "oxipng/oxipng",
+    "revision": "v10.2.1"
+  },
+  {
+    "tool": "JPEGOptim",
+    "version": "1.5.6",
+    "upstream": "tjko/jpegoptim",
+    "revision": "v1.5.6"
+  },
+  {
+    "tool": "Gifsicle",
+    "version": "1.98",
+    "upstream": "kohler/gifsicle",
+    "revision": "v1.98"
+  },
+  {
+    "tool": "PNGCrush",
+    "version": "1.8.13",
+    "upstream": "pngcrush_latest",
+    "revision": null
+  },
+  {
+    "tool": "AdvPNG",
+    "version": "2.6",
+    "upstream": "amadvance/advancecomp",
+    "revision": null
+  },
+  {
+    "tool": "SVGO",
+    "version": "4.1.0",
+    "upstream": "svg/svgo",
+    "revision": null
+  },
+  {
+    "tool": "jpegtran / MozJPEG",
+    "version": "4.1.5",
+    "upstream": "mozilla/mozjpeg",
+    "revision": "v4.1.5-2-g260b65c3"
+  },
+  {
+    "tool": "ZopfliPNG",
+    "version": "1.0.3",
+    "upstream": "google/zopfli",
+    "revision": "zopfli-1.0.1-95-gba79a65"
+  },
+  {
+    "tool": "Guetzli",
+    "version": "1.0.1",
+    "upstream": "google/guetzli",
+    "revision": "v1.0.1-76-g214f2bb"
+  },
+  {
+    "tool": "svgcleaner",
+    "version": "0.9.6",
+    "upstream": "RazrFalcon/svgcleaner",
+    "revision": "v0.9.5-10-g575eac7"
+  },
+  {
+    "tool": "PNGOUT (macOS)",
+    "version": "20230322",
+    "upstream": "pngout_latest",
+    "revision": null
+  }
+]

@@ -4,63 +4,40 @@ PicPress is a macOS app based on [ImageOptim](https://imageoptim.com), providing
 
 ## Building
 
-Requires:
-
-* Xcode with Swift 6.2 or later support
-* macOS 14 or later to run the SwiftUI app
-* [Rust](https://rust-lang.org/) installed via [rustup](https://www.rustup.rs/) (not Homebrew)
+Requires Xcode with Swift 6.2 or later support and macOS 14 or later
 
 ```sh
-git clone --recursive https://github.com/TopScrech/PicPress.git
+git clone https://github.com/TopScrech/PicPress.git
 cd PicPress
+open PicPress.xcodeproj
 ```
 
-To get started, initialize submodules with `git submodule update --init --recursive` and open `PicPress.xcodeproj`
-It builds the app and bundled dependencies from this single project
-Local builds use ad hoc signing, so the original author’s developer certificates are not required
-Debug builds use separate entitlements that allow Xcode to attach its debugger; Release builds keep debugger access disabled
-Local builds disable hardened runtime because ad hoc signatures have no team identity for validating embedded frameworks
-Distribution builds must enable hardened runtime and configure the appropriate signing identity, team, and shared app group
+The project builds only the Swift app, backend framework, action extension, and tests
+Optimizer tools are prebuilt universal macOS executables in `Tools`, supporting Apple silicon and Intel
+There are no Git submodules or vendor source builds, and Rust, npm, and C/C++ tool builds are not required
+Configure the app and action extension with the same signing team
+Debug builds use debugger entitlements; Release builds keep debugger access disabled
 
-In case of build errors, these sometimes help:
-
-```sh
-git submodule update --init --recursive
-```
-
-```sh
-cd gifsicle # or pngquant
-make clean
-make
-```
+`scripts/bundle-sandbox-helpers.sh` verifies `Tools/SHA256SUMS`, copies the executables and their runtime libraries into the backend framework, and signs the embedded tools with sandbox inheritance
+SVGO uses the prebuilt `Tools/svgo.js` bundle with Node.js 22.23.4 and JIT disabled
+The first build downloads checksum-verified official Node archives for both architectures into DerivedData
+The app requires no Node installation or network access at runtime
 
 ## Optimization tool versions
 
-Run `python3 scripts/check-tool-versions.py` from any directory to compare this checkout's tool versions with upstream stable releases/tags
-The script requires Python 3.9+ and curl, reads source manifests and the SVGO lockfile, and makes no dependency changes
-It includes all tools, including dependencies that use patched forks
-Matching version numbers indicate the same release base, not identical source code
+`Tools/versions.json` records the bundled tool versions and source revisions
+Run `python3 scripts/check-tool-versions.py` to compare the manifest with upstream stable releases
+The audit requires Python 3.9+ and curl and makes no dependency changes
 
-- `--json` prints versions, source revisions, upstream URLs, and any lookup errors as JSON
+- `--json` prints versions, source revisions, upstream URLs, and lookup errors
 - `--check` exits with status 1 when updates are available
-- Incomplete audits, including network failures or missing sources, exit with status 2
+- Incomplete audits exit with status 2
 
-SVGO is pinned in `svgo/package-lock.json` and its prebuilt bundle is tracked in `svgo/prebuilt`
-Normal Xcode builds copy this bundle without installing npm dependencies or running Webpack
-SVGO uses bundled Node.js 22.23.4 for both Apple silicon and Intel, with JIT disabled
-The backend build downloads the pinned official archives, checks their SHA-256 hashes, and embeds a universal runtime and license notices
-Downloads are cached in Xcode DerivedData; the first build requires access to nodejs.org
-No Node installation or network access is required when running the app
-`scripts/bundle-sandbox-helpers.sh` pins the version and checksums and signs all embedded optimizer executables with sandbox inheritance
-Run `make -C svgo && node --test svgo/test.cjs` to check both SVG modes and the bundled script without npm dependencies
-After changing SVGO dependencies or its wrapper, run `make -C svgo rebuild` and commit the updated prebuilt files alongside the source and lockfile
-This explicit rebuild installs npm dependencies and tests both the source and bundles; `make -C svgo clean` removes the dependencies and copied build output while preserving the prebuilt bundle
 Run `python3 -B scripts/test-tool-versions.py` for offline version-checker tests
-
-The updated native tools are built by the existing Xcode targets
-AdvanceCOMP and PNGCrush archives are versioned and checksum-verified during source preparation
-Gifsicle uses upstream's integrated lossy compression
-For local ad hoc validation of tools that load bundled libraries, build with `ENABLE_HARDENED_RUNTIME=NO`; distribution builds require a shared signing identity
+To update tools, prepare universal Release executables outside this repository, replace the files in `Tools`, and update the manifest, license notices, and SHA-256 checksums
+Keep the ImageOptim fork's CLI compatibility, particularly Zopfli's `--timelimit` option
+Keep `libimageoptimjpeg.dylib` and `liblibpng.dylib` alongside the executables that load them
+License notices are retained in `Tools/Licenses` and copied into the app
 
 ## Interface
 
@@ -72,13 +49,13 @@ The ImageOptimize action extension uses async image loading and a SwiftUI progre
 The app and extension no longer load XIB files
 `PicPressController` provides native file-opening, Finder services, update checks, and application lifecycle integration
 
-The root Xcode project contains all optimizer and updater targets, with no nested dependency projects
+The root Xcode project contains the app, backend, action extension, and test targets
 The navigator groups each source file once under its physical folder
 
 Folder-import regression tests use Swift Testing and run with `scripts/test-swift.sh`, with all build artifacts kept in a temporary directory
 
 The app and backend keep strict compiler diagnostics
-Pinned third-party targets use compatibility settings for legacy C, Objective-C, and Rust code, with `-Wall` retained for C and Objective-C
+Prebuilt CLI tools are validated and signed during bundling
 
 ## App Sandbox and App Store builds
 
