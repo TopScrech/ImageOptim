@@ -1193,7 +1193,7 @@
         "MACOSX_DEPLOYMENT_TARGET": "14.0",
         "MTL_ENABLE_DEBUG_INFO[config=Debug]": "YES",
         "MTL_ENABLE_DEBUG_INFO[config=Release]": "NO",
-        "PRODUCT_BUNDLE_IDENTIFIER": "net.pornel.ImageOptimizeExtension",
+        "PRODUCT_BUNDLE_IDENTIFIER": "dev.topscrech.PicPress.ImageOptimize",
         "PRODUCT_NAME": "$(TARGET_NAME)",
         "PROVISIONING_PROFILE": "",
         "PROVISIONING_PROFILE_SPECIFIER": "",
