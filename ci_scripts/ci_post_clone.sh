@@ -13,3 +13,9 @@ sh "$installer" -y --no-modify-path --profile minimal \
 export PATH="$HOME/.cargo/bin:$PATH"
 cargo --version
 rustup target list --installed
+
+# Populate generated source files before Xcode evaluates build inputs
+repository=$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd)
+for dependency in libpng zlib advpng gifsicle guetzli jpegoptim libjpeg pngcrush zopfli-png PicPress svgo; do
+    make -C "$repository/$dependency" all
+done
